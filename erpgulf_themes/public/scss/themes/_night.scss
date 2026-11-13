@@ -1,0 +1,2286 @@
+// Claudion Night — dark theme for Frappe v16. Runs on top of Frappe's own dark theme:
+// theme_switcher.js sets data-theme="dark" while data-theme-mode stays "claudionnight",
+// so these rules are keyed on data-theme-mode.
+[data-theme-mode="claudionnight"] {
+  --main-color: #073c44;
+  /* Dark green */
+  --accent-color: #15b08f;
+  /* Teal for hover effects */
+  --searchbar-color: #293532;
+  --text-highlight: #9ec8b9;
+  /* Soft green for titles */
+  --background-light: #0d1211;
+  /* white background */
+  --background-color3: #1b2120;
+  --border-color3: #1e2624;
+  /* Light gray for borders */
+  --box-color: rgba(255, 255, 255, 0.03) !important;
+  /* box color light minty */
+  --border-color: #192422;
+  --text-color2: #525454;
+  /* Text color for various elements */
+  --text-color3: #979999;
+  /* Text color for various elements */
+  --text-light: #979999;
+  /* Text color for various elements */
+}
+[data-theme-mode="claudionnight"] .form-control {
+  /* width: 472px; */
+  color: rgba(255, 255, 255, 1);
+
+  height: 36px;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  background: rgba(2, 13, 15, 1);
+  border: 1px solid rgba(204, 208, 208, 1); 
+}
+
+[data-theme-mode="claudionnight"] .list-subject a {
+  font-family: $theme-font;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+[data-theme-mode="claudionnight"] .page-container {
+  background-color: var(--background-light);
+}
+/* [data-theme-mode="claudionnight"] .form-page {
+  width: 1030px;
+  height: 596px;
+  border-radius: 12px;
+  padding: 16px;
+  background: rgba(10, 20, 22, 1) !important;
+  border: 1px solid rgba(49, 53, 54, 1);
+  box-sizing: border-box;
+} */
+
+[data-theme-mode="claudionnight"] .page-head.flex {
+  background-color: var(--background-light);
+  /* Pure black */
+  color: var(--text-light);
+  /* White text */
+  border: var(--background-light);
+}
+
+[data-theme-mode="claudionnight"] .page-container {
+  background-color: #020d0f;
+}
+[data-theme-mode="claudionnight"] .page-head {
+  background-color: #020d0f !important;
+}
+[data-theme-mode="claudionnight"] .layout-main-section {
+  background-color: #0a1416;
+  /* width: 1030px;
+  height: 583px;
+  gap: 10px;
+  border-radius: 12px;
+  border-width: 1px;
+  padding: 24px;
+  border: 1px solid #313536; */
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+[data-theme-mode="claudionnight"] .page-form {
+  background-color: #0a1416 !important;
+  /* white text */
+}
+[data-theme-mode="claudionnight"] .list-row-head {
+  background-color: #0a1416 !important;
+  /* white text */
+}
+/* [data-theme-mode="claudionnight"] .avatar-frame {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+} */
+
+/*upper sidebar*/
+[data-theme-mode="claudionnight"] header.navbar.navbar-expand {
+  background-color: #042226;
+  color: var(--text-light);
+  /*Ensures text/icons are visible*/
+  border: 1px solid var(--border-color);
+}
+
+/*search bar background*/
+[data-theme-mode="claudionnight"] #navbar-search {
+  /* border-color: #4e878f !important;
+  background: #4E878F; */
+  border-color: #384B4B !important;
+  background: #384B4B !important;
+
+}
+
+/*color for notification icon*/
+[data-theme-mode="claudionnight"] .es-icon.icon-sm {
+  stroke: var(--text-light) !important;
+}
+
+/*color for help icon*/
+[data-theme-mode="claudionnight"] .dropdown-help .nav-link span {
+  color: var(--text-light);
+}
+
+[data-theme-mode="claudionnight"] .dropdown-help .es-icon.icon-xs {
+  stroke: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body h1 {
+  font-family: $theme-font;
+  /* font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 120%;
+  letter-spacing: 0%; */
+  color: #020d0f;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body p {
+  font-family: $theme-font;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 120% !important;
+  letter-spacing: 0%;
+  color: #2a2b2b;
+}
+
+/*points*/
+
+[data-theme-mode="claudionnight"] .onboarding-step-body ul {
+  color: #2a2b2b;
+  font-family: $theme-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120% !important;
+  letter-spacing: 0%;
+}
+
+[data-theme-mode="claudionnight"] .widget.onboarding-widget-box {
+  font-family: $theme-font !important;
+  background-color: var(--box-color); /* Light minty background */
+  border: 1px solid var(--border-color); /* Dark green border */
+  border-radius: 8px; /* Optional: Rounded corners */
+  padding: 20px;
+}
+
+[data-theme-mode="claudionnight"] .widget.onboarding-widget-box {
+  background-color: var(--box-color) !important;
+  border: 1px solid #293532;
+  color: var(--text-light) !important;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+[data-theme-mode="claudionnight"] .links-widget-box,
+[data-theme-mode="claudionnight"] .widget.links-widget-box {
+  background-color: var(--box-color) !important;
+  /* dark background */
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-light) !important;
+  border-radius: 8px;
+  /* rounded corners */
+  padding: 16px;
+  /* optional for spacing */
+}
+
+/* [data-theme-mode="claudionnight"] span.ellipsis {
+  height: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+} */
+
+[data-theme-mode="claudionnight"] .widget-title {
+  color: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .widget-subtitle {
+  font-family: $theme-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #2a2b2b !important;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body h1 {
+  /* width: 128px;
+  height: 18px; */
+  /* font-weight: 700;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0%; */
+  color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* color: var(--text-light) !important;
+  font-weight: 600; */
+}
+[data-theme-mode="claudionnight"] li::marker {
+  color: red;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body p {
+  color: var(--text-color3) !important;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body ul,
+[data-theme-mode="claudionnight"] .onboarding-step-body ul li {
+  color: var(--text-color3) !important;
+}
+
+[data-theme-mode="claudionnight"] .widget-subtitle {
+  color: var(--text-color3) !important;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step {
+  background-color: var(--background-color3);
+  color: var(--text-light);
+}
+
+[data-theme-mode="claudionnight"] svg.es-icon.sidebar-toggle-placeholder {
+  stroke: var(--text-light) !important;
+  /* or use a color like #ffffff */
+  fill: var(--text-light) !important;
+}
+[data-theme-mode="claudionnight"] .ce-block__content {
+  font-family: $theme-font !important;
+}
+
+[data-theme-mode="claudionnight"] .ce-block__content .ce-header .h4 b {
+  font-family: $theme-font !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+[data-theme-mode="claudionnight"] .ce-header .h4 b {
+  color: var(--text-light) !important;
+  /* or #FFFFFF for white */
+}
+
+[data-theme-mode="claudionnight"] .ce-header .h4 b {
+  color: var(--text-light) !important;
+  /* or use a hex: #ffffff for white */
+}
+
+[data-theme-mode="claudionnight"] .shortcut-widget-box .widget-title .ellipsis {
+  font-family: $theme-font !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+[data-theme-mode="claudionnight"] .shortcut-widget-box {
+  background-color: var(--background-light) !important;
+  color: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step:hover,
+[data-theme-mode="claudionnight"] .onboarding-step.skipped.active:hover,
+[data-theme-mode="claudionnight"] .onboarding-step.pending.active:hover {
+  background-color: #1b2120 !important;
+  /* Same as normal background */
+  color: var(--text-light) !important;
+  border: 1px solid #1e2624 !important;
+  /* match border too */
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step:empty {
+  display: none;
+  background: transparent;
+  border: none;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step:focus,
+[data-theme-mode="claudionnight"] .onboarding-step.active,
+[data-theme-mode="claudionnight"] .onboarding-step:focus-visible {
+  border: 1px solid var(--accent-color) !important;
+  /* optional if you want a colored border */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+[data-theme-mode="claudionnight"] .links-widget-box,
+[data-theme-mode="claudionnight"] .widget.links-widget-box {
+  background-color: var(--box-color) !important;
+  border: 1px solid #293532 !important;
+  color: var(--text-light) !important;
+  /* This makes text white */
+}
+
+/* Target the specific text elements inside */
+[data-theme-mode="claudionnight"] .widget.links-widget-box .widget-title,
+[data-theme-mode="claudionnight"] .widget.links-widget-box .widget-subtitle,
+[data-theme-mode="claudionnight"] .widget.links-widget-box .link-text {
+  color: var(--text-light) !important;
+  /* Title, subtitle, links all white */
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step.skipped.active {
+  background-color: var(--background-color3);
+}
+
+/* green tick mark*/
+
+/* [data-theme-mode="claudionnight"] .step-index svg use {
+  fill: var(--background-light);
+} */
+/* text color*/
+
+/*points*/
+[data-theme-mode="claudionnight"] .onboarding-step-body ul li::marker {
+  color: var(--accent-color);
+}
+
+/*show customer list text color*/
+[data-theme-mode="claudionnight"] .onboarding-step-body a[href*="/app/customer"] {
+  color:  #15B08F !important;
+
+  /* background: transparent; */
+}
+[data-theme-mode="claudionnight"] h1#buyingsettings{
+    color:  #ffffff !important;
+
+}
+[data-theme-mode="claudionnight"] h1#sellingsettings{
+    color:  #ffffff !important;
+
+}
+[data-theme-mode="claudionnight"] h1#reviewstocksettings{
+    color:  #ffffff !important;}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body p a {
+  color: var(--accent-color) !important;
+  /* Use your theme accent */
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body p a:hover {
+  color: var(--main-color) !important;
+  /* Use your theme accent */
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step-body a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+/*button*/
+
+/*line*/
+[data-theme-mode="claudionnight"] .widget.spacer {
+  background-color: transparent !important;
+  border-top: 1px solid #192422;
+  height: 1px;
+  margin: 24px 0;
+  border-radius: 0;
+}
+
+/* [data-theme-mode="claudionnight"] .links-widget-box {
+  background-color:var(--box3-color);
+} */
+
+/* [data-theme-mode="claudionnight"] .sidebar-item-label {
+  color: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-label:hover {
+  color: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-label.selected {
+  color: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon {
+  fill: var(--text-light) !important;
+  or use a specific color code like #FFFFFF
+} */
+
+[data-theme-mode="claudionnight"] .flex {
+  font-family: $theme-font !important;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-section .nested-container [title="Public"] {
+  font-family: $theme-font !important;
+}
+
+[data-theme-mode="claudionnight"] .list-sidebar .overlay-sidebar .hidden-xs .hidden-sm .opened {
+  font-family: $theme-font !important;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover {
+  background-color: #2a2f2d !important;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar {
+  background-color: #2a2f2d !important;
+  color: var(--background-light);
+}
+[data-theme-mode="claudionnight"] .sidebar-item-label.selected {
+  color: black !important;
+}
+/* Change the text/icon color on hover */
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-label,
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-icon {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-label {
+  color: var(--text-light) !important;
+  /* white color or whatever text color you want */
+  font-weight: 500;
+  /* optional: slightly bold */
+  font-size: 14px;
+  /* optional: control font size */
+  text-transform: capitalize;
+  /* optional: make first letter caps */
+}
+/* [data-theme-mode="claudionnight"] .page-form {
+  background-color: #0a1416;
+} /* 
+ /
+[data-theme-mode="claudionnight"] .frappe-list {
+  background-color: #0a1416;
+  width: 1030px;
+  height: 583px;
+  gap: 10px;
+  border-radius: 12px;
+  border-width: 1px;
+  padding: 24px;
+  border: 1px solid #313536;
+} */
+
+[data-theme-mode="claudionnight"] .control-label,
+[data-theme-mode="claudionnight"] .grid-heading-row {
+  color: #979999; /* updated from screenshot */
+  font-family: $theme-font; /* added the font */
+  font-weight: 500; /* 500 from screenshot */
+  font-size: 12px; /* 12px from screenshot */
+  line-height: 120%; /* 120% line height */
+  letter-spacing: 0%; /* 0% letter spacing */
+}
+
+/* Hover effect to change stroke color */
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-icon svg {
+  stroke: var(--accent-color) !important;
+  /* Optional: Change outline color on hover */
+}
+
+/* Make sure the <use> element inside the svg also doesn't override it */
+/* [data-theme-mode="claudionnight"] .desk-sidebar-item .sidebar-item-icon svg use {
+  fill: none !important;
+  stroke: var(--text-light) !important;
+} */
+
+/* Selected item text/icon color */
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-label,
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+/* For typed text inside the search input */
+[data-theme-mode="claudionnight"] #navbar-search {
+  color: var(--text-color2);
+}
+
+/* For the placeholder text */
+[data-theme-mode="claudionnight"] #navbar-search::placeholder {
+  color: #aab2bd !important;
+  opacity: 1;
+}
+
+[data-theme-mode="claudionnight"] .widget-control .btn.btn-sm.btn-secondary.small {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+  padding: 0;
+  position: relative;
+}
+
+/* Hide the original text */
+[data-theme-mode="claudionnight"] .widget-control .btn.btn-sm.btn-secondary.small::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url("/assets/erpgulf_themes/images/Button1.svg"); /* Correct path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+}
+
+[data-theme-mode="claudionnight"] .widget-control .btn.btn-sm.btn-secondary.small::after {
+  content: "";
+  display: none;
+}
+
+/* Optional: hide original content using visibility */
+[data-theme-mode="claudionnight"] .widget-control .btn.btn-sm.btn-secondary.small {
+  color: transparent !important;
+}
+
+[data-theme-mode="claudionnight"] .list-row a {
+  color: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .list-row a:hover {
+  color: #969e9e !important;
+}
+
+[data-theme-mode="claudionnight"] .level.list-row {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme-mode="claudionnight"] .list-row-container:hover .level.list-row {
+  background-color: #2a2f2d !important;
+  color: var(--text-light) !important;
+  cursor: pointer;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step.skipped {
+  background-color: transparent !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step.pending.active {
+  background-color: #313634 !important;
+  color: var(--text-light) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+[data-theme-mode="claudionnight"] .onboarding-step.pending.active:hover {
+  background-color: #313634 !important;
+  color: var(--text-light) !important;
+}
+
+/* [data-theme-mode="claudionnight"] .standard-sidebar-section .es-icon {
+  stroke: var(--text-light) !important;
+  fill: var(--text-light) !important;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon svg use {
+  stroke: white !important;
+  fill: white !important;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-label {
+  color: var(--text-color3) !important;
+  White color
+} */
+
+[data-theme-mode="claudionnight"] span.ellipsis,
+[data-theme-mode="claudionnight"] .widget-title {
+  color: #837a7a !important;
+}
+
+[data-theme-mode="claudionnight"] .widget-title span.ellipsis {
+  color: #ffffff !important;
+  /* <-- pure white or your desired color */
+}
+
+[data-theme-mode="claudionnight"] a.add-group-by {
+  color: #837a7a !important;
+  /* or whatever color you want */
+}
+
+[data-theme-mode="claudionnight"] a.add-group-by:hover {
+  color: var(--accent-color);
+  /* or whatever color you want */
+}
+
+/* Optional - on hover */
+
+------------------------------------------------- [data-theme-mode="claudionnight"] a.add-group-by {
+  color: #837a7a !important;
+  transition: color 0.3s ease;
+}
+
+[data-theme-mode="claudionnight"] a.add-group-by:hover {
+  color: var(--accent-color) !important;
+  /* Hover turns accent color */
+}
+
+/* "Show Tags" link */
+
+/* Sidebar labels like "Filter By" */
+[data-theme-mode="claudionnight"] li.sidebar-label {
+  color: var(--text-color3) !important;
+  transition: color 0.3s ease;
+}
+
+[data-theme-mode="claudionnight"] li.sidebar-label:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Text inside widget boxes (titles, subtitles) */
+[data-theme-mode="claudionnight"] span.ellipsis,
+[data-theme-mode="claudionnight"] .widget-title {
+  color: #837a7a !important;
+  transition: color 0.3s ease;
+}
+
+/* Hover for widget titles */
+[data-theme-mode="claudionnight"] .widget-title:hover span.ellipsis {
+  color: var(--accent-color) !important;
+}
+
+/* Hover for text inside "Your Shortcuts" widgets */
+[data-theme-mode="claudionnight"] .links-widget-box a:hover,
+[data-theme-mode="claudionnight"] .widget.links-widget-box a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* List View Row hover smooth transition */
+[data-theme-mode="claudionnight"] .list-row-container:hover .level.list-row {
+  background-color: #2a2f2d !important;
+  color: var(--text-light) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Final polish: normal links inside list view */
+[data-theme-mode="claudionnight"] .list-row a {
+  color: var(--text-light) !important;
+  transition: color 0.3s ease;
+}
+
+[data-theme-mode="claudionnight"] .list-row a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Final polish: hover for dashboard sidebar text */
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-label,
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-icon {
+  color: var(--accent-color) !important;
+  fill: var(--accent-color) !important;
+}
+
+[data-theme-mode="claudionnight"] a.link-item.ellipsis.onboard-spotlight:hover {
+  background-color: #2a2f2d !important;
+  /* Dark gray hover background */
+  color: var(--text-light) !important;
+  /* Keep text white */
+}
+
+/* General icon styling */
+[data-theme-mode="claudionnight"] .widget-head .widget-label {
+  display: flex;
+  /* Align icon and text in a row */
+  align-items: center;
+  /* Center vertically */
+  gap: 8px;
+  /* Space between icon and text */
+}
+
+[data-theme-mode="claudionnight"] .widget-head .widget-label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Item"])::before {
+  background-image: url("/assets/erpgulf_themes/images/night_item.svg");
+}
+
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Customer"])::before {
+  background-image: url("/assets/erpgulf_themes/images/night_customer.svg");
+}
+
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Supplier"])::before {
+  background-image: url("/assets/erpgulf_themes/images/B-supplier.svg");
+}
+
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Sales Invoice"])::before {
+  background-image: url("/assets/erpgulf_themes/images/B-Sales-inv.svg");
+}
+
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Leaderboard"])::before {
+  background-image: url("/assets/erpgulf_themes/images/B-leaderboard.svg");
+}
+
+/* Connector line below each icon */
+
+/* Remove connector for last step */
+
+[data-theme-mode="claudionnight"] .widget-control svg use,
+[data-theme-mode="claudionnight"] .link-content.ellipsis svg use {
+  stroke: var(--text-light) !important;
+  fill: var(--text-light) !important;
+}
+
+/* On hover - optional */
+[data-theme-mode="claudionnight"] .widget-control:hover svg use,
+[data-theme-mode="claudionnight"] .link-content.ellipsis:hover svg use {
+  stroke: var(--accent-color) !important;
+  fill: var(--accent-color) !important;
+}
+
+/* Remove connector for last step */
+
+[data-theme-mode="claudionnight"] .navbar .vertical-bar {
+  border-right: 1px solid #114d56;
+  height: 24px;
+  margin: auto;
+  margin-left: var(--margin-md);
+}
+
+[data-theme-mode="claudionnight"] .vertical-bar {
+  /* Optional: equal gap between bell and Help */
+}
+[data-theme-mode="claudionnight"] #navbar-breadcrumbs li a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+[data-theme-mode="claudionnight"] ul.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: white !important;
+  /* 16px between all navbar items */
+}
+
+/* Apply only to widget titles under the Reports & Masters section */
+
+[data-theme-mode="claudionnight"] .widget-control svg.es-icon-es-line.icon-xs {
+  stroke: black !important;
+  fill: black !important;
+}
+
+[data-theme-mode="claudionnight"] .shortcut-widget-box .widget-label {
+  flex-direction: row !important; /* Align icon and text side-by-side */
+  align-items: center !important; /* Vertically center */
+  justify-content: flex-start;
+  gap: 8px; /* Space between icon and text */
+}
+[data-theme-mode="claudionnight"] .widget-head .widget-label {
+  display: flex;
+  flex-direction: column; /* Stack title and subtitle vertically */
+  align-items: flex-start; /* Align to the left */
+  gap: 2px; /* Optional: spacing between title and subtitle */
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="accounting"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="app-window"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="archive"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="assets"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="building-complex"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="buying"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="cable"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="crm"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="factory"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-kanban"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-normal"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="getting-started"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="handshake"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="headset"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="integration"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="organization"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="package"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="project"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="quality"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="rocket"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="sell"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="setting"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="settings"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shield-check"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shopping-cart"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="stock"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="store"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="support"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="tool"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="users"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wallet"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="website"] svg,
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wrench"] svg {
+  display: none !important;
+}
+
+[data-theme-mode="claudionnight"] .item-anchor {
+  gap: 8px;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="getting-started"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="rocket"] {
+  border: 1.5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Smart%20Home,%20House-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="accounting"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wallet"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/credit-card-edit-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="buying"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shopping-cart"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/shopping-bag-fast-buy-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="sell"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="store"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/store-minimal-shielld-2-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="stock"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="package"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Delivery,%20Shipment-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="assets"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="archive"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/hotel-building-2-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="organization"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="factory"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="building-complex"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/factory-energy-style-2-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="quality"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shield-check"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Certificate,%20Checkmark,%20Square-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="project"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-kanban"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Documents,%20File,%20Blank-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="support"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="headset"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Headphones,%20Customer,%20support-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="users"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/User,Profile-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="website"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="app-window"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Cursor,%20Select,%20Hand,%20Browser-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="crm"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="handshake"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Research,%20Target,%20Selection-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="tool"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wrench"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/tools-wench-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="setting"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="settings"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/share-minimal-square-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] .sidebar-item-icon[item-icon="integration"],
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] .sidebar-item-icon[item-icon="cable"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/magnet-horizontal-right-big-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] .sidebar-item-icon[item-icon="integration"],
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] .sidebar-item-icon[item-icon="cable"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/link-minimal-circle-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] .sidebar-item-icon[item-icon="tool"],
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] .sidebar-item-icon[item-icon="wrench"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/building-office-circle-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-normal"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Delivery,%20Shipment-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Base label color in the claudionnight theme */
+[data-theme-mode="claudionnight"] .sidebar-item-label {
+  color: var(--text-light) !important;
+}
+
+/* Hover state */
+[data-theme-mode="claudionnight"] .sidebar-item-label:hover,
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-label {
+  color: white !important;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover {
+  background-color: #313634 !important;
+}
+
+/* Selected item label */
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-label {
+  color: #020d0f !important;
+}
+
+/* Selected item background */
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar {
+  background-color: #44c0a5 !important;
+}
+
+/* Icon fill on hover or selected */
+[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover svg use,
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar svg use {
+  fill: #020d0f !important;
+  color: #020d0f !important;
+}
+[data-theme-mode="claudionnight"] .input-with-feedback {
+  /* width: 145px;
+  height: 33px; */
+  /* gap: 8px;  */
+  /* border-radius: 6px; */
+  /* padding: 8px 10px; */
+  background-color: #020d0f;
+  border: 1px solid #313536;
+}
+[data-theme-mode="claudionnight"] input[data-fieldname="has_variants"] {
+  width: 16px;
+  height: 16px;
+}
+
+[data-theme-mode="claudionnight"] .label-area {
+  font-family: $theme-font;
+  /* font-weight: 500; */
+  /* font-size: 12px; */
+  /* line-height: 130%; */
+  /* letter-spacing: 0; */
+  /* vertical-align: middle; */
+  /* width: 80px;
+  height: 18px; */
+  color: #ffffff;
+}
+
+[data-theme-mode="claudionnight"] .list-row-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #525656;
+  background: #0a1416;
+}
+[data-theme-mode="claudionnight"] .list-check-all {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #525656;
+  background: #0a1416;
+}
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.ellipsis {
+  width: 112px;
+  height: 29px;
+  gap: 4px; /* Only effective if it's a flex or grid container */
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: #0a1416;
+  border: 1px solid #4e878f;
+  color: #4e878f; /* optional for better contrast */
+}
+[data-theme-mode="claudionnight"] .btn.btn-default.icon-btn {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  background-color: #0a1416;
+  border: 1px solid #4e878f;
+  border-radius: 4px;
+  color: #ffffff;
+}
+[data-theme-mode="claudionnight"] .btn.btn-primary.btn-sm.primary-action {
+  width: 99px;
+  height: 29px;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 8px;
+  background: #4e878f;
+
+  font-family: $theme-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #020d0f;
+   align-items: center;
+  justify-content: center;
+}
+[data-theme-mode="claudionnight"] .es-icon.es-line.icon-sm {
+  stroke: #4e878f !important;
+  fill: #4e878f !important;
+}
+/* [data-theme-mode="claudionnight"] svg.icon.icon-sm[href="#icon-dot-horizontal"] {
+  stroke: #4e878f !important;
+  fill: #4e878f !important;
+} */
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.list-sidebar-button {
+  width: 198px;
+  height: 28px;
+  gap: 10px; /* Only effective if using flex or grid layout */
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+[data-theme-mode="claudionnight"] .list-row-col {
+  color: #ffffff !important;
+}
+[data-theme-mode="claudionnight"] .level-item {
+  color: #ffffff !important;
+}
+[data-theme-mode="claudionnight"] .list-count {
+  color: #ffffff !important;
+}
+[data-theme-mode="claudionnight"] .indicator-pill.blue {
+  border-radius: 9999px;
+  background: #94b1b6;
+  border: 1px solid #51858c;
+
+  font-family: $theme-font;
+
+  color: #0b272b !important;
+}
+[data-theme-mode="claudionnight"] .btn.btn-xs.btn-secondary.chart-menu {
+  border: 1px solid #4E878F;
+  background-color: #114d56;
+  fill:#ffffff;
+}
+[data-theme-mode="claudionnight"] .filter-chart.btn.btn-xs.pull-right {
+  border: 1px solid #4E878F;
+  background-color: #114d56;
+  fill:#ffffff
+}
+[data-theme-mode="claudionnight"] .indicator-pill.blue > .ellipsis {
+  font-family: $theme-font;
+
+  color: #0b272b !important;
+}
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.list-sidebar-button[data-label="Assigned To"] {
+  width: 198px;
+  height: 28px;
+  gap: 10px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  background: #15b08f;
+}
+
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.list-sidebar-button[data-label="Assigned To"] > .ellipsis {
+  font-family: $theme-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #020d0f !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+/* [data-theme-mode="claudionnight"]
+  .btn.btn-default.btn-sm.list-sidebar-button[data-label="Created By"] {
+  width: 198px;
+  height: 28px;
+  gap: 10px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  background: #020d0f;
+} */
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.list-sidebar-button {
+  width: 198px;
+  height: 28px;
+  gap: 10px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  background: #020d0f;
+}
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.list-sidebar-button > .ellipsis {
+  font-family: $theme-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #979999 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+[data-theme-mode="claudionnight"] .list-sidebar-button span:first-child {
+  color: #979999;
+}
+[data-theme-mode="claudionnight"] .input-with-feedback.form-control.input-xs[placeholder="Filter Name"] {
+  width: 198px;
+  height: 30px;
+  gap: 8px; /* Only effective if display is flex or grid */
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #020d0f;
+  border: 1px solid #313536;
+
+  box-sizing: border-box; /* ensures padding fits within width/height */
+  font-family: $theme-font;
+  font-size: 14px;
+  color: #ffffff;
+}
+[data-theme-mode="claudionnight"] .list-link.filter-pill.list-sidebar-button.btn.btn-default {
+  width: 198px;
+  height: 30px;
+  gap: 8px; /* Only effective if display is flex or grid */
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #020d0f;
+  border: 1px solid #313536;
+}
+[data-theme-mode="claudionnight"] .ellipsis.filter-name {
+  box-sizing: border-box; /* ensures padding fits within width/height */
+  font-family: $theme-font;
+  font-size: 13px;
+
+  color: #979999;
+}
+[data-theme-mode="claudionnight"] .filter-button.btn.btn-sm.btn-default {
+  width: 87px;
+  height: 28px;
+  gap: 4px; /* Only effective if display is flex/grid */
+  border-radius: 4px;
+  padding: 6px 10px;
+  background: #0a1416;
+  border: 1px solid #4e878f;
+  color: #4e878f; /* optional for better contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ensures inner content is centered */
+  box-sizing: border-box;
+}
+[data-theme-mode="claudionnight"] .filter-x-button.btn.btn-sm.btn-default {
+  /* width: 87px; */
+  height: 28px;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: #0a1416;
+  border: 1px solid #4e878f;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ensures inner content is centered */
+  box-sizing: border-box;
+}
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.sort-selector-button {
+  /* width: 129px;*/
+  height: 28px;
+  gap: 4px; /* Only effective if display is flex/grid */
+  border-radius: 4px;
+  padding: 6px 10px;
+  background: #0a1416;
+  border: 1px solid #4e878f;
+  color: #4e878f;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ensures inner content is centered */
+  box-sizing: border-box;
+}
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.btn-order {
+  /* width: 89px; */
+  height: 28px;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: #0a1416;
+  border: 1px solid #4e878f;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ensures inner content is centered */
+  box-sizing: border-box;
+}
+[data-theme-mode="claudionnight"] .like-icon {
+  fill: #ffffff !important;
+}
+[data-theme-mode="claudionnight"] .form-tabs-list {
+  background: #0a1416 !important;
+
+  color: #ffffffff !important;
+}
+[data-theme-mode="claudionnight"] .std-form-layout > .form-layout > .form-page {
+  background: #0a1416 !important;
+  border: 1px solid #313536 !important;
+  color: #ffffffff !important;
+}
+[data-theme-mode="claudionnight"] .input-with-feedback.form-control {
+  width: 100%; /* It will adapt to container */
+  height: 38px;
+  padding: 10px;
+  gap: 8px;
+  border-radius: 6px;
+  font-size: 14px; /* (optional) make it neat */
+  box-shadow: none;
+  background: #020d0f;
+  /* white background */
+  color: #ffffff !important; /* text dark */
+  border: 1px solid #313536 !important; /* light gray border */
+}
+[data-theme-mode="claudionnight"] .control-label {
+  color: #979999;
+}
+[data-theme-mode="claudionnight"] .layout-main-section.frappe-card {
+  background: #0A1416;
+  border: 1px solid #313536 !important; /* Replace with your desired hex code */
+}
+
+[data-theme-mode="claudionnight"] .nav-link{
+  color:#ffffff !important;
+}
+
+[data-theme-mode="claudionnight"] .btn.btn-default.ellipsis
+{
+  border: 1px solid #4E878F;
+  color: #4e878f;
+  background: #020D0F;
+  fill: #4E878F;
+  height: 32px;
+  padding: 4px;
+  border-radius: 4px;
+
+}
+
+[data-theme-mode="claudionnight"] .comment-input-header{
+  color: #ffffff !important;
+}
+[data-theme-mode="claudionnight"] .section-head.collapsible
+{
+  color: #ffffff !important;
+ 
+}
+[data-theme-mode="claudionnight"] .timeline-item.activity-title{
+  background-color: #020D0F!important;
+  color: #ffffff!important;
+}
+[data-theme-mode="claudionnight"] .timeline-item.activity-title h4{
+  background-color: #020D0F!important;
+  color: #ffffff!important;
+}
+
+[data-theme-mode="claudionnight"] .timeline-items.timeline-actions{
+    background-color: #020D0F!important;
+
+}
+
+[data-theme-mode="claudionnight"] button.action-btn{
+  border: 1px solid #4E878F;
+  color: #4e878f;
+  background: #020D0F;
+  fill: #4E878F;
+  height: 32px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+[data-theme-mode="claudionnight"] .ql-editor
+{
+  background: #020D0F!important;
+  border: 1px solid #313536
+}
+
+[data-theme-mode="claudionnight"] .ql-editor.ql-blank::before {
+  content: attr(data-placeholder);
+  color: #313536;
+  position: absolute;
+  pointer-events: none;
+}
+
+[data-theme-mode="claudionnight"] .timeline-content{
+  color: #ffffff !important;
+}
+
+[data-theme-mode="claudionnight"] .timeline-content a {
+  color: #ffffff !important;
+}
+
+[data-theme-mode="claudionnight"] .timeline-content b {
+  color: #ffffff !important;
+}
+
+[data-theme-mode="claudionnight"] h1#createacustomer {
+  /* width: 128px;
+  height: 18px; */
+  font-family: $theme-font;
+  /* font-weight: 700;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0%; */
+  color: #ffffff;
+}
+[data-theme-mode="claudionnight"] .ce-block__content .widget .dashboard-widget-box{
+  background: #0A1416 !important;
+  border: 1px solid #313536;
+  /* border-radius: 12px; 
+  padding: 12px; */
+  color: #ffffff;
+}
+
+/* *******************************************************ICONS*********************************************************** */
+
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="getting-started"],
+[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="rocket"] {
+  border: 1.5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/Smart%20Home,%20House-grey.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="accounting"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="wallet"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/accounting/Payments, Finance/credit-card-edit.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="buying"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="shopping-cart"] {
+  background-image: url("/assets/erpgulf_themes/images/buying/Shopping, Ecommerce/shopping-bag-fast-buy.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  display: inline-block !important;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="sell"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="store"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/selling/Shopping, Ecommerce/store-minimal-shielld-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="stock"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="package"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/stock/Delivery/Delivery, Shipment.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="assets"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="archive"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/assets/Building, Construction/hotel-building-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="organization"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="factory"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="building-complex"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/manufacture/Energy, Renewable/factory-energy-style-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="quality"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="shield-check"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/quality/Interface, Essential/Certificate, Checkmark, Square.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+    
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="project"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="folder-kanban"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/projects/Files/Documents, File, Blank.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="support"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="headset"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/support/Support, Help, Question/Headphones, Customer, support.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="users"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/users/User/User,Profile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="website"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="app-window"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/website/Cursor, Select, Hand/Cursor, Select, Hand, Browser.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="crm"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="handshake"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/crm/Business, Products/Research, Target, Selection.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="tool"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="wrench"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/tools/Construction, Tools/tools-wench.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="setting"],
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="settings"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/erpsettings/Interface, Essential/share-minimal-square.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="integration"],
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="cable"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/integrations/Interface, Essential/magnet-horizontal-right-big.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="integration"],
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="cable"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/erpintegration/Interface, Essential/link-minimal-circle.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="tool"],
+[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="wrench"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/build/Office, Work/building-office-circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="folder-normal"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/erpgulf_themes/images/zatca-erp/Delivery/Delivery, Shipment.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Item"])::before {
+  background-image: url("/assets/erpgulf_themes/images/b-item.png")!important;
+}
+
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Material Request"])::before {
+  background-image: url("/assets/erpgulf_themes/images/b-material-request.png")!important;
+}
+
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Purchase Order"])::before {
+  background-image: url("/assets/erpgulf_themes/images/b-purchase-order.png")!important;
+}
+
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Purchase Analytics"])::before {
+  background-image: url("/assets/erpgulf_themes/images/b-purchase-analytics.png")!important;
+}
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Purchase Order Analysis"])::before {
+  background-image: url("/assets/erpgulf_themes/images/b-purchase-order-analysis.png")!important;
+}
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Dashboard"])::before {
+  background-image: url("/assets/erpgulf_themes/images/b-dashboard.png")!important;
+}
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Learn Procurement"])::before {
+  background-image: url("/assets/erpgulf_themes/images/b-learn-procurement.png")!important;
+}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Order"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sell-sales-order.png")!important
+}
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Analytics"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sell-sales-analytics.png")!important;
+}
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Point of Sale"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sell-point-of-sale.png")!important;
+}
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Sales Management"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sell-learn-sales.png")!important;
+}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Delivery Note"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sto-delivery-note.png");}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Inventory Management"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sto-learn-inventory.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Receipt"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sto-purchase-receipt.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Balance"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sto-stock-balance.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Entry"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sto-stock-entry.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Ledger"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sto-stock-ledger.png");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-asst-asset.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset Category"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-asst-asset-category.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Fixed Asset Register"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-asst-fixed-asset-reg.png");}
+
+   
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Creator"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-bom-creator.png");}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Stock Report"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-bom-stock-report.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-bom.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Forecasting"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-forecasting.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Job Card"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-job-card.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Manufacturing"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-learn-manufacturing.png");}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Plant Floor"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-plant-floor.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-production-plan.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Planning Report"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-production-planning-report.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Work Order"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-man-work-order.png");}
+
+  
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Non Conformance"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-q-no-conformance.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-q-production-plan.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Action"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-q-qaction.png");}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Goal"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-q-qgoal.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Inspection"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-q-qinspection.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Procedure"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-q-qprocedure.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Review"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-q-qreview.png");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Project Management"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-pro-learn-project-management.png");}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project Billing Summary"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-pro-project-billing-summary.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-pro-project.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Task"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-pro-task.png");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Timesheet"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-pro-timesheet.png");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Issue"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sup-issue.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Maintenance Visit"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sup-maintenance-visit.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Service Level Agreement"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-sup-service-level-agreement.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Permission Manager"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-us-permission-manager.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Role"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-us-role.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Profile"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-us-user-profile.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Type"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-us-user-type.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-us-user.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blog Post"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-web-blog-post.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blogger"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-web-blogger.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Form"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-web-web-form.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Page"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-web-web-page.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Website Settings"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-web-website-settings.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Lead"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-crm-lead.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Opportunity"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-crm-opportunity.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customer"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-crm-customer.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Assignment Rule"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-to-assignment-rule.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="File"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-to-file.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Import Data"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-to-import-data.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="ToDo"])::before {
+  background-image: url("/assets/erpgulf_themes/images/n-to-todo.svg");}
+
+  
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Settings"])::before {
+  background-image: url("/assets/erpgulf_themes/images/d--acc-sett.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Buying Settings"])::before {
+  background-image: url("/assets/erpgulf_themes/images/d--buying-sett.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Global Defaults"])::before {
+  background-image: url("/assets/erpgulf_themes/images/d--global-defaults.svg");}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Settings"])::before {
+  background-image: url("/assets/erpgulf_themes/images/d--print-sett.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Selling Settings"])::before {
+  background-image: url("/assets/erpgulf_themes/images/d--selling-sett.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Settings"])::before {
+  background-image: url("/assets/erpgulf_themes/images/d--stock-sett.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="System Settings"])::before {
+  background-image: url("/assets/erpgulf_themes/images/d--syst-sett.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Browse Apps"])::before {
+  background-image: url("/assets/erpgulf_themes/images/BROWSE.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Client Script"])::before {
+  background-image: url("/assets/erpgulf_themes/images/build-client-script.svg");}
+
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customize Form"])::before {
+  background-image: url("/assets/erpgulf_themes/images/build-customize-form.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="DocType"])::before {
+  background-image: url("/assets/erpgulf_themes/images/build-doctype.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Report"])::before {
+  background-image: url("/assets/erpgulf_themes/images/build-report.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Server Script"])::before {
+  background-image: url("/assets/erpgulf_themes/images/build-server-script.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Format Builder"])::before {
+  background-image: url("/assets/erpgulf_themes/images/build-pfb.svg");}
+
+   [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard "])::before {
+  background-image: url("/assets/erpgulf_themes/images/a-db.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Zatca Setup Wizard"])::before {
+  background-image: url("/assets/erpgulf_themes/images/a-wizard.svg");}
+
+   [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Receivable"])::before {
+  background-image: url("/assets/erpgulf_themes/images/A-accnts-recvbl.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Cost Center"])::before {
+  background-image: url("/assets/erpgulf_themes/images/A-cost-center.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Journal Entry"])::before {
+  background-image: url("/assets/erpgulf_themes/images/A-journal-entry.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Payment Entry"])::before {
+  background-image: url("/assets/erpgulf_themes/images/A-payment-entry.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="POS Invoice"])::before  {
+  background-image: url("/assets/erpgulf_themes/images/A-pos-invoice.svg")!important;}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Chart of Accounts"])::before {
+  background-image: url("/assets/erpgulf_themes/images/z-chart-of-accnts.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Invoice"])::before {
+  background-image: url("/assets/erpgulf_themes/images/z-pur-inv.svg");}
+
+  
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before {
+  background-image: url("/assets/erpgulf_themes/images/z-general-ledger.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before {
+  background-image: url("/assets/erpgulf_themes/images/z-trial-balance.svg");}
+
+  [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before  {
+  background-image: url("/assets/erpgulf_themes/images/z-learn-accounting.svg")!important;}
+
+    /*********************************ICONS END***********************************/
+
+    /* 
+[data-theme-mode="claudionnight"] .count {
+  width: 16px !important;
+  height: 20px !important;
+  font-family: $theme-font !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 20px !important;
+  letter-spacing: 0% !important;
+  color: #ffffff !important;
+}
+
+[data-theme-mode="claudionnight"] .number-card {
+  width: 242.4px!important;
+  height: 104px!important;
+  gap: 4px!important;
+  border-radius: 6px!important;
+  padding: 20px!important;
+  background: #0A1416!important;
+  border: 1px solid #313536!important; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+[data-theme-mode="claudionnight"] .number-card h4 {
+  color: #ffffff !important;
+}
+
+[data-theme-mode="claudionnight"] #monthlyChart {
+ 
+  border-radius: 8px !important;
+  border-width: 1px !important;
+  background: #0A1416 !important;
+  border: 1px solid #313536 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+[data-theme-mode="claudionnight"] 
+.frappe-control[data-fieldname="zatca_charts"] > div > div:nth-child(1),
+[data-theme-mode="claudionnight"] 
+.frappe-control[data-fieldname="zatca_charts"] > div > div:nth-child(2) {
+  background-color: #0A1416 !important;
+}
+
+[data-theme-mode="claudionnight"] 
+.frappe-control[data-fieldname="zatca_list"] table {
+  width: 1260px !important;
+  height: 464px !important;
+  border-radius: 12px !important;
+  border-width: 1px !important;
+  background: #0A1416 !important;
+  border: 1px solid #052B30 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  padding: 16px !important; 
+  box-sizing: border-box !important;
+}
+[data-theme-mode="claudionnight"] 
+.frappe-control[data-fieldname="zatca_list"] td {
+  color: #FFFFFF !important;
+  font-family: $theme-font !important;
+ 
+}
+[data-theme-mode="claudionnight"] 
+.frappe-control[data-fieldname="zatca_list"] td a {
+  color: #ffffff !important;}
+
+[data-theme-mode="claudionnight"] th {
+  color: #ffffff !important;
+}
+
+ */
+
+ [data-theme-mode="claudionnight"][data-route="Zatca/Zatca Dashboard"] .layout-main-section {
+  all: unset !important;
+  display: contents !important;
+}
+
+[data-theme-mode="claudionnight"] .dashboard-widget-box {
+background: #0A1416!important;
+border: 1px solid #313536!important;
+}
+
+/* Change the line (path) color to purple */
+[data-theme-mode="claudionnight"] .line-graph-path {
+  stroke: #7575ff !important;
+}
+
+/* [data-theme="claudionday"] .region-fill {
+  fill: url(#path-fill-gradient-purple-custom) !important;
+} */
+
+[data-theme-mode="claudionnight"] .graph-svg-tip .tooltip-legend {
+  background: #7575ff !important;
+}
+
+/* Additional fallback if .region-fill doesn't respond to URL gradient */
+[data-theme-mode="claudionnight"] .region-fill {
+  fill: #7575ff1a !important; /* 10% opacity */
+}
+
+/* Adjusting stroke width or line style */
+[data-theme-mode="claudionnight"] .line-graph-path {
+  stroke-width: 2px !important;
+}
+
+/* Smooth curve if it's SVG path-based */
+[data-theme-mode="claudionnight"] .line-graph-path {
+  stroke-linejoin: round !important;
+  stroke-linecap: round !important;
+}
+
+[data-theme-mode="claudionnight"] rect.bar.mini {
+  fill: #2195A7!important;
+}
+
+[data-theme-mode="claudionnight"] .chart-legend .legend-dataset-label {
+  fill: #8895a5;
+  color:  #8895A5!important;
+
+}
+
+[data-theme-mode="claudionnight"] .bar-chart .x.axis text,
+[data-theme-mode="claudionnight"] .bar-chart .y.axis text {
+  fill: #8895A5 !important;
+ 
+}
+
+[data-theme-mode="claudionnight"] .widget.number-widget-box {
+  background-color: #0A1416 !important;
+  border: 1px solid #313536 !important;
+  border-radius: 6px !important;
+  padding: 16px !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme-mode="claudionnight"] .widget.number-widget-box .widget-title span {
+  width: 120px !important;
+  height: 20px !important;
+  font-family: $theme-font !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: 0 !important;
+color: #FFFFFF !important;
+  display: inline-block !important;
+  padding: 0 4px; /* optional for spacing */
+  background-color: #0a1416 !important; /* ensures contrast against white background */
+  border-radius: 4px; /* optional: softens background edges */
+}
+
+[data-theme-mode="claudionnight"] .widget.number-widget-box .number {
+  color:#FFFFFF !important;
+  font-family: $theme-font !important;
+font-weight: 700;
+font-size: 24px;
+line-height: 20px;
+letter-spacing: 0%;
+}
+
+[data-theme-mode="claudionnight"] .widget-title .ellipsis:hover {
+color:#ffffff !important;
+}
+
+[data-theme-mode="claudionnight"] .h4 {
+  color: #ffffff !important;
+}
+
+  [data-theme-mode="claudionnight"] .count {
+  width: 16px !important;
+  height: 20px !important;
+  font-family: $theme-font !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 20px !important;
+  letter-spacing: 0% !important;
+  color: white !important;
+}
+
+[data-theme-mode="claudionnight"] .frappe-control[data-fieldname="zatca_list"] table {
+
+  border-radius: 12px !important;
+
+  background: #0A1416 !important;
+  border-bottom: 1px solid #313536 !important;
+
+}
+[data-theme-mode="claudionnight"] .frappe-control[data-fieldname="zatca_list"] td {
+  color: white !important;
+  font-family: $theme-font !important;
+ 
+}
+[data-theme-mode="claudionnight"] .frappe-control[data-fieldname="zatca_list"] td a {
+  color: white !important;}
+
+[data-theme-mode="claudionnight"] th {
+  color: white !important;
+background: #313536 !important;
+  font-family: $theme-font !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: 0px !important;
+}
+
+[data-theme-mode="claudionnight"] .badge-danger {
+  width: 88px !important;
+  height: 20px !important;
+  gap: 4px !important;
+  border-radius: 9999px !important;
+  border-width: 1px !important;
+  padding-top: 2px !important;
+  padding-right: 8px !important;
+  padding-bottom: 2px !important;
+  padding-left: 8px !important;
+  background: #464133 !important;
+  border: 1px solid #564d33 !important;
+  color: #c3a75d !important;
+
+  /* Font styles */
+  font-family: $theme-font !important;
+  font-weight: 500 !important;
+  font-size: 11px !important;
+  line-height: 120% !important;
+  letter-spacing: 0px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+[data-theme-mode="claudionnight"] .modal-dialog .modal-content{
+  background: #0A1416 !important;
+  border: 1px solid #313536 !important;
+  border-radius: 8px !important;
+}
+
+[data-theme-mode="claudionnight"] .modal-title {
+  color: #FFFFFF !important;
+  font-family: $theme-font !important;
+ 
+}
+
+[data-theme-mode="claudionnight"] .btn.btn-secondary.btn-sm {
+  background: #15b08f;
+  color:black;
+}
+
+[data-theme-mode="claudionnight"] .btn.btn-default.btn-sm.btn-new-doc.hidden-xs {
+  background: #15b08f;
+  color:black;
+}
+
+[data-theme-mode="claudionnight"] .btn.btn-primary.btn-sm.btn-modal-primary {
+  background: #15b08f;
+  color:black;
+}
+
+[data-theme-mode="claudionnight"] .form-clickable-section.grid-footer {
+  background: #0A1416 !important;
+  
+}
+
+/* [data-theme-mode="claudionnight"] .icon-btn svg {
+  display: none;
+}
+
+[data-theme-mode="claudionnight"].icon-btn {
+  background-image: url('/assets/erpgulf_themes/images/printer-modern.svg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.2em; 
+  width: 2em;
+  height: 2em;
+} */
+
+[data-theme-mode="claudionnight"] .frappe-control > div > div:first-child {
+  background: #0A1416 !important;
+  color:#ffffff!important;
+/* border: 1px solid #313536 !important */
+}
+
+[data-theme-mode="claudionnight"] .frappe-control > div > div:last-child {
+  background: #0A1416 !important;
+  color: #ffffff !important;
+  /* border: 1px solid #313536 !important; */
+}
+
+[data-theme-mode="claudionnight"] .frappe-control[data-fieldname="zatca_list"] #dynamicContent {
+  background: #0A1416 !important;
+  color: #ffffff !important;
+  border: 1px solid #313536 !important;
+  
+}
+
+[data-theme-mode="claudionnight"] #page-Sales\ Invoice > div.container.page-body > div.page-wrapper > div > div.row.layout-main > div.col-lg-2.layout-side-section > div > ul.list-unstyled.sidebar-menu.form-attachments > li.attachments-actions > span > span > a {
+color: #ffffff !important;
+ 
+}
