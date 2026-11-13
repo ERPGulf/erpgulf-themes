@@ -1,6 +1,6 @@
 # Design reference
 
-Colours, type and element styling for the three desk themes in this app, taken from the stylesheets as they stand. It is meant for designers: change a value here on paper, and the "In code" column tells a developer where to change it.
+Colours, type and element styling for the three desk themes in this app (Frappe v16.50 and above), taken from the stylesheets as they stand. It is meant for designers: change a value here on paper, and the "In code" column tells a developer where to change it.
 
 All stylesheets are in `erpgulf_themes/public/scss/themes/`.
 
@@ -80,7 +80,10 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 | Sidebar | `#1B2030` | `#AAB1C2` | none | — | |
 | Sidebar item, hover | white at 8% | `#FFFFFF` | — | theme radius | |
 | Sidebar item, current | `#D9372B` | `#FFFFFF` | — | theme radius | Shadow: 0 6px 16px, red at 35% |
-| Primary button | `#D9372B` | `#FFFFFF` | `#D9372B` | 10px | Hover and pressed: `#BF2D22` |
+| Dock (module rail) | `#1B2030` | `#AAB1C2` | — | — | |
+| Dock tile, hover | white at 8% | `#FFFFFF` | — | — | |
+| Dock tile, current module | `#D9372B` | `#FFFFFF` | — | — | Shadow: 0 6px 16px, red at 35% |
+| Primary button | `#D9372B` | `#FFFFFF` | `#D9372B` | 10px | Hover and pressed: `#BF2D22`. Applies to classic buttons and to solid buttons from Frappe's new component library |
 | Default button | `#FFFFFF` | `#1B2030` | 1px `#E6E8EC` | 10px | Hover: `#F4F5F7` |
 | Card, widget, form, list, report | `#FFFFFF` | `#343A4A` | 1px `#E6E8EC` | 16px | No shadow |
 | Card and section titles | — | `#1B2030`, weight 600 | — | — | |
@@ -109,7 +112,7 @@ White page, deep-green top bar, teal accent.
 | Deep green | `#042226` | `--main-color` | Top bar base colour |
 | Green | `#073C44` | — | Top bar, secondary buttons, mini chart bars |
 | Search green | `#114D56` | `--searchbar-color` | Search box in the top bar, top-bar divider |
-| Teal | `#15B08F` | `--accent-color` | Accent: sidebar hover and current item, avatar background, link hover, list-sidebar button hover |
+| Teal | `#15B08F` | `--accent-color` | Accent: sidebar hover and current item, current dock tile, avatar background, link hover, list-sidebar button hover |
 | Muted teal | `#4E878F` | — | Workspace edit / new buttons and their icons |
 | Soft green | `#9EC8B9` | `--text-highlight` | Highlight text on dark green |
 
@@ -122,7 +125,7 @@ White page, deep-green top bar, teal accent.
 | Cool white | `#F9FAFB` | — | Form and list card background, table header cells |
 | Tab green-white | `#F7FAF9` | — | Form tab strip and form page background |
 | Sidebar tint | `#EDF2F0` | — | Form sidebar menu and stats |
-| Pale teal | `#DAEDE9` | `--background-color3 / --box2-color` | Active skipped onboarding step, tinted boxes |
+| Pale teal | `#DAEDE9` | `--background-color3 / --box2-color` | Dock tile hover, active skipped onboarding step, tinted boxes |
 
 ### Borders
 
@@ -160,6 +163,8 @@ White page, deep-green top bar, teal accent.
 | Search box (top bar) | `#114D56` | `#AAB2BD` | — | |
 | Page | `#FFFFFF` | `#151616` | — | |
 | Sidebar item, hover and current | `#15B08F` | `#FFFFFF` | — | Radius 6px |
+| Dock tile, hover | `#DAEDE9` | `#042226` | — | |
+| Dock tile, current module | `#15B08F` | `#FFFFFF` | — | |
 | Avatar (initials) | `#15B08F` | `#FFFFFF` | — | |
 | Default button | — | `#151616` | — | |
 | Secondary button | `#073C44` | — | `#073C44` | |
@@ -173,7 +178,7 @@ White page, deep-green top bar, teal accent.
 | List-sidebar button, hover | `#15B08F` | `#FFFFFF` | `#15B08F` | |
 | Line chart | — | stroke `#7575FF` | — | |
 
-Module icons in the sidebar are replaced by custom images from `erpgulf_themes/public/images/`.
+Module and sidebar icons are Frappe's own outline icons, coloured by the theme.
 
 ## Claudion Night
 
@@ -190,7 +195,7 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Search grey-green | `#293532` | `--searchbar-color` | Search box base, widget borders |
 | Search fill | `#384B4B` | — | Search box background and border |
 | Teal | `#15B08F` | `--accent-color` | Accent: links, hover text and icons, focus border, primary-style buttons |
-| Bright teal | `#44C0A5` | — | Current sidebar item background |
+| Bright teal | `#44C0A5` | — | Current sidebar item and current dock tile |
 | Muted teal | `#4E878F` | — | Button borders, button text and icons |
 | Soft green | `#9EC8B9` | `--text-highlight` | Highlight text |
 
@@ -203,7 +208,7 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Base | `#0D1211` | `--background-light` | Base background, shown before the page finishes loading |
 | Raised | `#1B2120` | `--background-color3` | Onboarding steps, raised boxes |
 | Hover | `#2A2F2D` | — | List row hover, link hover background |
-| Sidebar hover | `#313634` | — | Sidebar item hover |
+| Sidebar hover | `#313634` | — | Sidebar item and dock tile hover |
 
 ### Borders
 
@@ -240,6 +245,8 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Main content, forms, lists | `#0A1416` | `#FFFFFF` | 1px `#313536` | |
 | Sidebar item, hover | `#313634` | `#FFFFFF`, icon `#15B08F` | — | |
 | Sidebar item, current | `#44C0A5` | `#020D0F` | — | |
+| Dock tile, hover | `#313634` | `#FFFFFF` | — | |
+| Dock tile, current module | `#44C0A5` | `#020D0F` | — | |
 | Buttons (default, icon, primary) | — | `#4E878F` | 1px `#4E878F` | |
 | Accent buttons (secondary, new document) | `#15B08F` | — | — | |
 | Text input | `#020D0F` | `#FFFFFF` | 1px `#CCD0D0` | Filters and inline inputs: 1px `#313536` |
@@ -252,7 +259,7 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Chart axis and legend text | — | `#8895A5` | — | |
 | Line chart | — | stroke `#7575FF` | — | |
 
-Module icons in the sidebar are replaced by custom images (night variants) from `erpgulf_themes/public/images/`.
+Module and sidebar icons are Frappe's own outline icons, coloured by the theme.
 
 ## Changing a colour
 

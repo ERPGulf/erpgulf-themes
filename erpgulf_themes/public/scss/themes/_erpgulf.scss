@@ -1,4 +1,4 @@
-// ERPGulf — light theme for Frappe v16: navy shell, light-grey page, white cards, red accent.
+// ERPGulf — light theme for Frappe v16.50+: navy shell, light-grey page, white cards, red accent.
 // Built on Frappe's own colour tokens, so it re-colours the whole desk rather than
 // styling screens one by one. Sits on Frappe's default (light) tokens.
 
@@ -57,7 +57,7 @@ $eg-shell-text: #aab1c2; // idle text and icons on the shell
   --date-active-bg: #{$eg-red};
   --date-active-text: #ffffff;
 
-  // Softer corners (both the v16.5 and the v16.56 token names)
+  // Softer corners
   --radius: 10px;
   --radius-md: 12px;
   --radius-lg: 14px;
@@ -109,7 +109,6 @@ html[data-theme="erpgulf"],
 
   --surface-base: #{$eg-navy};
   --surface-sidebar: #{$eg-navy};
-  --surface-menu-bar: #{$eg-navy};
   --desk-sidebar-bg: #{$eg-navy};
   --dock-bg: #{$eg-navy};
   --surface-gray-1: rgba(255, 255, 255, 0.04);
@@ -118,8 +117,6 @@ html[data-theme="erpgulf"],
   --surface-gray-4: rgba(255, 255, 255, 0.16);
   --surface-elevation-2: #{$eg-navy-soft};
   --surface-elevation-3: #{$eg-navy-soft};
-  --sidebar-hover-color: rgba(255, 255, 255, 0.08);
-  --sidebar-active-color: #{$eg-red};
   --sidebar-select-color: rgba(255, 255, 255, 0.08);
   --control-bg: rgba(255, 255, 255, 0.08);
   --fg-color: #{$eg-navy-soft};
@@ -128,7 +125,6 @@ html[data-theme="erpgulf"],
   --outline-gray-2: rgba(255, 255, 255, 0.12);
   --outline-gray-3: rgba(255, 255, 255, 0.18);
   --outline-gray-4: rgba(255, 255, 255, 0.24);
-  --sidebar-border-color: transparent;
   --border-color: rgba(255, 255, 255, 0.08);
 
   --dock-ink: #{$eg-shell-text};
@@ -170,6 +166,22 @@ html[data-theme="erpgulf"],
   color: #ffffff;
 }
 
+// The dock (module rail): idle tiles are muted, the current module is a red tile.
+[data-theme="erpgulf"] .dock {
+  background: $eg-navy;
+}
+
+[data-theme="erpgulf"] .dock .dock-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+[data-theme="erpgulf"] .dock .dock-item.active {
+  background: $eg-red;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(217, 55, 43, 0.35);
+}
+
 // ---------- Typography ----------
 
 // Page title (the last breadcrumb) and large headings use the serif display face.
@@ -192,12 +204,26 @@ html[data-theme="erpgulf"],
   color: #ffffff;
 }
 
-[data-theme="erpgulf"] .btn-primary:hover,
-[data-theme="erpgulf"] .btn-primary:active,
-[data-theme="erpgulf"] .btn-primary:not(:disabled):not(.disabled):active {
+[data-theme="erpgulf"] .btn-primary:hover {
   background-color: $eg-red-dark;
   border-color: $eg-red-dark;
   color: #ffffff;
+}
+
+// Frappe sets the pressed state with !important, so this has to as well.
+[data-theme="erpgulf"] .btn.btn-primary:active {
+  background-color: $eg-red-dark !important;
+  border-color: $eg-red-dark;
+  color: #ffffff !important;
+}
+
+// Solid buttons from Frappe's new component library. Buttons that carry their own
+// colour (data-theme="red", "green"…) are left alone.
+[data-theme="erpgulf"] .es-button[data-variant="solid"]:not([data-theme]) {
+  --bt-solid-bg: #{$eg-red};
+  --bt-solid-bg-hover: #{$eg-red-dark};
+  --bt-solid-bg-active: #{$eg-red-dark};
+  --bt-solid-fg: #ffffff;
 }
 
 [data-theme="erpgulf"] .btn-primary .icon,

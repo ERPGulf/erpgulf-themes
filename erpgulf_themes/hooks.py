@@ -1,7 +1,7 @@
 app_name = "erpgulf_themes"
 app_title = "ERPGulf Themes"
 app_publisher = "ERPGulf"
-app_description = "Desk themes for Frappe v16.5+: Claudion Day, Claudion Night and ERPGulf"
+app_description = "Desk themes for Frappe v16.50+: Claudion Day, Claudion Night and ERPGulf"
 app_email = "support@erpgulf.com"
 app_license = "mit"
 

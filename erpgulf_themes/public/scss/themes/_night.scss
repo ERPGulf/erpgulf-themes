@@ -1,4 +1,4 @@
-// Claudion Night — dark theme for Frappe v16. Runs on top of Frappe's own dark theme:
+// Claudion Night — dark theme for Frappe v16.50+. Runs on top of Frappe's own dark theme:
 // theme_switcher.js sets data-theme="dark" while data-theme-mode stays "claudionnight",
 // so these rules are keyed on data-theme-mode.
 [data-theme-mode="claudionnight"] {
@@ -248,7 +248,6 @@
 [data-theme-mode="claudionnight"] svg.es-icon.sidebar-toggle-placeholder {
   stroke: var(--text-light) !important;
   /* or use a color like #ffffff */
-  fill: var(--text-light) !important;
 }
 [data-theme-mode="claudionnight"] .ce-block__content {
   font-family: $theme-font !important;
@@ -576,9 +575,8 @@
   fill: var(--text-light) !important;
 }
 
-[data-theme-mode="claudionnight"] .sidebar-item-icon svg use {
-  stroke: white !important;
-  fill: white !important;
+[data-theme-mode="claudionnight"] .sidebar-item-icon {
+  color: var(--text-light);
 }
 
 [data-theme-mode="claudionnight"] .sidebar-label {
@@ -727,14 +725,12 @@
 [data-theme-mode="claudionnight"] .widget-control svg use,
 [data-theme-mode="claudionnight"] .link-content.ellipsis svg use {
   stroke: var(--text-light) !important;
-  fill: var(--text-light) !important;
 }
 
 /* On hover - optional */
 [data-theme-mode="claudionnight"] .widget-control:hover svg use,
 [data-theme-mode="claudionnight"] .link-content.ellipsis:hover svg use {
   stroke: var(--accent-color) !important;
-  fill: var(--accent-color) !important;
 }
 
 /* Remove connector for last step */
@@ -766,7 +762,6 @@
 
 [data-theme-mode="claudionnight"] .widget-control svg.es-icon-es-line.icon-xs {
   stroke: black !important;
-  fill: black !important;
 }
 
 [data-theme-mode="claudionnight"] .shortcut-widget-box .widget-label {
@@ -782,253 +777,8 @@
   gap: 2px; /* Optional: spacing between title and subtitle */
 }
 
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="accounting"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="app-window"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="archive"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="assets"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="building-complex"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="buying"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="cable"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="crm"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="factory"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-kanban"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-normal"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="getting-started"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="handshake"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="headset"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="integration"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="organization"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="package"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="project"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="quality"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="rocket"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="sell"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="setting"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="settings"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shield-check"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shopping-cart"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="stock"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="store"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="support"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="tool"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="users"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wallet"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="website"] svg,
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wrench"] svg {
-  display: none !important;
-}
-
 [data-theme-mode="claudionnight"] .item-anchor {
   gap: 8px;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="getting-started"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="rocket"] {
-  border: 1.5px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Smart%20Home,%20House-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="accounting"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wallet"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/credit-card-edit-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="buying"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shopping-cart"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/shopping-bag-fast-buy-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="sell"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="store"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/store-minimal-shielld-2-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="stock"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="package"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Delivery,%20Shipment-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="assets"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="archive"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/hotel-building-2-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="organization"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="factory"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="building-complex"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/factory-energy-style-2-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="quality"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="shield-check"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Certificate,%20Checkmark,%20Square-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="project"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-kanban"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Documents,%20File,%20Blank-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="support"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="headset"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Headphones,%20Customer,%20support-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="users"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/User,Profile-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="website"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="app-window"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Cursor,%20Select,%20Hand,%20Browser-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="crm"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="handshake"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Research,%20Target,%20Selection-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="tool"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="wrench"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/tools-wench-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="setting"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="settings"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/share-minimal-square-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] .sidebar-item-icon[item-icon="integration"],
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] .sidebar-item-icon[item-icon="cable"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/magnet-horizontal-right-big-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] .sidebar-item-icon[item-icon="integration"],
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] .sidebar-item-icon[item-icon="cable"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/link-minimal-circle-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] .sidebar-item-icon[item-icon="tool"],
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] .sidebar-item-icon[item-icon="wrench"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/building-office-circle-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="folder-normal"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Delivery,%20Shipment-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* Base label color in the claudionnight theme */
@@ -1057,9 +807,8 @@
 }
 
 /* Icon fill on hover or selected */
-[data-theme-mode="claudionnight"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover svg use,
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar svg use {
-  fill: #020d0f !important;
+/* v16.50 sidebar icons are outline glyphs drawn in currentColor: colour them, never fill them. */
+[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon {
   color: #020d0f !important;
 }
 [data-theme-mode="claudionnight"] .input-with-feedback {
@@ -1140,7 +889,6 @@
 }
 [data-theme-mode="claudionnight"] .es-icon.es-line.icon-sm {
   stroke: #4e878f !important;
-  fill: #4e878f !important;
 }
 /* [data-theme-mode="claudionnight"] svg.icon.icon-sm[href="#icon-dot-horizontal"] {
   stroke: #4e878f !important;
@@ -1451,217 +1199,6 @@
 }
 
 /* *******************************************************ICONS*********************************************************** */
-
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="getting-started"],
-[data-theme-mode="claudionnight"] .sidebar-item-icon[item-icon="rocket"] {
-  border: 1.5px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/Smart%20Home,%20House-grey.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="accounting"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="wallet"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/accounting/Payments, Finance/credit-card-edit.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="buying"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="shopping-cart"] {
-  background-image: url("/assets/erpgulf_themes/images/buying/Shopping, Ecommerce/shopping-bag-fast-buy.png") !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: 20px !important;
-  height: 20px !important;
-  display: inline-block !important;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="sell"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="store"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/selling/Shopping, Ecommerce/store-minimal-shielld-2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="stock"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="package"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/stock/Delivery/Delivery, Shipment.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="assets"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="archive"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/assets/Building, Construction/hotel-building-2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="organization"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="factory"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="building-complex"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/manufacture/Energy, Renewable/factory-energy-style-2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="quality"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="shield-check"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/quality/Interface, Essential/Certificate, Checkmark, Square.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-    
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="project"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="folder-kanban"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/projects/Files/Documents, File, Blank.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="support"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="headset"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/support/Support, Help, Question/Headphones, Customer, support.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="users"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/users/User/User,Profile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="website"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="app-window"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/website/Cursor, Select, Hand/Cursor, Select, Hand, Browser.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="crm"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="handshake"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/crm/Business, Products/Research, Target, Selection.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="tool"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="wrench"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/tools/Construction, Tools/tools-wench.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="setting"],
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="settings"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/erpsettings/Interface, Essential/share-minimal-square.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="integration"],
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="cable"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/integrations/Interface, Essential/magnet-horizontal-right-big.png") !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="integration"],
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="ERPNext Integrations"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="cable"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/erpintegration/Interface, Essential/link-minimal-circle.png") !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="tool"],
-[data-theme-mode="claudionnight"] .sidebar-item-container[data-id="Build"] > .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="wrench"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/build/Office, Work/building-office-circle.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-[data-theme-mode="claudionnight"] .standard-sidebar-item.active-sidebar .sidebar-item-icon[item-icon="folder-normal"] {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/erpgulf_themes/images/zatca-erp/Delivery/Delivery, Shipment.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 [data-theme-mode="claudionnight"] .widget-label:has(span[title="Item"])::before {
   background-image: url("/assets/erpgulf_themes/images/b-item.png")!important;
@@ -2283,4 +1820,15 @@ background: #313536 !important;
 [data-theme-mode="claudionnight"] #page-Sales\ Invoice > div.container.page-body > div.page-wrapper > div > div.row.layout-main > div.col-lg-2.layout-side-section > div > ul.list-unstyled.sidebar-menu.form-attachments > li.attachments-actions > span > span > a {
 color: #ffffff !important;
  
+}
+
+/* ---------- Dock (the module rail in v16.50+) ---------- */
+[data-theme-mode="claudionnight"] .dock .dock-item:hover {
+  background-color: #313634;
+  color: #ffffff;
+}
+
+[data-theme-mode="claudionnight"] .dock .dock-item.active {
+  background-color: #44c0a5;
+  color: #020d0f;
 }
