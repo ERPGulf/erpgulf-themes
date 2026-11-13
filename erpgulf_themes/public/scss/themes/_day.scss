@@ -1,4 +1,56 @@
 // Claudion Day — light theme. Frappe v16.50+. Sits on Frappe's default (light) tokens.
+
+/* ---------- Frappe tokens ----------
+   Frappe's screens (including everything new in v16.50: print designer, DocType Settings,
+   data import, Kanban, list layouts, the component library) take their surfaces, text and
+   borders from these tokens. Remapping them here themes all of those screens at once; the
+   rules further down only add what is specific to Claudion Day. */
+[data-theme="claudionday"] {
+  /* Grey ramp, tinted to Day's green-greys */
+  --gray-50: #f7faf9;
+  --gray-100: #f1f5f4;
+  --gray-200: #e8ecea;
+  --gray-300: #dfe3e1;
+  --gray-400: #bcc5c2;
+  --gray-500: #8f9a97;
+  --gray-600: #6d7775;
+  --gray-700: #525454;
+  --gray-800: #393a3a;
+  --gray-900: #151616;
+  --gray-950: #0b0c0c;
+
+  /* Accent */
+  --primary: #15b08f;
+  --primary-color: #15b08f;
+  --brand-color: #15b08f;
+  --btn-primary: #073c44;
+  --border-primary: #15b08f;
+  --progress-bar-bg: #15b08f;
+  --checkbox-color: #15b08f;
+  --checkbox-gradient: linear-gradient(180deg, #15b08f 0%, #15b08f 100%);
+  --date-active-bg: #073c44;
+  --date-active-text: #ffffff;
+  --focus-default: 0px 0px 0px 2px rgba(21, 176, 143, 0.35);
+  --focus-outline-default: 2px solid rgba(21, 176, 143, 0.6);
+}
+
+/* Solid buttons from Frappe's component library. Buttons with their own colour are left alone. */
+[data-theme="claudionday"] .es-button[data-variant="solid"]:not([data-theme]) {
+  --bt-solid-bg: #073c44;
+  --bt-solid-bg-hover: #042226;
+  --bt-solid-bg-active: #042226;
+  --bt-solid-fg: #ffffff;
+}
+
+/* Selection accent in the print designer and on Kanban boards */
+html[data-theme="claudionday"] .builder-root {
+  --pfb-accent: #15b08f;
+}
+
+html[data-theme="claudionday"] .kn-board {
+  --kn-accent: #15b08f;
+}
+
 [data-theme="claudionday"] {
   --main-color: #042226;
   /* Dark green */

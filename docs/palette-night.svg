@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="932" height="444" viewBox="0 0 932 444" font-family="Helvetica, Arial, sans-serif">
-<rect width="932" height="444" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="628" viewBox="0 0 932 628" font-family="Helvetica, Arial, sans-serif">
+<rect width="932" height="628" fill="#ffffff"/>
 <text x="16" y="36" font-size="20" font-weight="700" fill="#1b2030">Claudion Night palette</text>
 <rect x="16" y="60" width="140" height="80" rx="10" fill="#042226" stroke="#d0d4dc"/>
 <text x="26" y="84" font-size="12" font-weight="700" fill="#ffffff">Deep green</text>
@@ -70,7 +70,43 @@
 <rect x="616" y="336" width="140" height="80" rx="10" fill="#8895a5" stroke="#d0d4dc"/>
 <text x="626" y="360" font-size="12" font-weight="700" fill="#ffffff">Chart text</text>
 <text x="626" y="380" font-size="12" fill="#ffffff">#8895A5</text>
-<rect x="766" y="336" width="140" height="80" rx="10" fill="#7575ff" stroke="#d0d4dc"/>
-<text x="776" y="360" font-size="12" font-weight="700" fill="#ffffff">Chart violet</text>
-<text x="776" y="380" font-size="12" fill="#ffffff">#7575FF</text>
+<rect x="766" y="336" width="140" height="80" rx="10" fill="#0a1416" stroke="#d0d4dc"/>
+<text x="776" y="360" font-size="12" font-weight="700" fill="#ffffff">Gray 950</text>
+<text x="776" y="380" font-size="12" fill="#ffffff">#0A1416</text>
+<rect x="16" y="428" width="140" height="80" rx="10" fill="#0f1b1c" stroke="#d0d4dc"/>
+<text x="26" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 900</text>
+<text x="26" y="472" font-size="12" fill="#ffffff">#0F1B1C</text>
+<rect x="166" y="428" width="140" height="80" rx="10" fill="#1e2624" stroke="#d0d4dc"/>
+<text x="176" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 800</text>
+<text x="176" y="472" font-size="12" fill="#ffffff">#1E2624</text>
+<rect x="316" y="428" width="140" height="80" rx="10" fill="#232b2a" stroke="#d0d4dc"/>
+<text x="326" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 700</text>
+<text x="326" y="472" font-size="12" fill="#ffffff">#232B2A</text>
+<rect x="466" y="428" width="140" height="80" rx="10" fill="#313536" stroke="#d0d4dc"/>
+<text x="476" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 600</text>
+<text x="476" y="472" font-size="12" fill="#ffffff">#313536</text>
+<rect x="616" y="428" width="140" height="80" rx="10" fill="#3f4746" stroke="#d0d4dc"/>
+<text x="626" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 500</text>
+<text x="626" y="472" font-size="12" fill="#ffffff">#3F4746</text>
+<rect x="766" y="428" width="140" height="80" rx="10" fill="#525656" stroke="#d0d4dc"/>
+<text x="776" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 450</text>
+<text x="776" y="472" font-size="12" fill="#ffffff">#525656</text>
+<rect x="16" y="520" width="140" height="80" rx="10" fill="#7f8887" stroke="#d0d4dc"/>
+<text x="26" y="544" font-size="12" font-weight="700" fill="#ffffff">Gray 400</text>
+<text x="26" y="564" font-size="12" fill="#ffffff">#7F8887</text>
+<rect x="166" y="520" width="140" height="80" rx="10" fill="#979999" stroke="#d0d4dc"/>
+<text x="176" y="544" font-size="12" font-weight="700" fill="#1b2030">Gray 300</text>
+<text x="176" y="564" font-size="12" fill="#1b2030">#979999</text>
+<rect x="316" y="520" width="140" height="80" rx="10" fill="#b9bfbe" stroke="#d0d4dc"/>
+<text x="326" y="544" font-size="12" font-weight="700" fill="#1b2030">Gray 200</text>
+<text x="326" y="564" font-size="12" fill="#1b2030">#B9BFBE</text>
+<rect x="466" y="520" width="140" height="80" rx="10" fill="#e3e7e6" stroke="#d0d4dc"/>
+<text x="476" y="544" font-size="12" font-weight="700" fill="#1b2030">Gray 100</text>
+<text x="476" y="564" font-size="12" fill="#1b2030">#E3E7E6</text>
+<rect x="616" y="520" width="140" height="80" rx="10" fill="#ffffff" stroke="#d0d4dc"/>
+<text x="626" y="544" font-size="12" font-weight="700" fill="#1b2030">Gray 50</text>
+<text x="626" y="564" font-size="12" fill="#1b2030">#FFFFFF</text>
+<rect x="766" y="520" width="140" height="80" rx="10" fill="#7575ff" stroke="#d0d4dc"/>
+<text x="776" y="544" font-size="12" font-weight="700" fill="#ffffff">Chart violet</text>
+<text x="776" y="564" font-size="12" fill="#ffffff">#7575FF</text>
 </svg>

@@ -39,6 +39,7 @@ Uninstalling removes the theme options and puts every user back on Frappe's Ligh
 
 - Works with both desktop layouts in v16.50 (the new "Apps" layout with the dock, and the old layout). The dock and the module sidebars are styled in all three themes.
 - Module and sidebar icons are Frappe's own, coloured by the theme.
+- The screens added in v16.50 (print designer, DocType Settings, data import wizard, Kanban, list layouts, component library) are themed through Frappe's colour tokens, which each theme remaps.
 - Do not install alongside an app that ships the same themes (for example the theme code in `claudion4saudi`): both would override the theme switcher.
 - Claudion Night sets the page to Frappe's `dark` theme and keys its own rules on `data-theme-mode="claudionnight"`, so everything in Frappe that checks for dark mode follows it.
 - Fonts: Host Grotesk and Young Serif, both under the SIL Open Font License (see `erpgulf_themes/public/fonts/`).

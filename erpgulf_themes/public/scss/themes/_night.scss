@@ -1,6 +1,58 @@
 // Claudion Night — dark theme for Frappe v16.50+. Runs on top of Frappe's own dark theme:
 // theme_switcher.js sets data-theme="dark" while data-theme-mode stays "claudionnight",
 // so these rules are keyed on data-theme-mode.
+
+/* ---------- Frappe tokens ----------
+   Claudion Night runs on Frappe's dark theme. Frappe's screens (including everything new in
+   v16.50: print designer, DocType Settings, data import, Kanban, list layouts, the component
+   library) take their surfaces, text and borders from these tokens. Remapping the dark grey
+   ramp here gives all of those screens Night's green-black palette; the rules further down
+   only add what is specific to Claudion Night. */
+[data-theme-mode="claudionnight"] {
+  --gray-950: #0a1416; /* base surface */
+  --gray-900: #0f1b1c;
+  --gray-800: #1e2624; /* subtle borders */
+  --gray-700: #232b2a; /* controls, hover */
+  --gray-600: #313536; /* raised surfaces, borders */
+  --gray-500: #3f4746;
+  --gray-450: #525656;
+  --gray-400: #7f8887; /* muted text */
+  --gray-300: #979999; /* secondary text */
+  --gray-200: #b9bfbe;
+  --gray-100: #e3e7e6; /* body text */
+  --gray-50: #ffffff; /* headings */
+
+  /* Accent */
+  --primary: #15b08f;
+  --primary-color: #15b08f;
+  --brand-color: #15b08f;
+  --btn-primary: #4e878f;
+  --border-primary: #15b08f;
+  --progress-bar-bg: #15b08f;
+  --checkbox-color: #15b08f;
+  --date-active-bg: #4e878f;
+  --date-active-text: #ffffff;
+  --focus-default: 0px 0px 0px 3px rgba(21, 176, 143, 0.4);
+  --focus-outline-default: 3px solid rgba(21, 176, 143, 0.6);
+}
+
+/* Solid buttons from Frappe's component library. Buttons with their own colour are left alone. */
+[data-theme-mode="claudionnight"] .es-button[data-variant="solid"]:not([data-theme]) {
+  --bt-solid-bg: #4e878f;
+  --bt-solid-bg-hover: #5c98a0;
+  --bt-solid-bg-active: #5c98a0;
+  --bt-solid-fg: #ffffff;
+}
+
+/* Selection accent in the print designer and on Kanban boards */
+html[data-theme-mode="claudionnight"] .builder-root {
+  --pfb-accent: #15b08f;
+}
+
+html[data-theme-mode="claudionnight"] .kn-board {
+  --kn-accent: #15b08f;
+}
+
 [data-theme-mode="claudionnight"] {
   --main-color: #073c44;
   /* Dark green */

@@ -94,6 +94,7 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 | Modal | `#FFFFFF` | — | — | 18px | |
 | Avatar (initials) | `#1B2030` | `#FFFFFF` | — | — | |
 | Text selection | `#FBEAE8` | `#1B2030` | — | — | |
+| Focus ring, selection in print designer and Kanban | `#D9372B` | — | — | — | Focus ring at 25–50% opacity |
 
 Corner radius scale: 10px (controls), 12px, 14px, 18px (large surfaces); cards 16px; page panel 22px.
 
@@ -146,6 +147,22 @@ White page, deep-green top bar, teal accent.
 | Secondary | `#525454` | `--text-color2` | Secondary link text |
 | Search text | `#AAB2BD` | — | Search box text and placeholder |
 
+### Grey ramp (drives Frappe's own surface, text and border tokens, so it colours every screen the theme has no specific rule for, including the new v16.50 screens)
+
+| Name | Hex | In code | Used for |
+| --- | --- | --- | --- |
+| Gray 50 | `#F7FAF9` | `--gray-50` | Subtle backgrounds |
+| Gray 100 | `#F1F5F4` | `--gray-100` | Control backgrounds, hover |
+| Gray 200 | `#E8ECEA` | `--gray-200` | Light borders |
+| Gray 300 | `#DFE3E1` | `--gray-300` | Borders |
+| Gray 400 | `#BCC5C2` | `--gray-400` | Strong borders, placeholders |
+| Gray 500 | `#8F9A97` | `--gray-500` | Faint text |
+| Gray 600 | `#6D7775` | `--gray-600` | Muted text |
+| Gray 700 | `#525454` | `--gray-700` | Secondary text |
+| Gray 800 | `#393A3A` | `--gray-800` | Labels |
+| Gray 900 | `#151616` | `--gray-900` | Body text |
+| Gray 950 | `#0B0C0C` | `--gray-950` | Headings |
+
 ### Status and charts
 
 | Name | Hex | In code | Used for |
@@ -166,8 +183,10 @@ White page, deep-green top bar, teal accent.
 | Dock tile, hover | `#DAEDE9` | `#042226` | — | |
 | Dock tile, current module | `#15B08F` | `#FFFFFF` | — | |
 | Avatar (initials) | `#15B08F` | `#FFFFFF` | — | |
+| Primary button | `#073C44` | `#FFFFFF` | — | Hover (component-library buttons): `#042226` |
 | Default button | — | `#151616` | — | |
 | Secondary button | `#073C44` | — | `#073C44` | |
+| Checkboxes, progress bars, focus ring, selection in print designer and Kanban | `#15B08F` | — | — | Focus ring at 35–60% opacity |
 | Workspace edit / new buttons | — | `#4E878F` | — | |
 | Widgets and link cards | `#F5F7F7` | `#2A2B2B` | 1px `#EBEDED` | |
 | Form / list card | `#F9FAFB` | — | 1px `#EAECF0` | |
@@ -229,6 +248,23 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Dim | `#837A7A` | — | Truncated text, group-by links |
 | Chart text | `#8895A5` | — | Chart axis and legend text |
 
+### Grey ramp (drives Frappe's own surface, text and border tokens, so it colours every screen the theme has no specific rule for, including the new v16.50 screens)
+
+| Name | Hex | In code | Used for |
+| --- | --- | --- | --- |
+| Gray 950 | `#0A1416` | `--gray-950` | Base surface |
+| Gray 900 | `#0F1B1C` | `--gray-900` | Subtle surface |
+| Gray 800 | `#1E2624` | `--gray-800` | Subtle borders |
+| Gray 700 | `#232B2A` | `--gray-700` | Control backgrounds, hover |
+| Gray 600 | `#313536` | `--gray-600` | Raised surfaces, borders |
+| Gray 500 | `#3F4746` | `--gray-500` | Strong borders |
+| Gray 450 | `#525656` | `--gray-450` | Stronger borders |
+| Gray 400 | `#7F8887` | `--gray-400` | Muted text |
+| Gray 300 | `#979999` | `--gray-300` | Secondary text |
+| Gray 200 | `#B9BFBE` | `--gray-200` | Strong secondary text |
+| Gray 100 | `#E3E7E6` | `--gray-100` | Body text |
+| Gray 50 | `#FFFFFF` | `--gray-50` | Headings |
+
 ### Charts
 
 | Name | Hex | In code | Used for |
@@ -249,6 +285,8 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Dock tile, current module | `#44C0A5` | `#020D0F` | — | |
 | Buttons (default, icon, primary) | — | `#4E878F` | 1px `#4E878F` | |
 | Accent buttons (secondary, new document) | `#15B08F` | — | — | |
+| Primary button (page action, component-library solid buttons) | `#4E878F` | `#FFFFFF` | — | Hover: `#5C98A0` |
+| Checkboxes, progress bars, focus ring, selection in print designer and Kanban | `#15B08F` | — | — | Focus ring at 40–60% opacity |
 | Text input | `#020D0F` | `#FFFFFF` | 1px `#CCD0D0` | Filters and inline inputs: 1px `#313536` |
 | Field labels, grid headers | — | `#979999` | — | |
 | Headings, widget titles | — | `#FFFFFF` | — | |
@@ -261,8 +299,12 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 
 Module and sidebar icons are Frappe's own outline icons, coloured by the theme.
 
+## Screens without their own rules
+
+The print designer, DocType Settings, the data import wizard, Kanban boards, list layouts, global search and the new component library are drawn entirely from Frappe's colour tokens. Each theme remaps those tokens (the grey ramp and the accent) at the top of its stylesheet, so these screens follow the theme without screen-by-screen rules. To restyle them, change the ramp or the accent.
+
 ## Changing a colour
 
 - **ERPGulf:** every colour is a variable at the top of `_erpgulf.scss` (`$eg-…`) or in the grey ramp just below it. Change it there and it applies everywhere.
-- **Claudion Day and Night:** colours with a name in the "In code" column are variables at the top of the stylesheet. The rest (shown as —) are written directly into individual rules, so changing one means a find-and-replace of the hex value in that stylesheet.
+- **Claudion Day and Night:** the grey ramp and accent are in the "Frappe tokens" block at the top of each stylesheet. Other colours with a name in the "In code" column are variables just below it. The rest (shown as —) are written directly into individual rules, so changing one means a find-and-replace of the hex value in that stylesheet.
 - After any change: `bench build --app erpgulf_themes`.

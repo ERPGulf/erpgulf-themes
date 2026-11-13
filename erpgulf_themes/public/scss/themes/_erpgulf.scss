@@ -56,6 +56,8 @@ $eg-shell-text: #aab1c2; // idle text and icons on the shell
   --checkbox-gradient: linear-gradient(180deg, #{$eg-red} 0%, #{$eg-red} 100%);
   --date-active-bg: #{$eg-red};
   --date-active-text: #ffffff;
+  --focus-default: 0px 0px 0px 2px rgba(217, 55, 43, 0.25);
+  --focus-outline-default: 2px solid rgba(217, 55, 43, 0.5);
 
   // Softer corners
   --radius: 10px;
@@ -311,4 +313,13 @@ html[data-theme="erpgulf"],
 
 [data-theme="erpgulf"] .progress-bar {
   background-color: $eg-red;
+}
+
+// Selection accent in the print designer and on Kanban boards
+html[data-theme="erpgulf"] .builder-root {
+  --pfb-accent: #{$eg-red};
+}
+
+html[data-theme="erpgulf"] .kn-board {
+  --kn-accent: #{$eg-red};
 }
