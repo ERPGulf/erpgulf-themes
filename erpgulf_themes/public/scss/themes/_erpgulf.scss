@@ -323,6 +323,22 @@ html[data-theme="erpgulf"],
   border-radius: 18px;
 }
 
+// Inside white surfaces, anything Frappe paints with the page colour should be white too.
+[data-theme="erpgulf"] .modal-content,
+[data-theme="erpgulf"] .frappe-list,
+[data-theme="erpgulf"] .form-page,
+[data-theme="erpgulf"] .widget,
+[data-theme="erpgulf"] .report-wrapper {
+  --bg-color: #{$eg-card};
+}
+
+// Forms shown inside a dialog (Settings, quick entry) are not cards: no border around the fields.
+[data-theme="erpgulf"] .modal .form-page {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
 [data-theme="erpgulf"] .avatar-frame.standard-image {
   background-color: $eg-navy;
   color: #ffffff;
