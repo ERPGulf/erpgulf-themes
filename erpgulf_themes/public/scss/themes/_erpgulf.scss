@@ -14,6 +14,7 @@ $eg-ink: #1b2030; // headings
 $eg-text: #343a4a; // body text
 $eg-muted: #6b7385;
 $eg-shell-text: #aab1c2; // idle text and icons on the shell
+$eg-shell-hover: #3a4463; // hovered or focused item on the shell: a clearly lighter slate-blue
 
 [data-theme="erpgulf"] {
   // Cool grey ramp. Frappe's surface, text and border tokens all read from it.
@@ -152,14 +153,14 @@ html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item .item-
 html[data-theme="erpgulf"]
   .body-sidebar-container
   .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: $eg-shell-hover !important;
 }
 
 html[data-theme="erpgulf"]
   .body-sidebar-container
   .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover
   .item-anchor {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 // Hover and keyboard focus: spell the text and icon colour out for the label and the icon as
@@ -173,7 +174,7 @@ html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.a
 }
 
 html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.active-sidebar):focus-within {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: $eg-shell-hover !important;
 }
 
 // The page you are on: red tile, white label and icon.
@@ -194,7 +195,7 @@ html[data-theme="erpgulf"] .dock {
 }
 
 html[data-theme="erpgulf"] .dock .dock-item:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: $eg-shell-hover;
   color: #ffffff;
 }
 

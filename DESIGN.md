@@ -37,6 +37,7 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 | Red dark | `#BF2D22` | `$eg-red-dark` | Primary button hover and pressed |
 | Red soft | `#FBEAE8` | `$eg-red-soft` | Text selection highlight |
 | Shell text | `#AAB1C2` | `$eg-shell-text` | Idle sidebar labels and icons on navy |
+| Shell hover | `#3A4463` | `$eg-shell-hover` | Hovered or focused sidebar item and dock tile |
 
 ### Page and surfaces
 
@@ -78,10 +79,10 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 | Page panel | `#F4F5F7` | `#343A4A` | — | 22px on the sidebar side | The whole content area |
 | Page header bar | `#FFFFFF` | `#1B2030`, Young Serif title | 1px `#E6E8EC` bottom | — | Title is the last breadcrumb |
 | Sidebar | `#1B2030` | `#AAB1C2` | none | — | |
-| Sidebar item, hover | white at 8% | `#FFFFFF` | — | theme radius | |
+| Sidebar item, hover or keyboard focus | `#3A4463` | `#FFFFFF` | — | theme radius | |
 | Sidebar item, current | `#D9372B` | `#FFFFFF` | — | theme radius | Shadow: 0 6px 16px, red at 35% |
 | Dock (module rail) | `#1B2030` | `#AAB1C2` | — | — | |
-| Dock tile, hover | white at 8% | `#FFFFFF` | — | — | |
+| Dock tile, hover | `#3A4463` | `#FFFFFF` | — | — | |
 | Dock tile, current module | `#D9372B` | `#FFFFFF` | — | — | Shadow: 0 6px 16px, red at 35% |
 | Primary button | `#D9372B` | `#FFFFFF` | `#D9372B` | 10px | Hover and pressed: `#BF2D22`. Applies to classic buttons and to solid buttons from Frappe's new component library |
 | Default button | `#FFFFFF` | `#1B2030` | 1px `#E6E8EC` | 10px | Hover: `#F4F5F7` |
