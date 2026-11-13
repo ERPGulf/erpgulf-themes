@@ -1965,3 +1965,17 @@ html[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .
 html[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
   content: "";
 }
+
+/* Inputs have a fixed height in this theme. Centre the text in single-line boxes (it sat
+   against the top edge in filter dropdowns) and let multi-line fields keep their own height. */
+html[data-theme-mode="claudionnight"] input.form-control,
+html[data-theme-mode="claudionnight"] select.form-control {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+html[data-theme-mode="claudionnight"] textarea.form-control,
+html[data-theme-mode="claudionnight"] div.form-control {
+  height: auto !important;
+  min-height: 38px;
+}

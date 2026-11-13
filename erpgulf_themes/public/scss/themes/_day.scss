@@ -92,7 +92,7 @@ html[data-theme="claudionday"] .layout-main-section {
 }
 
 html[data-theme="claudionday"] .avatar-frame {
-  background-color: var(--accent-color) !important;
+  background-color: #073c44 !important; /* deep green, so initials do not look like the teal timeline ticks */
   /* Replace with your desired color */
   color: #ffffff !important;
   /* Optional: change letter color */
@@ -836,45 +836,26 @@ html[data-theme="claudionday"] ul.list-unstyled.sidebar-menu.form-sidebar-stats 
   border-radius: 8px;
 }
 
-/* Hide the original  dot */
+/* Activity timeline: each entry is marked with the tick icon, centred on Frappe's own
+   continuous line. Every marker is the same 24px image, so they are always the same size.
+   (The old version pinned the icon to the corner of the 16px dot and drew a fixed 40px
+   connector under each one, so markers sat off the line and the connectors never met.) */
 html[data-theme="claudionday"] .timeline-dot {
   background: none !important;
   border: none !important;
 }
 
-/* Add your custom icon */
 html[data-theme="claudionday"] .timeline-dot::before {
   content: "";
-  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 24px;
   height: 24px;
-  background-image: url("/assets/erpgulf_themes/images/step_icon_day.svg");
-  /* <-- update path here */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-html[data-theme="claudionday"] .new-timeline::before {
-  display: none !important;
-}
-
-html[data-theme="claudionday"] .timeline-item::before {
-  display: none !important;
-}
-
-html[data-theme="claudionday"] .timeline-dot::after {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 40px;
-  margin: 6px auto 0 auto;
-  background-image: url("/assets/erpgulf_themes/images/white_connector.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--background-light) url("/assets/erpgulf_themes/images/step_icon_day.svg") center / contain
+    no-repeat;
 }
 
 html[data-theme="claudionday"] .btn.btn-secondary {
@@ -1661,4 +1642,18 @@ html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-
 html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before,
 html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
   content: "";
+}
+
+/* Inputs have a fixed height in this theme. Centre the text in single-line boxes (it sat
+   against the top edge in filter dropdowns) and let multi-line fields keep their own height. */
+html[data-theme="claudionday"] input.form-control,
+html[data-theme="claudionday"] select.form-control {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+html[data-theme="claudionday"] textarea.form-control,
+html[data-theme="claudionday"] div.form-control {
+  height: auto !important;
+  min-height: 38px;
 }

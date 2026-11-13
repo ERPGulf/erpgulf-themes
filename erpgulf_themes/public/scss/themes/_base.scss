@@ -58,3 +58,96 @@ $theme-themes: 'html[data-theme="claudionday"]', 'html[data-theme-mode="claudion
 html[data-theme="claudionnight"] body {
   background-color: #0d1211;
 }
+
+// ---------- Layout (all three themes) ----------
+
+// Dashboards: Frappe lays number cards out three to a row, however wide the page is.
+// Fit as many as there is room for (four on a normal desktop width) and let them share the row.
+@each $root in $theme-themes {
+  #{$root} .widget-group-body.grid-col-3:has(.number-widget-box) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+// List filters: the match-type button (≈ / =) joined to a filter box is always exactly as
+// tall as the box, whatever height a theme gives its inputs.
+@each $root in $theme-themes {
+  #{$root} .input-group > .input-group-btn {
+    display: flex;
+    align-self: stretch;
+  }
+
+  #{$root} .input-group > .input-group-btn > .match-type-dropdown-btn {
+    height: 100%;
+  }
+}
+
+// Multi-select filters ("Entity" on Purchase Analytics, for example): the box is a plain
+// block, so its text sat against the top edge whenever a theme changed the box height.
+@each $root in $theme-themes {
+  #{$root} .multiselect-list > .form-control {
+    display: flex;
+    align-items: center;
+  }
+
+  #{$root} .multiselect-list > .form-control > .status-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+// List and report filters: a box that holds a value reads heavier than an empty one, so it is
+// obvious at a glance which filters are in use.
+@each $root in $theme-themes {
+  #{$root} .page-form input.form-control:not(:placeholder-shown),
+  #{$root} .page-form select.form-control:not(:has(option[value=""]:checked)),
+  #{$root} .page-form .multiselect-list > .form-control > .status-text:not(:has(.text-extra-muted)) {
+    font-weight: 600;
+  }
+
+  #{$root} .page-form input.form-control::placeholder {
+    font-weight: 400;
+  }
+}
+
+// Dropdowns with nothing chosen show their label as an overlay pinned 3px from the top, which
+// only suits Frappe's default box height. Centre it on the box instead.
+@each $root in $theme-themes {
+  #{$root} .frappe-control[data-fieldtype="Select"] .placeholder {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// Status dots: Frappe's "orange" is a red-orange that is hard to tell from "red" when the two
+// sit side by side (a warning next to an error). Make orange a clear amber.
+@each $root in $theme-themes {
+  #{$root} {
+    --indicator-dot-orange: #e6a700;
+  }
+
+  // Frappe releases that predate the token colour the dot directly.
+  #{$root} .indicator.orange::before,
+  #{$root} .indicator.orange::after {
+    background: #e6a700;
+  }
+}
+
+// Report totals: the theme font is wider than Frappe's in bold, so large totals lost their
+// currency symbol off the edge of the column. Semi-bold with slightly tighter spacing fits.
+@each $root in $theme-themes {
+  #{$root} .datatable .dt-row.dt-row-totalRow .dt-cell__content {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+// Form footer: Frappe paints the "Activity" heading row with the page colour. Wherever the area
+// around it is a different shade, that shows as a band that stops short of both edges.
+// No fill, so the heading always sits on whatever is behind it.
+@each $root in $theme-themes {
+  #{$root} .new-timeline .activity-title,
+  #{$root} .new-timeline .timeline-actions {
+    background-color: transparent;
+  }
+}

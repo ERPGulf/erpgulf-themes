@@ -31,9 +31,9 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 
 | Name | Hex | In code | Used for |
 | --- | --- | --- | --- |
-| Navy | `#1B2030` | `$eg-navy` | App frame behind the page, sidebar, dock, avatar background, heading text |
+| Navy | `#1B2030` | `$eg-navy` | App frame behind the page, sidebar, dock, avatar background, heading text, progress bars |
 | Navy soft | `#262C3F` | `$eg-navy-soft` | Raised surfaces on the navy shell (menus, collapsed-section tile) |
-| Red | `#D9372B` | `$eg-red` | Primary buttons, current sidebar item, focus border, checkboxes, progress bars, date-picker selection |
+| Red | `#D9372B` | `$eg-red` | Primary buttons, current sidebar item, focus border, checkboxes, date-picker selection |
 | Red dark | `#BF2D22` | `$eg-red-dark` | Primary button hover and pressed |
 | Red soft | `#FBEAE8` | `$eg-red-soft` | Text selection highlight |
 | Shell text | `#AAB1C2` | `$eg-shell-text` | Idle sidebar labels and icons on navy |
@@ -85,7 +85,11 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 | Dock tile, current module | `#D9372B` | `#FFFFFF` | — | — | Shadow: 0 6px 16px, red at 35% |
 | Primary button | `#D9372B` | `#FFFFFF` | `#D9372B` | 10px | Hover and pressed: `#BF2D22`. Applies to classic buttons and to solid buttons from Frappe's new component library |
 | Default button | `#FFFFFF` | `#1B2030` | 1px `#E6E8EC` | 10px | Hover: `#F4F5F7` |
-| Card, widget, form, list, report | `#FFFFFF` | `#343A4A` | 1px `#E6E8EC` | 16px | No shadow |
+| Card, widget, list | `#FFFFFF` | `#343A4A` | 1px `#E6E8EC` | 16px | No shadow |
+| Form | `#FFFFFF` | `#343A4A` | none | 16px | A white sheet on the grey page |
+| Report | `#FFFFFF` | `#343A4A` | none | 0 | Square edges: the table scrolls sideways |
+| Number card | `#FFFFFF` | label `#6B7385`, value `#1B2030` bold 24px | 1px `#E6E8EC` | 16px | 48px red icon tile on the left (gradient `#E2493D` to `#BF2D22`, white icon); hover: light red border and a soft shadow |
+| Progress bar | `#1B2030` | — | — | — | Navy, not red: a full red bar reads as a problem |
 | Card and section titles | — | `#1B2030`, weight 600 | — | — | |
 | Text input | `#FFFFFF` | `#343A4A` | 1px `#E6E8EC` | 10px | Focus: `#D9372B` border and a 3px ring, red at 15% |
 | Read-only input | `#F4F5F7` | — | — | — | |
@@ -98,7 +102,7 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 
 Corner radius scale: 10px (controls), 12px, 14px, 18px (large surfaces); cards 16px; page panel 22px.
 
-Status pills, alerts and charts are not restyled in this theme: they use Frappe's standard colours.
+Status pills and alerts are not restyled in this theme: they use Frappe's standard colours.
 
 ## Claudion Day
 
@@ -111,9 +115,9 @@ White page, deep-green top bar, teal accent.
 | Name | Hex | In code | Used for |
 | --- | --- | --- | --- |
 | Deep green | `#042226` | `--main-color` | Top bar base colour |
-| Green | `#073C44` | — | Top bar, secondary buttons, mini chart bars |
+| Green | `#073C44` | — | Top bar, secondary buttons, avatar background, mini chart bars |
 | Divider green | `#114D56` | `--searchbar-color` | Top-bar divider |
-| Teal | `#15B08F` | `--accent-color` | Accent: current sidebar item, current dock tile, avatar background, link hover, list-sidebar button hover |
+| Teal | `#15B08F` | `--accent-color` | Accent: current sidebar item, current dock tile, timeline ticks, link hover, list-sidebar button hover |
 | Muted teal | `#4E878F` | — | Workspace edit / new buttons and their icons |
 | Soft green | `#9EC8B9` | `--text-highlight` | Highlight text on dark green |
 
@@ -181,7 +185,7 @@ White page, deep-green top bar, teal accent.
 | Sidebar item, current | `#15B08F` | `#FFFFFF` | — | |
 | Dock tile, hover | `#DAEDE9` | `#042226` | — | |
 | Dock tile, current module | `#15B08F` | `#FFFFFF` | — | |
-| Avatar (initials) | `#15B08F` | `#FFFFFF` | — | |
+| Avatar (initials) | `#073C44` | `#FFFFFF` | — | |
 | Primary button | `#073C44` | `#FFFFFF` | — | Hover (component-library buttons): `#042226` |
 | Default button | — | `#151616` | — | |
 | Secondary button | `#073C44` | — | `#073C44` | |
@@ -295,6 +299,25 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Line chart | — | stroke `#7575FF` | — | |
 
 Module and sidebar icons are Frappe's own outline icons, coloured by the theme.
+
+## Chart colours
+
+Charts that do not set their own colours take the theme's palette, in this order. Neighbouring colours are deliberately different, so a two-series chart never shows two shades of one colour. The list is in `erpgulf_themes/public/js/chart_palette.js`.
+
+| Theme | Colours, in order |
+| --- | --- |
+| ERPGulf | `#D9372B` `#1B2030` `#D9A13B` `#4A8AD9` `#5AA77A` `#9AA3B5` `#8E6FD1` `#E58A7F` `#2F9C95` `#6B7385` |
+| Claudion Day | `#15B08F` `#073C44` `#7575FF` `#E0A23A` `#4E878F` `#E2675A` `#9EC8B9` `#5A8FD6` `#8E6FD1` `#525454` |
+| Claudion Night | `#44C0A5` `#7575FF` `#E0A23A` `#4E9FD6` `#E2675A` `#9EC8B9` `#B08CF0` `#4E878F` `#D6C15A` `#979999` |
+
+## Shared by all three themes
+
+| Element | Styling |
+| --- | --- |
+| Orange status dot | `#E6A700` (amber), so a warning is easy to tell from a red error |
+| Filter box holding a value | Semi-bold (600); empty boxes keep normal-weight grey placeholder text |
+| Dashboard number cards | As many per row as fit (four at normal desktop width), minimum 220px each |
+| Report total row | Semi-bold (600), slightly tighter letter spacing |
 
 ## Screens without their own rules
 

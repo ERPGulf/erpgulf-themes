@@ -52,7 +52,7 @@ $eg-shell-text: #aab1c2; // idle text and icons on the shell
   --brand-color: #{$eg-red};
   --btn-primary: #{$eg-red};
   --border-primary: #{$eg-red};
-  --progress-bar-bg: #{$eg-red};
+  --progress-bar-bg: #{$eg-navy}; // not red: a full red bar reads as a problem, not as "done"
   --checkbox-color: #{$eg-red};
   --checkbox-gradient: linear-gradient(180deg, #{$eg-red} 0%, #{$eg-red} 100%);
   --date-active-bg: #{$eg-red};
@@ -255,11 +255,26 @@ html[data-theme="erpgulf"] .btn-default:hover {
 html[data-theme="erpgulf"] .frappe-card,
 html[data-theme="erpgulf"] .widget,
 html[data-theme="erpgulf"] .form-page,
-html[data-theme="erpgulf"] .frappe-list,
-html[data-theme="erpgulf"] .report-wrapper {
+html[data-theme="erpgulf"] .frappe-list {
   background-color: $eg-card;
   border: 1px solid $eg-border;
   border-radius: 16px;
+  box-shadow: none;
+}
+
+// Forms: a white sheet on the grey page with no outline. The border drew a line under the
+// last field, right above Comments. Leave room below the last field instead.
+html[data-theme="erpgulf"] .form-page {
+  border: 0;
+  padding-bottom: 16px;
+}
+
+// Reports are not drawn as a rounded card: the table is wider than the page and scrolls
+// sideways, so a rounded border cuts through its last column. A plain white sheet instead.
+html[data-theme="erpgulf"] .report-wrapper {
+  background-color: $eg-card;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
 }
 
@@ -352,7 +367,7 @@ html[data-theme="erpgulf"] .avatar-frame.standard-image {
 }
 
 html[data-theme="erpgulf"] .progress-bar {
-  background-color: $eg-red;
+  background-color: $eg-navy;
 }
 
 // Selection accent in the print designer and on Kanban boards
@@ -362,4 +377,71 @@ html[data-theme="erpgulf"] .builder-root {
 
 html[data-theme="erpgulf"] .kn-board {
   --kn-accent: #{$eg-red};
+}
+
+// ---------- Number cards ----------
+// A red icon tile on the left, the label over the value on the right. Number cards carry no
+// icon of their own, so four chart-style icons rotate across the row.
+
+$eg-icon-bars: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 21v-6M12 21V3M19 21V9'/%3E%3C/svg%3E";
+$eg-icon-trend: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 7h6v6'/%3E%3Cpath d='m22 7-8.5 8.5-5-5L2 17'/%3E%3C/svg%3E";
+$eg-icon-layers: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z'/%3E%3Cpath d='M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12'/%3E%3Cpath d='M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17'/%3E%3C/svg%3E";
+$eg-icon-pie: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z'/%3E%3Cpath d='M21.21 15.89A10 10 0 1 1 8 2.83'/%3E%3C/svg%3E";
+
+html[data-theme="erpgulf"] .widget.number-widget-box {
+  position: relative;
+  justify-content: center;
+  min-height: 84px;
+  padding: 16px 18px;
+  padding-inline-start: 82px;
+  background-color: $eg-card;
+  border: 1px solid $eg-border;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(27, 32, 48, 0.04);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+html[data-theme="erpgulf"] .widget.number-widget-box:hover {
+  border-color: rgba(217, 55, 43, 0.45);
+  box-shadow: 0 6px 18px rgba(27, 32, 48, 0.08);
+}
+
+html[data-theme="erpgulf"] .widget.number-widget-box::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 18px;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  transform: translateY(-50%);
+  border-radius: 13px;
+  background: url($eg-icon-bars) center / 24px 24px no-repeat,
+    linear-gradient(135deg, #e2493d 0%, $eg-red-dark 100%);
+  box-shadow: 0 4px 10px rgba(217, 55, 43, 0.28);
+}
+
+html[data-theme="erpgulf"] .widget.number-widget-box:nth-child(4n + 2)::before {
+  background-image: url($eg-icon-trend), linear-gradient(135deg, #e2493d 0%, $eg-red-dark 100%);
+}
+
+html[data-theme="erpgulf"] .widget.number-widget-box:nth-child(4n + 3)::before {
+  background-image: url($eg-icon-layers), linear-gradient(135deg, #e2493d 0%, $eg-red-dark 100%);
+}
+
+html[data-theme="erpgulf"] .widget.number-widget-box:nth-child(4n + 4)::before {
+  background-image: url($eg-icon-pie), linear-gradient(135deg, #e2493d 0%, $eg-red-dark 100%);
+}
+
+html[data-theme="erpgulf"] .widget.number-widget-box .widget-head .widget-title {
+  color: $eg-muted;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+html[data-theme="erpgulf"] .widget.number-widget-box .widget-body .number {
+  color: $eg-ink;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
