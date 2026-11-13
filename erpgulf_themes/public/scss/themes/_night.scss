@@ -159,13 +159,6 @@ html[data-theme-mode="claudionnight"] .kn-board {
 }
 
 /*search bar background*/
-[data-theme-mode="claudionnight"] #navbar-search {
-  /* border-color: #4e878f !important;
-  background: #4E878F; */
-  border-color: #384B4B !important;
-  background: #384B4B !important;
-
-}
 
 /*color for notification icon*/
 [data-theme-mode="claudionnight"] .es-icon.icon-sm {
@@ -541,15 +534,8 @@ html[data-theme-mode="claudionnight"] .kn-board {
 }
 
 /* For typed text inside the search input */
-[data-theme-mode="claudionnight"] #navbar-search {
-  color: var(--text-color2);
-}
 
 /* For the placeholder text */
-[data-theme-mode="claudionnight"] #navbar-search::placeholder {
-  color: #aab2bd !important;
-  opacity: 1;
-}
 
 [data-theme-mode="claudionnight"] .widget-control .btn.btn-sm.btn-secondary.small {
   background: none;
@@ -1986,11 +1972,4 @@ color: #ffffff !important;
 [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before,
 [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
   content: "";
-}
-
-/* The search box inside the command palette (Ctrl/Cmd+K) is the old top-bar search input:
-   drop the top-bar fill there so it reads as part of the dialog. */
-[data-theme-mode="claudionnight"] .modal #navbar-search {
-  background: transparent !important;
-  border-color: transparent !important;
 }

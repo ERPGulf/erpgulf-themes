@@ -109,16 +109,6 @@ html[data-theme="claudionday"] .kn-board {
 }
 
 /*search bar background*/
-[data-theme="claudionday"] #navbar-search {
-  color: #3b3636 !important;
-  background-color: var(--searchbar-color);
-  /* Dark green background */
-}
-
-[data-theme="claudionday"] #navbar-search::placeholder {
-  color: #aab2bd !important;
-  /* light gray placeholder */
-}
 
 [data-theme="claudionday"] #navbar-breadcrumbs > li > a::before {
   color: #333;
@@ -360,51 +350,11 @@ html[data-theme="claudionday"] .kn-board {
   padding-right: 50px !important; 
 } */
 
-[data-theme="claudionday"] #navbar-search {
-  color: #aab2bd !important;
-  width: 300px !important;
-  height: 32px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  transform: rotate(0deg) !important;
-  opacity: 1 !important;
-  border-radius: 8px !important;
-
-  padding: 4px 13px 4px 16px !important;
-
-  background-color: #114d56 !important;
-  border: 1px solid #114d56 !important;
-
-  background-image: url("/assets/erpgulf_themes/images/Search.svg"),
-    url("/assets/erpgulf_themes/images/g.svg") !important;
-
-  background-repeat: no-repeat, no-repeat !important;
-
-  background-position: 8px center, calc(100% - 6px) center !important;
-
-  background-size: 24px 24px, 39px 20px !important;
-
-  padding-left: 33px !important;
-  padding-right: 55px !important;
-}
-
 [data-theme="claudionday"] .search-icon {
   display: none !important;
 }
 
 /* For the placeholder text */
-[data-theme="claudionday"] #navbar-search::placeholder {
-  opacity: 1 !important;
-  font-family: $theme-font !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  /* "Regular" is not valid CSS */
-  font-size: 11px !important;
-  line-height: 130% !important;
-  letter-spacing: 0% !important;
-  color: #aab2bd !important;
-  vertical-align: middle !important;
-}
 /*sdfghjkl*/
 [data-theme="claudionday"] .notifications-icon .notifications-unseen {
   display: none !important;

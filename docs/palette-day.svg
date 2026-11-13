@@ -8,7 +8,7 @@
 <text x="176" y="84" font-size="12" font-weight="700" fill="#ffffff">Green</text>
 <text x="176" y="104" font-size="12" fill="#ffffff">#073C44</text>
 <rect x="316" y="60" width="140" height="80" rx="10" fill="#114d56" stroke="#d0d4dc"/>
-<text x="326" y="84" font-size="12" font-weight="700" fill="#ffffff">Search green</text>
+<text x="326" y="84" font-size="12" font-weight="700" fill="#ffffff">Divider green</text>
 <text x="326" y="104" font-size="12" fill="#ffffff">#114D56</text>
 <rect x="466" y="60" width="140" height="80" rx="10" fill="#15b08f" stroke="#d0d4dc"/>
 <text x="476" y="84" font-size="12" font-weight="700" fill="#1b2030">Teal</text>
@@ -61,52 +61,49 @@
 <rect x="166" y="336" width="140" height="80" rx="10" fill="#525454" stroke="#d0d4dc"/>
 <text x="176" y="360" font-size="12" font-weight="700" fill="#ffffff">Secondary</text>
 <text x="176" y="380" font-size="12" fill="#ffffff">#525454</text>
-<rect x="316" y="336" width="140" height="80" rx="10" fill="#aab2bd" stroke="#d0d4dc"/>
-<text x="326" y="360" font-size="12" font-weight="700" fill="#1b2030">Search text</text>
-<text x="326" y="380" font-size="12" fill="#1b2030">#AAB2BD</text>
-<rect x="466" y="336" width="140" height="80" rx="10" fill="#f7faf9" stroke="#d0d4dc"/>
-<text x="476" y="360" font-size="12" font-weight="700" fill="#1b2030">Gray 50</text>
-<text x="476" y="380" font-size="12" fill="#1b2030">#F7FAF9</text>
-<rect x="616" y="336" width="140" height="80" rx="10" fill="#f1f5f4" stroke="#d0d4dc"/>
-<text x="626" y="360" font-size="12" font-weight="700" fill="#1b2030">Gray 100</text>
-<text x="626" y="380" font-size="12" fill="#1b2030">#F1F5F4</text>
-<rect x="766" y="336" width="140" height="80" rx="10" fill="#e8ecea" stroke="#d0d4dc"/>
-<text x="776" y="360" font-size="12" font-weight="700" fill="#1b2030">Gray 200</text>
-<text x="776" y="380" font-size="12" fill="#1b2030">#E8ECEA</text>
-<rect x="16" y="428" width="140" height="80" rx="10" fill="#dfe3e1" stroke="#d0d4dc"/>
-<text x="26" y="452" font-size="12" font-weight="700" fill="#1b2030">Gray 300</text>
-<text x="26" y="472" font-size="12" fill="#1b2030">#DFE3E1</text>
-<rect x="166" y="428" width="140" height="80" rx="10" fill="#bcc5c2" stroke="#d0d4dc"/>
-<text x="176" y="452" font-size="12" font-weight="700" fill="#1b2030">Gray 400</text>
-<text x="176" y="472" font-size="12" fill="#1b2030">#BCC5C2</text>
-<rect x="316" y="428" width="140" height="80" rx="10" fill="#8f9a97" stroke="#d0d4dc"/>
-<text x="326" y="452" font-size="12" font-weight="700" fill="#1b2030">Gray 500</text>
-<text x="326" y="472" font-size="12" fill="#1b2030">#8F9A97</text>
-<rect x="466" y="428" width="140" height="80" rx="10" fill="#6d7775" stroke="#d0d4dc"/>
-<text x="476" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 600</text>
-<text x="476" y="472" font-size="12" fill="#ffffff">#6D7775</text>
-<rect x="616" y="428" width="140" height="80" rx="10" fill="#525454" stroke="#d0d4dc"/>
-<text x="626" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 700</text>
-<text x="626" y="472" font-size="12" fill="#ffffff">#525454</text>
-<rect x="766" y="428" width="140" height="80" rx="10" fill="#393a3a" stroke="#d0d4dc"/>
-<text x="776" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 800</text>
-<text x="776" y="472" font-size="12" fill="#ffffff">#393A3A</text>
-<rect x="16" y="520" width="140" height="80" rx="10" fill="#151616" stroke="#d0d4dc"/>
-<text x="26" y="544" font-size="12" font-weight="700" fill="#ffffff">Gray 900</text>
-<text x="26" y="564" font-size="12" fill="#ffffff">#151616</text>
-<rect x="166" y="520" width="140" height="80" rx="10" fill="#0b0c0c" stroke="#d0d4dc"/>
-<text x="176" y="544" font-size="12" font-weight="700" fill="#ffffff">Gray 950</text>
-<text x="176" y="564" font-size="12" fill="#ffffff">#0B0C0C</text>
-<rect x="316" y="520" width="140" height="80" rx="10" fill="#cfe7eb" stroke="#d0d4dc"/>
-<text x="326" y="544" font-size="12" font-weight="700" fill="#1b2030">Pill background</text>
-<text x="326" y="564" font-size="12" fill="#1b2030">#CFE7EB</text>
-<rect x="466" y="520" width="140" height="80" rx="10" fill="#a6c8cd" stroke="#d0d4dc"/>
-<text x="476" y="544" font-size="12" font-weight="700" fill="#1b2030">Pill border</text>
-<text x="476" y="564" font-size="12" fill="#1b2030">#A6C8CD</text>
-<rect x="616" y="520" width="140" height="80" rx="10" fill="#256a74" stroke="#d0d4dc"/>
-<text x="626" y="544" font-size="12" font-weight="700" fill="#ffffff">Pill text</text>
-<text x="626" y="564" font-size="12" fill="#ffffff">#256A74</text>
-<rect x="766" y="520" width="140" height="80" rx="10" fill="#7575ff" stroke="#d0d4dc"/>
-<text x="776" y="544" font-size="12" font-weight="700" fill="#ffffff">Chart violet</text>
-<text x="776" y="564" font-size="12" fill="#ffffff">#7575FF</text>
+<rect x="316" y="336" width="140" height="80" rx="10" fill="#f7faf9" stroke="#d0d4dc"/>
+<text x="326" y="360" font-size="12" font-weight="700" fill="#1b2030">Gray 50</text>
+<text x="326" y="380" font-size="12" fill="#1b2030">#F7FAF9</text>
+<rect x="466" y="336" width="140" height="80" rx="10" fill="#f1f5f4" stroke="#d0d4dc"/>
+<text x="476" y="360" font-size="12" font-weight="700" fill="#1b2030">Gray 100</text>
+<text x="476" y="380" font-size="12" fill="#1b2030">#F1F5F4</text>
+<rect x="616" y="336" width="140" height="80" rx="10" fill="#e8ecea" stroke="#d0d4dc"/>
+<text x="626" y="360" font-size="12" font-weight="700" fill="#1b2030">Gray 200</text>
+<text x="626" y="380" font-size="12" fill="#1b2030">#E8ECEA</text>
+<rect x="766" y="336" width="140" height="80" rx="10" fill="#dfe3e1" stroke="#d0d4dc"/>
+<text x="776" y="360" font-size="12" font-weight="700" fill="#1b2030">Gray 300</text>
+<text x="776" y="380" font-size="12" fill="#1b2030">#DFE3E1</text>
+<rect x="16" y="428" width="140" height="80" rx="10" fill="#bcc5c2" stroke="#d0d4dc"/>
+<text x="26" y="452" font-size="12" font-weight="700" fill="#1b2030">Gray 400</text>
+<text x="26" y="472" font-size="12" fill="#1b2030">#BCC5C2</text>
+<rect x="166" y="428" width="140" height="80" rx="10" fill="#8f9a97" stroke="#d0d4dc"/>
+<text x="176" y="452" font-size="12" font-weight="700" fill="#1b2030">Gray 500</text>
+<text x="176" y="472" font-size="12" fill="#1b2030">#8F9A97</text>
+<rect x="316" y="428" width="140" height="80" rx="10" fill="#6d7775" stroke="#d0d4dc"/>
+<text x="326" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 600</text>
+<text x="326" y="472" font-size="12" fill="#ffffff">#6D7775</text>
+<rect x="466" y="428" width="140" height="80" rx="10" fill="#525454" stroke="#d0d4dc"/>
+<text x="476" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 700</text>
+<text x="476" y="472" font-size="12" fill="#ffffff">#525454</text>
+<rect x="616" y="428" width="140" height="80" rx="10" fill="#393a3a" stroke="#d0d4dc"/>
+<text x="626" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 800</text>
+<text x="626" y="472" font-size="12" fill="#ffffff">#393A3A</text>
+<rect x="766" y="428" width="140" height="80" rx="10" fill="#151616" stroke="#d0d4dc"/>
+<text x="776" y="452" font-size="12" font-weight="700" fill="#ffffff">Gray 900</text>
+<text x="776" y="472" font-size="12" fill="#ffffff">#151616</text>
+<rect x="16" y="520" width="140" height="80" rx="10" fill="#0b0c0c" stroke="#d0d4dc"/>
+<text x="26" y="544" font-size="12" font-weight="700" fill="#ffffff">Gray 950</text>
+<text x="26" y="564" font-size="12" fill="#ffffff">#0B0C0C</text>
+<rect x="166" y="520" width="140" height="80" rx="10" fill="#cfe7eb" stroke="#d0d4dc"/>
+<text x="176" y="544" font-size="12" font-weight="700" fill="#1b2030">Pill background</text>
+<text x="176" y="564" font-size="12" fill="#1b2030">#CFE7EB</text>
+<rect x="316" y="520" width="140" height="80" rx="10" fill="#a6c8cd" stroke="#d0d4dc"/>
+<text x="326" y="544" font-size="12" font-weight="700" fill="#1b2030">Pill border</text>
+<text x="326" y="564" font-size="12" fill="#1b2030">#A6C8CD</text>
+<rect x="466" y="520" width="140" height="80" rx="10" fill="#256a74" stroke="#d0d4dc"/>
+<text x="476" y="544" font-size="12" font-weight="700" fill="#ffffff">Pill text</text>
+<text x="476" y="564" font-size="12" fill="#ffffff">#256A74</text>
+<rect x="616" y="520" width="140" height="80" rx="10" fill="#7575ff" stroke="#d0d4dc"/>
+<text x="626" y="544" font-size="12" font-weight="700" fill="#ffffff">Chart violet</text>
+<text x="626" y="564" font-size="12" fill="#ffffff">#7575FF</text>
 </svg>

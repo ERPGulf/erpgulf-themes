@@ -112,7 +112,7 @@ White page, deep-green top bar, teal accent.
 | --- | --- | --- | --- |
 | Deep green | `#042226` | `--main-color` | Top bar base colour |
 | Green | `#073C44` | — | Top bar, secondary buttons, mini chart bars |
-| Search green | `#114D56` | `--searchbar-color` | Search box in the top bar, top-bar divider |
+| Divider green | `#114D56` | `--searchbar-color` | Top-bar divider |
 | Teal | `#15B08F` | `--accent-color` | Accent: current sidebar item, current dock tile, avatar background, link hover, list-sidebar button hover |
 | Muted teal | `#4E878F` | — | Workspace edit / new buttons and their icons |
 | Soft green | `#9EC8B9` | `--text-highlight` | Highlight text on dark green |
@@ -145,7 +145,6 @@ White page, deep-green top bar, teal accent.
 | Label | `#393A3A` | — | Field labels, form tabs, input text, grid headers |
 | Copy | `#2A2B2B` | — | Widget subtitles, link text, onboarding copy |
 | Secondary | `#525454` | `--text-color2` | Secondary link text |
-| Search text | `#AAB2BD` | — | Search box text and placeholder |
 
 ### Grey ramp (drives Frappe's own surface, text and border tokens, so it colours every screen the theme has no specific rule for, including the new v16.50 screens)
 
@@ -177,7 +176,6 @@ White page, deep-green top bar, teal accent.
 | Element | Background | Text / icon | Border | Notes |
 | --- | --- | --- | --- | --- |
 | Top bar | `#073C44` | `#FFFFFF` | — | |
-| Search box (top bar) | `#114D56` | `#AAB2BD` | — | |
 | Page | `#FFFFFF` | `#151616` | — | |
 | Sidebar item, hover | `#DAEDE9` | `#042226` | — | Radius 6px |
 | Sidebar item, current | `#15B08F` | `#FFFFFF` | — | |
@@ -213,7 +211,6 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Deep green | `#042226` | — | Top bar |
 | Green | `#073C44` | `--main-color` | Link hover on dark, brand green |
 | Search grey-green | `#293532` | `--searchbar-color` | Search box base, widget borders |
-| Search fill | `#384B4B` | — | Search box background and border |
 | Teal | `#15B08F` | `--accent-color` | Accent: links, hover text and icons, focus border, primary-style buttons |
 | Bright teal | `#44C0A5` | — | Current sidebar item and current dock tile |
 | Muted teal | `#4E878F` | — | Button borders, button text and icons |
@@ -277,7 +274,6 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | Element | Background | Text / icon | Border | Notes |
 | --- | --- | --- | --- | --- |
 | Top bar | `#042226` | `#979999` | `#192422` | |
-| Search box (top bar) | `#384B4B` | — | `#384B4B` | |
 | Page and page header | `#0A1416` | `#979999` | — | One base colour for the whole page |
 | Forms, lists, cards | `#0A1416` | `#FFFFFF` | 1px `#313536` | Separated from the page by their border |
 | Sidebar item, hover | `#313634` | `#FFFFFF`, icon `#15B08F` | — | |
