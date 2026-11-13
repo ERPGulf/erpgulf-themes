@@ -162,6 +162,20 @@ html[data-theme="erpgulf"]
   color: #ffffff;
 }
 
+// Hover and keyboard focus: spell the text and icon colour out for the label and the icon as
+// well as the link, so nothing can leave dark text on the navy sidebar.
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.active-sidebar):hover .sidebar-item-label,
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.active-sidebar):hover .sidebar-item-icon,
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.active-sidebar):focus-within .item-anchor,
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.active-sidebar):focus-within .sidebar-item-label,
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.active-sidebar):focus-within .sidebar-item-icon {
+  color: #ffffff !important;
+}
+
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item:not(.active-sidebar):focus-within {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
 // The page you are on: red tile, white label and icon.
 html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar {
   background: $eg-red;
