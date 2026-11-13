@@ -8,6 +8,8 @@ Desk themes for Frappe / ERPNext **v16.5 and above**. Themes only: no doctypes, 
 | **Claudion Night** | Dark theme, built on Frappe's own dark mode |
 | **ERPGulf** | Navy shell and sidebar, light-grey page, white cards, red accent |
 
+**For designers:** [DESIGN.md](DESIGN.md) lists every colour (with hex codes), the fonts, and how each element is styled in each theme.
+
 ## Install
 
 ```bash

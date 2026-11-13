@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="444" viewBox="0 0 932 444" font-family="Helvetica, Arial, sans-serif">
+<rect width="932" height="444" fill="#ffffff"/>
+<text x="16" y="36" font-size="20" font-weight="700" fill="#1b2030">Claudion Night palette</text>
+<rect x="16" y="60" width="140" height="80" rx="10" fill="#042226" stroke="#d0d4dc"/>
+<text x="26" y="84" font-size="12" font-weight="700" fill="#ffffff">Deep green</text>
+<text x="26" y="104" font-size="12" fill="#ffffff">#042226</text>
+<rect x="166" y="60" width="140" height="80" rx="10" fill="#073c44" stroke="#d0d4dc"/>
+<text x="176" y="84" font-size="12" font-weight="700" fill="#ffffff">Green</text>
+<text x="176" y="104" font-size="12" fill="#ffffff">#073C44</text>
+<rect x="316" y="60" width="140" height="80" rx="10" fill="#293532" stroke="#d0d4dc"/>
+<text x="326" y="84" font-size="12" font-weight="700" fill="#ffffff">Search grey-green</text>
+<text x="326" y="104" font-size="12" fill="#ffffff">#293532</text>
+<rect x="466" y="60" width="140" height="80" rx="10" fill="#384b4b" stroke="#d0d4dc"/>
+<text x="476" y="84" font-size="12" font-weight="700" fill="#ffffff">Search fill</text>
+<text x="476" y="104" font-size="12" fill="#ffffff">#384B4B</text>
+<rect x="616" y="60" width="140" height="80" rx="10" fill="#15b08f" stroke="#d0d4dc"/>
+<text x="626" y="84" font-size="12" font-weight="700" fill="#1b2030">Teal</text>
+<text x="626" y="104" font-size="12" fill="#1b2030">#15B08F</text>
+<rect x="766" y="60" width="140" height="80" rx="10" fill="#44c0a5" stroke="#d0d4dc"/>
+<text x="776" y="84" font-size="12" font-weight="700" fill="#1b2030">Bright teal</text>
+<text x="776" y="104" font-size="12" fill="#1b2030">#44C0A5</text>
+<rect x="16" y="152" width="140" height="80" rx="10" fill="#4e878f" stroke="#d0d4dc"/>
+<text x="26" y="176" font-size="12" font-weight="700" fill="#ffffff">Muted teal</text>
+<text x="26" y="196" font-size="12" fill="#ffffff">#4E878F</text>
+<rect x="166" y="152" width="140" height="80" rx="10" fill="#9ec8b9" stroke="#d0d4dc"/>
+<text x="176" y="176" font-size="12" font-weight="700" fill="#1b2030">Soft green</text>
+<text x="176" y="196" font-size="12" fill="#1b2030">#9EC8B9</text>
+<rect x="316" y="152" width="140" height="80" rx="10" fill="#020d0f" stroke="#d0d4dc"/>
+<text x="326" y="176" font-size="12" font-weight="700" fill="#ffffff">Page black</text>
+<text x="326" y="196" font-size="12" fill="#ffffff">#020D0F</text>
+<rect x="466" y="152" width="140" height="80" rx="10" fill="#0a1416" stroke="#d0d4dc"/>
+<text x="476" y="176" font-size="12" font-weight="700" fill="#ffffff">Surface</text>
+<text x="476" y="196" font-size="12" fill="#ffffff">#0A1416</text>
+<rect x="616" y="152" width="140" height="80" rx="10" fill="#0d1211" stroke="#d0d4dc"/>
+<text x="626" y="176" font-size="12" font-weight="700" fill="#ffffff">Base</text>
+<text x="626" y="196" font-size="12" fill="#ffffff">#0D1211</text>
+<rect x="766" y="152" width="140" height="80" rx="10" fill="#1b2120" stroke="#d0d4dc"/>
+<text x="776" y="176" font-size="12" font-weight="700" fill="#ffffff">Raised</text>
+<text x="776" y="196" font-size="12" fill="#ffffff">#1B2120</text>
+<rect x="16" y="244" width="140" height="80" rx="10" fill="#2a2f2d" stroke="#d0d4dc"/>
+<text x="26" y="268" font-size="12" font-weight="700" fill="#ffffff">Hover</text>
+<text x="26" y="288" font-size="12" fill="#ffffff">#2A2F2D</text>
+<rect x="166" y="244" width="140" height="80" rx="10" fill="#313634" stroke="#d0d4dc"/>
+<text x="176" y="268" font-size="12" font-weight="700" fill="#ffffff">Sidebar hover</text>
+<text x="176" y="288" font-size="12" fill="#ffffff">#313634</text>
+<rect x="316" y="244" width="140" height="80" rx="10" fill="#313536" stroke="#d0d4dc"/>
+<text x="326" y="268" font-size="12" font-weight="700" fill="#ffffff">Border</text>
+<text x="326" y="288" font-size="12" fill="#ffffff">#313536</text>
+<rect x="466" y="244" width="140" height="80" rx="10" fill="#192422" stroke="#d0d4dc"/>
+<text x="476" y="268" font-size="12" font-weight="700" fill="#ffffff">Border dark</text>
+<text x="476" y="288" font-size="12" fill="#ffffff">#192422</text>
+<rect x="616" y="244" width="140" height="80" rx="10" fill="#1e2624" stroke="#d0d4dc"/>
+<text x="626" y="268" font-size="12" font-weight="700" fill="#ffffff">Border green</text>
+<text x="626" y="288" font-size="12" fill="#ffffff">#1E2624</text>
+<rect x="766" y="244" width="140" height="80" rx="10" fill="#525656" stroke="#d0d4dc"/>
+<text x="776" y="268" font-size="12" font-weight="700" fill="#ffffff">Checkbox border</text>
+<text x="776" y="288" font-size="12" fill="#ffffff">#525656</text>
+<rect x="16" y="336" width="140" height="80" rx="10" fill="#ccd0d0" stroke="#d0d4dc"/>
+<text x="26" y="360" font-size="12" font-weight="700" fill="#1b2030">Input border</text>
+<text x="26" y="380" font-size="12" fill="#1b2030">#CCD0D0</text>
+<rect x="166" y="336" width="140" height="80" rx="10" fill="#ffffff" stroke="#d0d4dc"/>
+<text x="176" y="360" font-size="12" font-weight="700" fill="#1b2030">White</text>
+<text x="176" y="380" font-size="12" fill="#1b2030">#FFFFFF</text>
+<rect x="316" y="336" width="140" height="80" rx="10" fill="#979999" stroke="#d0d4dc"/>
+<text x="326" y="360" font-size="12" font-weight="700" fill="#1b2030">Grey</text>
+<text x="326" y="380" font-size="12" fill="#1b2030">#979999</text>
+<rect x="466" y="336" width="140" height="80" rx="10" fill="#837a7a" stroke="#d0d4dc"/>
+<text x="476" y="360" font-size="12" font-weight="700" fill="#ffffff">Dim</text>
+<text x="476" y="380" font-size="12" fill="#ffffff">#837A7A</text>
+<rect x="616" y="336" width="140" height="80" rx="10" fill="#8895a5" stroke="#d0d4dc"/>
+<text x="626" y="360" font-size="12" font-weight="700" fill="#ffffff">Chart text</text>
+<text x="626" y="380" font-size="12" fill="#ffffff">#8895A5</text>
+<rect x="766" y="336" width="140" height="80" rx="10" fill="#7575ff" stroke="#d0d4dc"/>
+<text x="776" y="360" font-size="12" font-weight="700" fill="#ffffff">Chart violet</text>
+<text x="776" y="380" font-size="12" fill="#ffffff">#7575FF</text>
+</svg>

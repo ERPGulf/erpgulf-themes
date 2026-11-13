@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="444" viewBox="0 0 932 444" font-family="Helvetica, Arial, sans-serif">
+<rect width="932" height="444" fill="#ffffff"/>
+<text x="16" y="36" font-size="20" font-weight="700" fill="#1b2030">ERPGulf palette</text>
+<rect x="16" y="60" width="140" height="80" rx="10" fill="#1b2030" stroke="#d0d4dc"/>
+<text x="26" y="84" font-size="12" font-weight="700" fill="#ffffff">Navy</text>
+<text x="26" y="104" font-size="12" fill="#ffffff">#1B2030</text>
+<rect x="166" y="60" width="140" height="80" rx="10" fill="#262c3f" stroke="#d0d4dc"/>
+<text x="176" y="84" font-size="12" font-weight="700" fill="#ffffff">Navy soft</text>
+<text x="176" y="104" font-size="12" fill="#ffffff">#262C3F</text>
+<rect x="316" y="60" width="140" height="80" rx="10" fill="#d9372b" stroke="#d0d4dc"/>
+<text x="326" y="84" font-size="12" font-weight="700" fill="#ffffff">Red</text>
+<text x="326" y="104" font-size="12" fill="#ffffff">#D9372B</text>
+<rect x="466" y="60" width="140" height="80" rx="10" fill="#bf2d22" stroke="#d0d4dc"/>
+<text x="476" y="84" font-size="12" font-weight="700" fill="#ffffff">Red dark</text>
+<text x="476" y="104" font-size="12" fill="#ffffff">#BF2D22</text>
+<rect x="616" y="60" width="140" height="80" rx="10" fill="#fbeae8" stroke="#d0d4dc"/>
+<text x="626" y="84" font-size="12" font-weight="700" fill="#1b2030">Red soft</text>
+<text x="626" y="104" font-size="12" fill="#1b2030">#FBEAE8</text>
+<rect x="766" y="60" width="140" height="80" rx="10" fill="#aab1c2" stroke="#d0d4dc"/>
+<text x="776" y="84" font-size="12" font-weight="700" fill="#1b2030">Shell text</text>
+<text x="776" y="104" font-size="12" fill="#1b2030">#AAB1C2</text>
+<rect x="16" y="152" width="140" height="80" rx="10" fill="#f4f5f7" stroke="#d0d4dc"/>
+<text x="26" y="176" font-size="12" font-weight="700" fill="#1b2030">Page</text>
+<text x="26" y="196" font-size="12" fill="#1b2030">#F4F5F7</text>
+<rect x="166" y="152" width="140" height="80" rx="10" fill="#ffffff" stroke="#d0d4dc"/>
+<text x="176" y="176" font-size="12" font-weight="700" fill="#1b2030">Card</text>
+<text x="176" y="196" font-size="12" fill="#1b2030">#FFFFFF</text>
+<rect x="316" y="152" width="140" height="80" rx="10" fill="#e6e8ec" stroke="#d0d4dc"/>
+<text x="326" y="176" font-size="12" font-weight="700" fill="#1b2030">Border</text>
+<text x="326" y="196" font-size="12" fill="#1b2030">#E6E8EC</text>
+<rect x="466" y="152" width="140" height="80" rx="10" fill="#1b2030" stroke="#d0d4dc"/>
+<text x="476" y="176" font-size="12" font-weight="700" fill="#ffffff">Ink</text>
+<text x="476" y="196" font-size="12" fill="#ffffff">#1B2030</text>
+<rect x="616" y="152" width="140" height="80" rx="10" fill="#343a4a" stroke="#d0d4dc"/>
+<text x="626" y="176" font-size="12" font-weight="700" fill="#ffffff">Body</text>
+<text x="626" y="196" font-size="12" fill="#ffffff">#343A4A</text>
+<rect x="766" y="152" width="140" height="80" rx="10" fill="#6b7385" stroke="#d0d4dc"/>
+<text x="776" y="176" font-size="12" font-weight="700" fill="#ffffff">Muted</text>
+<text x="776" y="196" font-size="12" fill="#ffffff">#6B7385</text>
+<rect x="16" y="244" width="140" height="80" rx="10" fill="#f7f8fa" stroke="#d0d4dc"/>
+<text x="26" y="268" font-size="12" font-weight="700" fill="#1b2030">Gray 50</text>
+<text x="26" y="288" font-size="12" fill="#1b2030">#F7F8FA</text>
+<rect x="166" y="244" width="140" height="80" rx="10" fill="#f1f2f5" stroke="#d0d4dc"/>
+<text x="176" y="268" font-size="12" font-weight="700" fill="#1b2030">Gray 100</text>
+<text x="176" y="288" font-size="12" fill="#1b2030">#F1F2F5</text>
+<rect x="316" y="244" width="140" height="80" rx="10" fill="#e8eaee" stroke="#d0d4dc"/>
+<text x="326" y="268" font-size="12" font-weight="700" fill="#1b2030">Gray 200</text>
+<text x="326" y="288" font-size="12" fill="#1b2030">#E8EAEE</text>
+<rect x="466" y="244" width="140" height="80" rx="10" fill="#dcdfe5" stroke="#d0d4dc"/>
+<text x="476" y="268" font-size="12" font-weight="700" fill="#1b2030">Gray 300</text>
+<text x="476" y="288" font-size="12" fill="#1b2030">#DCDFE5</text>
+<rect x="616" y="244" width="140" height="80" rx="10" fill="#b8bdc9" stroke="#d0d4dc"/>
+<text x="626" y="268" font-size="12" font-weight="700" fill="#1b2030">Gray 400</text>
+<text x="626" y="288" font-size="12" fill="#1b2030">#B8BDC9</text>
+<rect x="766" y="244" width="140" height="80" rx="10" fill="#8b92a3" stroke="#d0d4dc"/>
+<text x="776" y="268" font-size="12" font-weight="700" fill="#ffffff">Gray 500</text>
+<text x="776" y="288" font-size="12" fill="#ffffff">#8B92A3</text>
+<rect x="16" y="336" width="140" height="80" rx="10" fill="#6b7385" stroke="#d0d4dc"/>
+<text x="26" y="360" font-size="12" font-weight="700" fill="#ffffff">Gray 600</text>
+<text x="26" y="380" font-size="12" fill="#ffffff">#6B7385</text>
+<rect x="166" y="336" width="140" height="80" rx="10" fill="#4a5163" stroke="#d0d4dc"/>
+<text x="176" y="360" font-size="12" font-weight="700" fill="#ffffff">Gray 700</text>
+<text x="176" y="380" font-size="12" fill="#ffffff">#4A5163</text>
+<rect x="316" y="336" width="140" height="80" rx="10" fill="#343a4a" stroke="#d0d4dc"/>
+<text x="326" y="360" font-size="12" font-weight="700" fill="#ffffff">Gray 800</text>
+<text x="326" y="380" font-size="12" fill="#ffffff">#343A4A</text>
+<rect x="466" y="336" width="140" height="80" rx="10" fill="#1b2030" stroke="#d0d4dc"/>
+<text x="476" y="360" font-size="12" font-weight="700" fill="#ffffff">Gray 900</text>
+<text x="476" y="380" font-size="12" fill="#ffffff">#1B2030</text>
+<rect x="616" y="336" width="140" height="80" rx="10" fill="#12151f" stroke="#d0d4dc"/>
+<text x="626" y="360" font-size="12" font-weight="700" fill="#ffffff">Gray 950</text>
+<text x="626" y="380" font-size="12" fill="#ffffff">#12151F</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="536" viewBox="0 0 932 536" font-family="Helvetica, Arial, sans-serif">
+<rect width="932" height="536" fill="#ffffff"/>
+<text x="16" y="36" font-size="20" font-weight="700" fill="#1b2030">Claudion Day palette</text>
+<rect x="16" y="60" width="140" height="80" rx="10" fill="#042226" stroke="#d0d4dc"/>
+<text x="26" y="84" font-size="12" font-weight="700" fill="#ffffff">Deep green</text>
+<text x="26" y="104" font-size="12" fill="#ffffff">#042226</text>
+<rect x="166" y="60" width="140" height="80" rx="10" fill="#073c44" stroke="#d0d4dc"/>
+<text x="176" y="84" font-size="12" font-weight="700" fill="#ffffff">Green</text>
+<text x="176" y="104" font-size="12" fill="#ffffff">#073C44</text>
+<rect x="316" y="60" width="140" height="80" rx="10" fill="#114d56" stroke="#d0d4dc"/>
+<text x="326" y="84" font-size="12" font-weight="700" fill="#ffffff">Search green</text>
+<text x="326" y="104" font-size="12" fill="#ffffff">#114D56</text>
+<rect x="466" y="60" width="140" height="80" rx="10" fill="#15b08f" stroke="#d0d4dc"/>
+<text x="476" y="84" font-size="12" font-weight="700" fill="#1b2030">Teal</text>
+<text x="476" y="104" font-size="12" fill="#1b2030">#15B08F</text>
+<rect x="616" y="60" width="140" height="80" rx="10" fill="#4e878f" stroke="#d0d4dc"/>
+<text x="626" y="84" font-size="12" font-weight="700" fill="#ffffff">Muted teal</text>
+<text x="626" y="104" font-size="12" fill="#ffffff">#4E878F</text>
+<rect x="766" y="60" width="140" height="80" rx="10" fill="#9ec8b9" stroke="#d0d4dc"/>
+<text x="776" y="84" font-size="12" font-weight="700" fill="#1b2030">Soft green</text>
+<text x="776" y="104" font-size="12" fill="#1b2030">#9EC8B9</text>
+<rect x="16" y="152" width="140" height="80" rx="10" fill="#ffffff" stroke="#d0d4dc"/>
+<text x="26" y="176" font-size="12" font-weight="700" fill="#1b2030">White</text>
+<text x="26" y="196" font-size="12" fill="#1b2030">#FFFFFF</text>
+<rect x="166" y="152" width="140" height="80" rx="10" fill="#f5f7f7" stroke="#d0d4dc"/>
+<text x="176" y="176" font-size="12" font-weight="700" fill="#1b2030">Mint grey</text>
+<text x="176" y="196" font-size="12" fill="#1b2030">#F5F7F7</text>
+<rect x="316" y="152" width="140" height="80" rx="10" fill="#f9fafb" stroke="#d0d4dc"/>
+<text x="326" y="176" font-size="12" font-weight="700" fill="#1b2030">Cool white</text>
+<text x="326" y="196" font-size="12" fill="#1b2030">#F9FAFB</text>
+<rect x="466" y="152" width="140" height="80" rx="10" fill="#f7faf9" stroke="#d0d4dc"/>
+<text x="476" y="176" font-size="12" font-weight="700" fill="#1b2030">Tab green-white</text>
+<text x="476" y="196" font-size="12" fill="#1b2030">#F7FAF9</text>
+<rect x="616" y="152" width="140" height="80" rx="10" fill="#edf2f0" stroke="#d0d4dc"/>
+<text x="626" y="176" font-size="12" font-weight="700" fill="#1b2030">Sidebar tint</text>
+<text x="626" y="196" font-size="12" fill="#1b2030">#EDF2F0</text>
+<rect x="766" y="152" width="140" height="80" rx="10" fill="#daede9" stroke="#d0d4dc"/>
+<text x="776" y="176" font-size="12" font-weight="700" fill="#1b2030">Pale teal</text>
+<text x="776" y="196" font-size="12" fill="#1b2030">#DAEDE9</text>
+<rect x="16" y="244" width="140" height="80" rx="10" fill="#dfe3e1" stroke="#d0d4dc"/>
+<text x="26" y="268" font-size="12" font-weight="700" fill="#1b2030">Border</text>
+<text x="26" y="288" font-size="12" fill="#1b2030">#DFE3E1</text>
+<rect x="166" y="244" width="140" height="80" rx="10" fill="#ebeded" stroke="#d0d4dc"/>
+<text x="176" y="268" font-size="12" font-weight="700" fill="#1b2030">Border light</text>
+<text x="176" y="288" font-size="12" fill="#1b2030">#EBEDED</text>
+<rect x="316" y="244" width="140" height="80" rx="10" fill="#eaecf0" stroke="#d0d4dc"/>
+<text x="326" y="268" font-size="12" font-weight="700" fill="#1b2030">Border cool</text>
+<text x="326" y="288" font-size="12" fill="#1b2030">#EAECF0</text>
+<rect x="466" y="244" width="140" height="80" rx="10" fill="#dcdede" stroke="#d0d4dc"/>
+<text x="476" y="268" font-size="12" font-weight="700" fill="#1b2030">Border grey</text>
+<text x="476" y="288" font-size="12" fill="#1b2030">#DCDEDE</text>
+<rect x="616" y="244" width="140" height="80" rx="10" fill="#151616" stroke="#d0d4dc"/>
+<text x="626" y="268" font-size="12" font-weight="700" fill="#ffffff">Ink</text>
+<text x="626" y="288" font-size="12" fill="#ffffff">#151616</text>
+<rect x="766" y="244" width="140" height="80" rx="10" fill="#393a3a" stroke="#d0d4dc"/>
+<text x="776" y="268" font-size="12" font-weight="700" fill="#ffffff">Label</text>
+<text x="776" y="288" font-size="12" fill="#ffffff">#393A3A</text>
+<rect x="16" y="336" width="140" height="80" rx="10" fill="#2a2b2b" stroke="#d0d4dc"/>
+<text x="26" y="360" font-size="12" font-weight="700" fill="#ffffff">Copy</text>
+<text x="26" y="380" font-size="12" fill="#ffffff">#2A2B2B</text>
+<rect x="166" y="336" width="140" height="80" rx="10" fill="#525454" stroke="#d0d4dc"/>
+<text x="176" y="360" font-size="12" font-weight="700" fill="#ffffff">Secondary</text>
+<text x="176" y="380" font-size="12" fill="#ffffff">#525454</text>
+<rect x="316" y="336" width="140" height="80" rx="10" fill="#aab2bd" stroke="#d0d4dc"/>
+<text x="326" y="360" font-size="12" font-weight="700" fill="#1b2030">Search text</text>
+<text x="326" y="380" font-size="12" fill="#1b2030">#AAB2BD</text>
+<rect x="466" y="336" width="140" height="80" rx="10" fill="#cfe7eb" stroke="#d0d4dc"/>
+<text x="476" y="360" font-size="12" font-weight="700" fill="#1b2030">Pill background</text>
+<text x="476" y="380" font-size="12" fill="#1b2030">#CFE7EB</text>
+<rect x="616" y="336" width="140" height="80" rx="10" fill="#a6c8cd" stroke="#d0d4dc"/>
+<text x="626" y="360" font-size="12" font-weight="700" fill="#1b2030">Pill border</text>
+<text x="626" y="380" font-size="12" fill="#1b2030">#A6C8CD</text>
+<rect x="766" y="336" width="140" height="80" rx="10" fill="#256a74" stroke="#d0d4dc"/>
+<text x="776" y="360" font-size="12" font-weight="700" fill="#ffffff">Pill text</text>
+<text x="776" y="380" font-size="12" fill="#ffffff">#256A74</text>
+<rect x="16" y="428" width="140" height="80" rx="10" fill="#7575ff" stroke="#d0d4dc"/>
+<text x="26" y="452" font-size="12" font-weight="700" fill="#ffffff">Chart violet</text>
+<text x="26" y="472" font-size="12" fill="#ffffff">#7575FF</text>
+</svg>
