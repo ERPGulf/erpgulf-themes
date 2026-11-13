@@ -29,8 +29,8 @@ $eg-shell-text: #aab1c2; // idle text and icons on the shell
   --gray-900: #1b2030;
   --gray-950: #12151f;
 
-  // Page and surfaces
-  --bg-color: #{$eg-page};
+  // Surfaces. The grey page colour is set on .main-section below, not through --bg-color,
+  // because Frappe also uses that token inside cards (sticky list columns, for example).
   --fg-color: #{$eg-card};
   --card-bg: #{$eg-card};
   --modal-bg: #{$eg-card};

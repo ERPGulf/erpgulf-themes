@@ -97,7 +97,7 @@ html[data-theme-mode="claudionnight"] .kn-board {
 }
 
 [data-theme-mode="claudionnight"] .page-container {
-  background-color: var(--background-light);
+  background-color: transparent;
 }
 /* [data-theme-mode="claudionnight"] .form-page {
   width: 1030px;
@@ -110,7 +110,7 @@ html[data-theme-mode="claudionnight"] .kn-board {
 } */
 
 [data-theme-mode="claudionnight"] .page-head.flex {
-  background-color: var(--background-light);
+  background-color: var(--surface-base);
   /* Pure black */
   color: var(--text-light);
   /* White text */
@@ -118,13 +118,13 @@ html[data-theme-mode="claudionnight"] .kn-board {
 }
 
 [data-theme-mode="claudionnight"] .page-container {
-  background-color: #020d0f;
+  background-color: transparent;
 }
 [data-theme-mode="claudionnight"] .page-head {
-  background-color: #020d0f !important;
+  background-color: var(--surface-base) !important;
 }
 [data-theme-mode="claudionnight"] .layout-main-section {
-  background-color: #0a1416;
+  background-color: transparent;
   /* width: 1030px;
   height: 583px;
   gap: 10px;
@@ -740,7 +740,7 @@ html[data-theme-mode="claudionnight"] .kn-board {
 }
 
 [data-theme-mode="claudionnight"] .widget-head .widget-label::before {
-  content: "";
+  content: none;
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -1883,4 +1883,109 @@ color: #ffffff !important;
 [data-theme-mode="claudionnight"] .dock .dock-item.active {
   background-color: #44c0a5;
   color: #020d0f;
+}
+
+/* ---------- Fixes from review on a v16.50 site ---------- */
+
+/* Inputs joined to a button (list filters): let the input share the row instead of taking all of it. */
+[data-theme-mode="claudionnight"] .input-group > .form-control {
+  width: 1%;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+/* Widget labels: reserve the icon slot only for labels that have an icon. */
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Item"])::before,
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Customer"])::before,
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Supplier"])::before,
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Sales Invoice"])::before,
+[data-theme-mode="claudionnight"] .widget-head .widget-label:has(span[title="Leaderboard"])::before,
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Item"])::before,
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Material Request"])::before,
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Purchase Order"])::before,
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Purchase Analytics"])::before,
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Purchase Order Analysis"])::before,
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Dashboard"])::before,
+[data-theme-mode="claudionnight"] .widget-label:has(span[title="Learn Procurement"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Order"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Analytics"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Point of Sale"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Sales Management"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Delivery Note"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Inventory Management"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Receipt"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Balance"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Entry"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Ledger"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset Category"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Fixed Asset Register"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Creator"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Stock Report"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Forecasting"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Job Card"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Manufacturing"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Plant Floor"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Planning Report"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Work Order"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Non Conformance"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Action"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Goal"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Inspection"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Procedure"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Review"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Project Management"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project Billing Summary"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Task"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Timesheet"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Issue"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Maintenance Visit"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Service Level Agreement"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Permission Manager"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Role"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Profile"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Type"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blog Post"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blogger"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Form"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Page"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Website Settings"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Lead"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Opportunity"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customer"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Assignment Rule"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="File"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Import Data"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="ToDo"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Settings"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Buying Settings"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Global Defaults"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Settings"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Selling Settings"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Settings"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="System Settings"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Browse Apps"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Client Script"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customize Form"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="DocType"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Report"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Server Script"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Format Builder"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard "])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Zatca Setup Wizard"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Receivable"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Cost Center"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Journal Entry"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Payment Entry"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="POS Invoice"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Chart of Accounts"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Invoice"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before,
+[data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
+  content: "";
 }

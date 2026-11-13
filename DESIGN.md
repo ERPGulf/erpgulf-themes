@@ -113,7 +113,7 @@ White page, deep-green top bar, teal accent.
 | Deep green | `#042226` | `--main-color` | Top bar base colour |
 | Green | `#073C44` | — | Top bar, secondary buttons, mini chart bars |
 | Search green | `#114D56` | `--searchbar-color` | Search box in the top bar, top-bar divider |
-| Teal | `#15B08F` | `--accent-color` | Accent: sidebar hover and current item, current dock tile, avatar background, link hover, list-sidebar button hover |
+| Teal | `#15B08F` | `--accent-color` | Accent: current sidebar item, current dock tile, avatar background, link hover, list-sidebar button hover |
 | Muted teal | `#4E878F` | — | Workspace edit / new buttons and their icons |
 | Soft green | `#9EC8B9` | `--text-highlight` | Highlight text on dark green |
 
@@ -126,7 +126,7 @@ White page, deep-green top bar, teal accent.
 | Cool white | `#F9FAFB` | — | Form and list card background, table header cells |
 | Tab green-white | `#F7FAF9` | — | Form tab strip and form page background |
 | Sidebar tint | `#EDF2F0` | — | Form sidebar menu and stats |
-| Pale teal | `#DAEDE9` | `--background-color3 / --box2-color` | Dock tile hover, active skipped onboarding step, tinted boxes |
+| Pale teal | `#DAEDE9` | `--background-color3 / --box2-color` | Sidebar item and dock tile hover, active skipped onboarding step, tinted boxes |
 
 ### Borders
 
@@ -179,7 +179,8 @@ White page, deep-green top bar, teal accent.
 | Top bar | `#073C44` | `#FFFFFF` | — | |
 | Search box (top bar) | `#114D56` | `#AAB2BD` | — | |
 | Page | `#FFFFFF` | `#151616` | — | |
-| Sidebar item, hover and current | `#15B08F` | `#FFFFFF` | — | Radius 6px |
+| Sidebar item, hover | `#DAEDE9` | `#042226` | — | Radius 6px |
+| Sidebar item, current | `#15B08F` | `#FFFFFF` | — | |
 | Dock tile, hover | `#DAEDE9` | `#042226` | — | |
 | Dock tile, current module | `#15B08F` | `#FFFFFF` | — | |
 | Avatar (initials) | `#15B08F` | `#FFFFFF` | — | |
@@ -222,8 +223,8 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 
 | Name | Hex | In code | Used for |
 | --- | --- | --- | --- |
-| Page black | `#020D0F` | — | Page container, page header, input background; text on the bright-teal sidebar item |
-| Surface | `#0A1416` | — | Main content area, forms, list header and rows |
+| Page black | `#020D0F` | — | Input background; text on the bright-teal sidebar item and dock tile |
+| Surface | `#0A1416` | — | Page, page header, forms, list header and rows |
 | Base | `#0D1211` | `--background-light` | Base background, shown before the page finishes loading |
 | Raised | `#1B2120` | `--background-color3` | Onboarding steps, raised boxes |
 | Hover | `#2A2F2D` | — | List row hover, link hover background |
@@ -277,8 +278,8 @@ Near-black green surfaces, teal accent. Runs on top of Frappe's own dark theme, 
 | --- | --- | --- | --- | --- |
 | Top bar | `#042226` | `#979999` | `#192422` | |
 | Search box (top bar) | `#384B4B` | — | `#384B4B` | |
-| Page container and header | `#020D0F` | `#979999` | — | |
-| Main content, forms, lists | `#0A1416` | `#FFFFFF` | 1px `#313536` | |
+| Page and page header | `#0A1416` | `#979999` | — | One base colour for the whole page |
+| Forms, lists, cards | `#0A1416` | `#FFFFFF` | 1px `#313536` | Separated from the page by their border |
 | Sidebar item, hover | `#313634` | `#FFFFFF`, icon `#15B08F` | — | |
 | Sidebar item, current | `#44C0A5` | `#020D0F` | — | |
 | Dock tile, hover | `#313634` | `#FFFFFF` | — | |
