@@ -7,8 +7,8 @@ MODULE = "ERPGulf Themes"
 
 # User.desk_theme options. Frappe lowercases the value into <html data-theme-mode="...">,
 # which is what the stylesheets and theme_switcher.js are keyed on.
-THEMES = ("ClaudionDay", "ClaudionNight", "ERPGulf")
-DEFAULT_THEME = "ClaudionDay"
+THEMES = ("ERPGulf", "ClaudionDay", "ClaudionNight")
+DEFAULT_THEME = "ERPGulf"
 
 
 @frappe.whitelist()

@@ -5,9 +5,9 @@ frappe.provide("frappe.ui");
 // base  = the Frappe theme it runs on top of (<html data-theme>). Claudion Night runs on
 //         Frappe's own dark theme, so every screen and script that checks for "dark" follows it.
 const THEMES = [
+  { name: "erpgulf", value: "ERPGulf", label: "ERPGulf", info: "ERPGulf theme" },
   { name: "claudionday", value: "ClaudionDay", label: "Claudion Day", info: "Claudion light theme" },
   { name: "claudionnight", value: "ClaudionNight", label: "Claudion Night", info: "Claudion dark theme", base: "dark" },
-  { name: "erpgulf", value: "ERPGulf", label: "ERPGulf", info: "ERPGulf theme" },
 ];
 
 const base_theme = (mode) => {

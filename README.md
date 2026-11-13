@@ -4,9 +4,9 @@ Desk themes for Frappe / ERPNext **v16.50 and above** (the release with the dock
 
 | Theme | Look |
 | --- | --- |
+| **ERPGulf** (default) | Navy shell and sidebar, light-grey page, white cards, red accent |
 | **Claudion Day** | Light theme, dark-green navigation, teal accent |
 | **Claudion Night** | Dark theme, built on Frappe's own dark mode |
-| **ERPGulf** | Navy shell and sidebar, light-grey page, white cards, red accent |
 
 **For designers:** [DESIGN.md](DESIGN.md) lists every colour (with hex codes), the fonts, and how each element is styled in each theme.
 
@@ -22,7 +22,7 @@ bench build --app erpgulf_themes
 
 - Replaces the theme switcher (user menu → Toggle Theme, or `Ctrl+Shift+G`) with these three themes.
 - Saves each user's choice on the server (`User.desk_theme`), so it follows them across browsers.
-- Sets **Claudion Day** as the default for new users. To change the default, edit `DEFAULT_THEME` in `erpgulf_themes/theme.py`.
+- Sets **ERPGulf** as the default: on install every user gets it, and so does each new user. To change the default, edit `DEFAULT_THEME` in `erpgulf_themes/theme.py`.
 - On install and on every migrate, users who are on any other theme are moved to the default. A user's own choice among the three is never overwritten.
 
 Frappe's built-in Light, Dark and Automatic themes are not offered while the app is installed.
