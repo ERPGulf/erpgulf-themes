@@ -35,7 +35,7 @@
 }
 
 /* Solid buttons from Frappe's component library. Buttons with their own colour are left alone. */
-[data-theme="claudionday"] .es-button[data-variant="solid"]:not([data-theme]) {
+html[data-theme="claudionday"] .es-button[data-variant="solid"]:not([data-theme]) {
   --bt-solid-bg: #073c44;
   --bt-solid-bg-hover: #042226;
   --bt-solid-bg-active: #042226;
@@ -79,58 +79,58 @@ html[data-theme="claudionday"] .kn-board {
   /* Text color for various elements */
 }
 
-[data-theme="claudionday"] .page-container,
-[data-theme="claudionday"] .layout-main-section {
+html[data-theme="claudionday"] .page-container,
+html[data-theme="claudionday"] .layout-main-section {
   background-color: var(--background-light);
   /* White base */
 }
 
-[data-theme="claudionday"] .layout-main-section {
+html[data-theme="claudionday"] .layout-main-section {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-[data-theme="claudionday"] .avatar-frame {
+html[data-theme="claudionday"] .avatar-frame {
   background-color: var(--accent-color) !important;
   /* Replace with your desired color */
   color: #ffffff !important;
   /* Optional: change letter color */
 }
 
-[data-theme="claudionday"] .navbar {
+html[data-theme="claudionday"] .navbar {
   background-color: #073c44 !important;
 }
 
 /*upper sidebar*/
-[data-theme="claudionday"] header.navbar.navbar-expand {
+html[data-theme="claudionday"] header.navbar.navbar-expand {
   background-color: var(--main-color);
   color: var(--background-light);
 }
 
 /*search bar background*/
 
-[data-theme="claudionday"] #navbar-breadcrumbs > li > a::before {
+html[data-theme="claudionday"] #navbar-breadcrumbs > li > a::before {
   color: #333;
   -webkit-text-stroke: 0.5px white;
 }
 
 /*color for notification icon*/
-[data-theme="claudionday"] .es-icon.icon-sm {
+html[data-theme="claudionday"] .es-icon.icon-sm {
   stroke: white !important;
 }
 
 /*color for help icon*/
-[data-theme="claudionday"] .dropdown-help .nav-link span {
+html[data-theme="claudionday"] .dropdown-help .nav-link span {
   color: var(--background-light);
   /* or any color you prefer */
 }
 
-[data-theme="claudionday"] .dropdown-help .es-icon.icon-xs {
+html[data-theme="claudionday"] .dropdown-help .es-icon.icon-xs {
   stroke: var(--background-light) !important;
 }
 
-[data-theme="claudionday"] .widget.onboarding-widget-box {
+html[data-theme="claudionday"] .widget.onboarding-widget-box {
   font-family: $theme-font !important;
   background-color: var(--box-color);
   /* Light minty background */
@@ -141,23 +141,23 @@ html[data-theme="claudionday"] .kn-board {
   padding: 20px;
 }
 
-[data-theme="claudionday"] .onboarding-step.skipped.active {
+html[data-theme="claudionday"] .onboarding-step.skipped.active {
   background-color: var(--background-color3);
 }
 
 /* green tick mark*/
-/* [data-theme="claudionday"] .step-index svg {
+/* html[data-theme="claudionday"] .step-index svg {
   background-color: var(--accent-color);
   border-radius: 100px;
 } */
 
-/* [data-theme="claudionday"] .step-index svg use {
+/* html[data-theme="claudionday"] .step-index svg use {
   fill: var(--background-light);
 } */
 
 /* text color*/
 
-[data-theme="claudionday"] .onboarding-step-body h1 {
+html[data-theme="claudionday"] .onboarding-step-body h1 {
   font-family: $theme-font;
   font-weight: 700 !important;
   font-size: 15px !important;
@@ -166,7 +166,7 @@ html[data-theme="claudionday"] .kn-board {
   color: #020d0f;
 }
 
-[data-theme="claudionday"] .onboarding-step-body p {
+html[data-theme="claudionday"] .onboarding-step-body p {
   font-family: $theme-font;
   font-weight: 400;
   font-size: 12px !important;
@@ -177,7 +177,7 @@ html[data-theme="claudionday"] .kn-board {
 
 /*points*/
 
-[data-theme="claudionday"] .onboarding-step-body ul {
+html[data-theme="claudionday"] .onboarding-step-body ul {
   color: #2a2b2b;
   font-family: $theme-font;
   font-weight: 400;
@@ -185,11 +185,11 @@ html[data-theme="claudionday"] .kn-board {
   line-height: 120% !important;
   letter-spacing: 0%;
 }
-[data-theme="claudionday"] .onboarding-step-body ul li::marker {
+html[data-theme="claudionday"] .onboarding-step-body ul li::marker {
   color: var(--accent-color);
 }
 /*show customer list text color*/
-/* [data-theme="claudionday"] .onboarding-step-body a {
+/* html[data-theme="claudionday"] .onboarding-step-body a {
 
   width: 130px !important;
   height: 17px !important;
@@ -210,27 +210,27 @@ html[data-theme="claudionday"] .kn-board {
   color: #094D3E !important;
 } */
 
-/* [data-theme="claudionday"] .onboarding-step-footer p {
+/* html[data-theme="claudionday"] .onboarding-step-footer p {
   margin: 0 !important;
   padding: 0 !important;
   display: inline-block !important;
 } */
 
 /*button*/
-/* [data-theme="claudionday"] .onboarding-step-footer .btn.btn-default {
+/* html[data-theme="claudionday"] .onboarding-step-footer .btn.btn-default {
   background-color: #094d3e; 
   color: var(--background-light); 
   border: none; 
   font-weight: 500;
 } */
 
-[data-theme="claudionday"] .shortcut-widget-box {
+html[data-theme="claudionday"] .shortcut-widget-box {
   background-color: #ffffff !important;
   /* Force white background */
 }
 
 /*line*/
-[data-theme="claudionday"] .widget.spacer {
+html[data-theme="claudionday"] .widget.spacer {
   background-color: transparent !important;
   /* Remove green background */
   border-top: 1px solid #e0e0e0 !important;
@@ -242,23 +242,23 @@ html[data-theme="claudionday"] .kn-board {
   border-radius: 0;
 }
 
-[data-theme="claudionday"] .links-widget-box {
+html[data-theme="claudionday"] .links-widget-box {
   background-color: var(--box3-color);
 }
 
-[data-theme="claudionday"] .links-widget-box .link-text {
+html[data-theme="claudionday"] .links-widget-box .link-text {
   color: var(--text-color2);
   /* Dark green */
 }
 
-[data-theme="claudionday"] .links-widget-box .link-text:hover {
+html[data-theme="claudionday"] .links-widget-box .link-text:hover {
   color: var(--accent-color);
   /* Teal on hover */
   text-decoration: underline;
   /* Optional: underline on hover */
 }
 
-[data-theme="claudionday"] .widget.links-widget-box .es-icon {
+html[data-theme="claudionday"] .widget.links-widget-box .es-icon {
   width: 16px !important;
   height: 16px !important;
   margin-left: auto !important;
@@ -268,8 +268,8 @@ html[data-theme="claudionday"] .kn-board {
   flex-shrink: 0 !important;
   /* prevent shrinking */
 }
-/* [data-theme="claudionday"] .link-item.onboard-spotlight .link-text { */
-[data-theme="claudionday"] span.link-text {
+/* html[data-theme="claudionday"] .link-item.onboard-spotlight .link-text { */
+html[data-theme="claudionday"] span.link-text {
   color: #2a2b2b !important;
   /* width: 133px !important; */
   margin-top: 0 !important;
@@ -285,10 +285,10 @@ html[data-theme="claudionday"] .kn-board {
   display: inline-block !important;
 }
 
-/* [data-theme="claudionday"] .widget-title {
+/* html[data-theme="claudionday"] .widget-title {
   margin-bottom: 4px !important;
 } */
-/* [data-theme="claudionday"] .widget-title span.ellipsis {
+/* html[data-theme="claudionday"] .widget-title span.ellipsis {
   font-family: $theme-font !important;
   font-weight: 700 !important; 
   font-style: normal !important; 
@@ -297,36 +297,36 @@ html[data-theme="claudionday"] .kn-board {
   letter-spacing: 0 !important;
   color: #020d0f !important;
 } */
-[data-theme="claudionday"] .widget-subtitle {
+html[data-theme="claudionday"] .widget-subtitle {
   display: none !important;
 }
 /* Hover effect for sidebar items */
-[data-theme="claudionday"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover {
+html[data-theme="claudionday"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover {
   background-color: var(--background-color3);
   border-radius: 6px;
 }
 
 /* Change the text/icon color on hover */
-[data-theme="claudionday"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-label,
-[data-theme="claudionday"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-icon {
+html[data-theme="claudionday"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-label,
+html[data-theme="claudionday"] .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover .sidebar-item-icon {
   color: var(--main-color);
   /* White text on hover */
   /* SVG icon color */
 }
 
 /* Selected item background */
-[data-theme="claudionday"] .standard-sidebar-item.active-sidebar {
+html[data-theme="claudionday"] .standard-sidebar-item.active-sidebar {
   background-color: var(--accent-color);
 }
 
 /* Selected item text/icon color */
-[data-theme="claudionday"] .standard-sidebar-item.active-sidebar .sidebar-item-label,
-[data-theme="claudionday"] .standard-sidebar-item.active-sidebar .icon:focus {
+html[data-theme="claudionday"] .standard-sidebar-item.active-sidebar .sidebar-item-label,
+html[data-theme="claudionday"] .standard-sidebar-item.active-sidebar .icon:focus {
   color: var(--background-light);
 }
 
 /* 
-[data-theme="claudionday"] #navbar-search {
+html[data-theme="claudionday"] #navbar-search {
   width: 300px !important;
   height: 32px !important;
   display: flex !important;
@@ -350,17 +350,17 @@ html[data-theme="claudionday"] .kn-board {
   padding-right: 50px !important; 
 } */
 
-[data-theme="claudionday"] .search-icon {
+html[data-theme="claudionday"] .search-icon {
   display: none !important;
 }
 
 /* For the placeholder text */
 /*sdfghjkl*/
-[data-theme="claudionday"] .notifications-icon .notifications-unseen {
+html[data-theme="claudionday"] .notifications-icon .notifications-unseen {
   display: none !important;
 }
 
-[data-theme="claudionday"] .notifications-icon {
+html[data-theme="claudionday"] .notifications-icon {
   width: 20px;
   /* adjust as needed */
   height: 20px;
@@ -374,7 +374,7 @@ html[data-theme="claudionday"] .kn-board {
   display: inline-block;
 }
 
-[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small {
+html[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small {
   background: none;
   border: none;
   font-size: 20px;
@@ -386,7 +386,7 @@ html[data-theme="claudionday"] .kn-board {
   position: relative;
 }
 /*dfghjkl;lkjhgkl*/
-[data-theme="claudionday"] .widget-subtitle {
+html[data-theme="claudionday"] .widget-subtitle {
   font-family: $theme-font;
   font-weight: 400;
   font-size: 12px;
@@ -396,7 +396,7 @@ html[data-theme="claudionday"] .kn-board {
 }
 
 /* Hide the original text */
-/* [data-theme="claudionday"]
+/* html[data-theme="claudionday"]
   .widget-control
   .btn.btn-sm.btn-secondary.small::before {
   content: "";
@@ -413,7 +413,7 @@ html[data-theme="claudionday"] .kn-board {
   transform: translate(-50%, -50%); 
 } */
 
-[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small {
+html[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small {
   width: 36px !important;
   height: 36px !important;
 
@@ -433,24 +433,24 @@ html[data-theme="claudionday"] .kn-board {
   border: none !important; /* optional: remove default border */
   cursor: pointer !important;
 }
-[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small::after {
+html[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small::after {
   content: "";
   display: none;
 }
 
 /* Optional: hide original content using visibility */
-[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small {
+html[data-theme="claudionday"] .widget-control .btn.btn-sm.btn-secondary.small {
   color: transparent !important;
   /* Hides the text while preserving dimensions */
 }
 
-[data-theme="claudionday"] a.onboarding-step.skipped {
+html[data-theme="claudionday"] a.onboarding-step.skipped {
   background-color: transparent !important;
   /* Or set your preferred color */
 }
 
 /* General icon styling */
-[data-theme="claudionday"] .widget-head .widget-label {
+html[data-theme="claudionday"] .widget-head .widget-label {
   display: flex;
   /* Align icon and text in a row */
   align-items: center;
@@ -462,14 +462,14 @@ html[data-theme="claudionday"] .kn-board {
   gap: 2px;
 }
 
-[data-theme="claudionday"] .shortcut-widget-box .widget-label {
+html[data-theme="claudionday"] .shortcut-widget-box .widget-label {
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start;
   gap: 8px;
 }
 
-[data-theme="claudionday"] .widget-head .widget-label::before {
+html[data-theme="claudionday"] .widget-head .widget-label::before {
   content: none;
   display: inline-block;
   width: 24px;
@@ -480,9 +480,7 @@ html[data-theme="claudionday"] .kn-board {
   flex-shrink: 0;
 }
 
-[data-theme="claudionday"] .widget.links-widget-box {
-  width: 245.67px !important;
-  height: 271px !important;
+html[data-theme="claudionday"] .widget.links-widget-box {
   display: flex !important;
   flex-direction: column !important;
   gap: 10px !important;
@@ -496,9 +494,7 @@ html[data-theme="claudionday"] .kn-board {
   background-color: #f5f7f7 !important;
 }
 
-[data-theme="claudionday"] button.btn-new-workspace {
-  width: 69px !important;
-  height: 36px !important;
+html[data-theme="claudionday"] button.btn-new-workspace {
 
   display: inline-flex !important;
   align-items: center !important;
@@ -526,16 +522,14 @@ html[data-theme="claudionday"] .kn-board {
 
   cursor: pointer !important;
 }
-[data-theme="claudionday"] .btn.btn-default.ellipsis.btn-new-workspace .es-icon {
+html[data-theme="claudionday"] .btn.btn-default.ellipsis.btn-new-workspace .es-icon {
   width: 16px !important;
   height: 16px !important;
   stroke: #4e878f !important;
   flex-shrink: 0 !important;
 }
 
-[data-theme="claudionday"] .btn-edit-workspace {
-  width: 65px !important;
-  height: 36px !important;
+html[data-theme="claudionday"] .btn-edit-workspace {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -556,79 +550,79 @@ html[data-theme="claudionday"] .kn-board {
   opacity: 1 !important;
   transform: rotate(0deg) !important;
 }
-[data-theme="claudionday"] .btn-edit-workspace .es-icon {
+html[data-theme="claudionday"] .btn-edit-workspace .es-icon {
   width: 16px !important;
   height: 16px !important;
   stroke: #4e878f !important;
   flex-shrink: 0 !important;
 }
 
-[data-theme="claudionday"] .widget.links-widget-box .link-content {
+html[data-theme="claudionday"] .widget.links-widget-box .link-content {
   display: flex !important;
   align-items: center !important;
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Item"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Item"])::before {
   background-image: url("/assets/erpgulf_themes/images/item.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Material Request"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Material Request"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226436.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226436%20(1).svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Analytics"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Analytics"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226437%20(1).svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order Analysis"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order Analysis"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226437.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226436%20(2).svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Procurement"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Procurement"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226436%20(3).svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customer"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customer"])::before {
   background-image: url("/assets/erpgulf_themes/images/customer.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Supplier"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Supplier"])::before {
   background-image: url("/assets/erpgulf_themes/images/B-supplier.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Invoice"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Invoice"])::before {
   background-image: url("/assets/erpgulf_themes/images/B-Sales-inv.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Leaderboard"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Leaderboard"])::before {
   background-image: url("/assets/erpgulf_themes/images/B-leaderboard.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Order"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Order"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226436.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Analytics"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Analytics"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226436%20(1).svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Point of Sale"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Point of Sale"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226437%20(1).svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Sales Management"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Sales Management"])::before {
   background-image: url("/assets/erpgulf_themes/images/Frame%202147226436.svg");
 }
 
-[data-theme="claudionday"] .indicator-pill.no-indicator-dot.ellipsis.green {
+html[data-theme="claudionday"] .indicator-pill.no-indicator-dot.ellipsis.green {
   width: 100%;
   background-color: #cfe7eb;
   border: 1px solid #a6c8cd;
@@ -639,17 +633,17 @@ html[data-theme="claudionday"] .kn-board {
 
 /* Remove connector for last step */
 
-[data-theme="claudionday"] .navbar .vertical-bar {
+html[data-theme="claudionday"] .navbar .vertical-bar {
   border-right: 1px solid #114d56;
   height: 24px;
   margin: auto;
   margin-left: var(--margin-md);
 }
 
-[data-theme="claudionday"] .vertical-bar {
+html[data-theme="claudionday"] .vertical-bar {
 }
 
-[data-theme="claudionday"] ul.navbar-nav {
+html[data-theme="claudionday"] ul.navbar-nav {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -658,36 +652,36 @@ html[data-theme="claudionday"] .kn-board {
 
 /* Apply only to widget titles under the Reports & Masters section */
 
-[data-theme="claudionday"] .widget-control svg.es-icon-es-line.icon-xs {
+html[data-theme="claudionday"] .widget-control svg.es-icon-es-line.icon-xs {
   stroke: black !important;
 }
 
-[data-theme="claudionday"] .form-tabs-list {
+html[data-theme="claudionday"] .form-tabs-list {
   background-color: #f7faf9;
   color: #393a3a !important;
 }
 
-[data-theme="claudionday"] .std-form-layout > .form-layout > .form-page {
+html[data-theme="claudionday"] .std-form-layout > .form-layout > .form-page {
   background-color: #f7faf9;
   border: 1px solid #dfe3e1;
   color: #393a3a !important;
 }
 
-/* [data-theme="claudionday"] .awesomplete {
+/* html[data-theme="claudionday"] .awesomplete {
   padding:4px 9px 4px 12px;
 } */
 /* 
-[data-theme="claudionday"] .awesomplete .form-control [type="text"] {
+html[data-theme="claudionday"] .awesomplete .form-control [type="text"] {
 padding-left: 20px !important;
 width: 156px !important;
 height: 16px !important;
 } */
 
-[data-theme="claudionday"] .awesomplete .search-icon {
+html[data-theme="claudionday"] .awesomplete .search-icon {
   padding-left: 10px !important;
 }
 
-[data-theme="claudionday"] .form-control {
+html[data-theme="claudionday"] .form-control {
   width: 100%;
   /* It will adapt to container */
   height: 38px;
@@ -705,7 +699,7 @@ height: 16px !important;
   /* light gray border */
 }
 
-[data-theme="claudionday"] #navbar-breadcrumbs a {
+html[data-theme="claudionday"] #navbar-breadcrumbs a {
   color: white !important;
   /* Or you can give a specific hex code */
   text-decoration: none;
@@ -713,12 +707,12 @@ height: 16px !important;
   /* (optional) make it slightly bolder */
 }
 
-[data-theme="claudionday"] #navbar-breadcrumbs a::before {
+html[data-theme="claudionday"] #navbar-breadcrumbs a::before {
   color: #ffffff !important;
   fill: #ffffff !important;
 }
 
-[data-theme="claudionday"] .form-control {
+html[data-theme="claudionday"] .form-control {
   background: rgba(255, 255, 255, 1) !important;
   /* width: 472px !important; */
   height: 38px !important;
@@ -729,7 +723,7 @@ height: 16px !important;
   border: 1px solid rgba(204, 208, 208, 1) !important;
 }
 
-[data-theme="claudionday"] .btn-default {
+html[data-theme="claudionday"] .btn-default {
   /* Box and Layout */
   /* width: 84px;
   height: 29px;
@@ -750,24 +744,24 @@ height: 16px !important;
   color: #151616;
 }
 
-[data-theme="claudionday"] .es-icon.icon-sm {
+html[data-theme="claudionday"] .es-icon.icon-sm {
   stroke: #151616 !important;
 }
 
-[data-theme="claudionday"] .icon .icon-sm {
+html[data-theme="claudionday"] .icon .icon-sm {
   stroke: #151616 !important;
 }
 
-[data-theme="claudionday"] .list-sidebar-button:hover {
+html[data-theme="claudionday"] .list-sidebar-button:hover {
   background-color: #15b08f;
   color: white;
 }
 
-[data-theme="claudionday"] .icon-xs:hover {
+html[data-theme="claudionday"] .icon-xs:hover {
   stroke: white;
 }
 
-/* [data-theme="claudionday"] a[data-label="Assigned To"] ::before {
+/* html[data-theme="claudionday"] a[data-label="Assigned To"] ::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -780,7 +774,7 @@ height: 16px !important;
   vertical-align: middle;
 } */
 
-/* [data-theme="claudionday"] button.btn-default[data-label="Duplicate"] {
+/* html[data-theme="claudionday"] button.btn-default[data-label="Duplicate"] {
   width: 79px;
   height: 29px;
   gap: 4px;
@@ -806,15 +800,15 @@ height: 16px !important;
   color: #151616;
 } */
 
-/* [data-theme="claudionday"] .form-control {
+/* html[data-theme="claudionday"] .form-control {
   background-color: rgba(22, 92, 100, 0.85) !important;
   border: none !important;
   color: #ffffff !important;
   height: 32px !important;
   border-radius: 8px !important;
 } */
-[data-theme="claudionday"] .control-label,
-[data-theme="claudionday"] .grid-heading-row {
+html[data-theme="claudionday"] .control-label,
+html[data-theme="claudionday"] .grid-heading-row {
   color: #393a3a;
   /* updated from screenshot */
   font-family: $theme-font;
@@ -829,27 +823,27 @@ height: 16px !important;
   /* 0% letter spacing */
 }
 
-[data-theme="claudionday"] ul.list-unstyled.sidebar-menu.text-muted {
+html[data-theme="claudionday"] ul.list-unstyled.sidebar-menu.text-muted {
   background-color: #edf2f0;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid#E1E5E4;
 }
 
-[data-theme="claudionday"] ul.list-unstyled.sidebar-menu.form-sidebar-stats {
+html[data-theme="claudionday"] ul.list-unstyled.sidebar-menu.form-sidebar-stats {
   background-color: #edf2f0;
   padding: 10px;
   border-radius: 8px;
 }
 
 /* Hide the original  dot */
-[data-theme="claudionday"] .timeline-dot {
+html[data-theme="claudionday"] .timeline-dot {
   background: none !important;
   border: none !important;
 }
 
 /* Add your custom icon */
-[data-theme="claudionday"] .timeline-dot::before {
+html[data-theme="claudionday"] .timeline-dot::before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -864,15 +858,15 @@ height: 16px !important;
   top: 0;
 }
 
-[data-theme="claudionday"] .new-timeline::before {
+html[data-theme="claudionday"] .new-timeline::before {
   display: none !important;
 }
 
-[data-theme="claudionday"] .timeline-item::before {
+html[data-theme="claudionday"] .timeline-item::before {
   display: none !important;
 }
 
-[data-theme="claudionday"] .timeline-dot::after {
+html[data-theme="claudionday"] .timeline-dot::after {
   content: "";
   display: block;
   width: 2px;
@@ -883,7 +877,7 @@ height: 16px !important;
   background-size: contain;
 }
 
-[data-theme="claudionday"] .btn.btn-secondary {
+html[data-theme="claudionday"] .btn.btn-secondary {
   background-color: #073c44;
   color: #ffffff;
   stroke:white;
@@ -892,88 +886,88 @@ height: 16px !important;
 
 }
 
-/* [data-theme="claudionday"] .col-md-4 {
+/* html[data-theme="claudionday"] .col-md-4 {
   flex: 0 0 22.1002222%;
   max-width:33.33333333%;
 
 } */
 
-[data-theme="claudionday"] .layout-main-section.frappe-card {
+html[data-theme="claudionday"] .layout-main-section.frappe-card {
   background-color: #f9fafb;
   border: 1px solid #eaecf0 !important;
   /* Replace with your desired hex code */
 }
 
-[data-theme="claudionday"] .page-form {
+html[data-theme="claudionday"] .page-form {
   background-color: #f9fafb !important;
   /* Replace with your desired color */
 }
 
-[data-theme="claudionday"] .layout-main-section .frappe-list .result {
+html[data-theme="claudionday"] .layout-main-section .frappe-list .result {
   background-color: white !important;
   color: #393a3a;
   /* replace with your desired color */
 }
 
-[data-theme="claudionday"] .list-subject a {
+html[data-theme="claudionday"] .list-subject a {
   font-family: $theme-font;
   font-size: 14px;
   font-weight: 400;
 }
 
-[data-theme="claudionday"] .indicator-pill.blue,
-[data-theme="claudionday"] .indicator-pill-right.blue,
-[data-theme="claudionday"] .indicator-pill-round.blue {
+html[data-theme="claudionday"] .indicator-pill.blue,
+html[data-theme="claudionday"] .indicator-pill-right.blue,
+html[data-theme="claudionday"] .indicator-pill-round.blue {
   background-color: #cfe7eb !important;
   color: #256a74 !important;
   border: #a6c8cd;
 }
 
 /* 
-[data-theme="claudionday"] .layout-main-section{
+html[data-theme="claudionday"] .layout-main-section{
   margin: 0px !important;
   padding: 0px !important;
 } */
 
-[data-theme="claudionday"] .ce-block__content {
+html[data-theme="claudionday"] .ce-block__content {
   font-family: $theme-font !important;
 }
 
-/* [data-theme="claudionday"] .ce-block__content[onboarding_name="Home"]{
+/* html[data-theme="claudionday"] .ce-block__content[onboarding_name="Home"]{
   margin: 0px !important;
   padding: 0px !important;
 } */
 
-[data-theme="claudionday"] .ce-block__content .ce-header .h4 b {
+html[data-theme="claudionday"] .ce-block__content .ce-header .h4 b {
   font-family: $theme-font !important;
   font-size: 20px !important;
   font-weight: 600 !important;
 }
 
-[data-theme="claudionday"] .ce-block .col-xs-12.ce-block__content {
+html[data-theme="claudionday"] .ce-block .col-xs-12.ce-block__content {
   background-color: #f5f7f7 !important;
   border: 1px solid #dcdede !important;
 }
 
-[data-theme="claudionday"] .ce-block.col-xs-12.col-sm-6.col-md-4 .ce-block__content .widget .links-widget-box {
+html[data-theme="claudionday"] .ce-block.col-xs-12.col-sm-6.col-md-4 .ce-block__content .widget .links-widget-box {
   padding: 0px !important;
 }
 
-/* [data-theme="claudionday"] .widget-title .ellipsis {
+/* html[data-theme="claudionday"] .widget-title .ellipsis {
   font-size: 18px !important;
   font-weight: 700 !important;
   line-height: 120%;
   letter-spacing: 0%;
 } */
 
-/* [data-theme="claudionday"] .shortcut-widget-box .widget-title .ellipsis {
+/* html[data-theme="claudionday"] .shortcut-widget-box .widget-title .ellipsis {
   font-family: $theme-font !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 120%;
   letter-spacing: 0%;
 } */
-[data-theme="claudionday"] .widget.number-widget-box .widget-label .widget-title span.ellipsis {
+html[data-theme="claudionday"] .widget.number-widget-box .widget-label .widget-title span.ellipsis {
   font-family: $theme-font !important;
   font-weight: 400 !important;
   font-style: normal !important;
@@ -983,7 +977,7 @@ height: 16px !important;
   color: #151616 !important;
   text-transform: none !important;
 }
-[data-theme="claudionday"] .card-stats.grey-stat .percentage-stat-area {
+html[data-theme="claudionday"] .card-stats.grey-stat .percentage-stat-area {
   font-family: $theme-font !important;
   font-weight: 400 !important;
   font-style: normal !important;
@@ -993,382 +987,382 @@ height: 16px !important;
   color: #151616 !important;
 }
 
-[data-theme="claudionday"] .item-anchor {
+html[data-theme="claudionday"] .item-anchor {
   gap: 8px;
 }
 
-[data-theme="claudionday"] .flex {
+html[data-theme="claudionday"] .flex {
   font-family: $theme-font !important;
 }
 
-[data-theme="claudionday"] .standard-sidebar-section .nested-container [title="Public"] {
+html[data-theme="claudionday"] .standard-sidebar-section .nested-container [title="Public"] {
   font-family: $theme-font !important;
 }
 
-[data-theme="claudionday"] .list-sidebar .overlay-sidebar .hidden-xs .hidden-sm .opened {
+html[data-theme="claudionday"] .list-sidebar .overlay-sidebar .hidden-xs .hidden-sm .opened {
   font-family: $theme-font !important;
 }
 
-[data-theme="claudionday"] .ce-block__content .widget .dashboard-widget-box {
+html[data-theme="claudionday"] .ce-block__content .widget .dashboard-widget-box {
   background-color: #f5f7f7 !important;
   border: 1px solid #dcdede !important;
 }
 
 /* Change the line (path) color to purple */
-[data-theme="claudionday"] .line-graph-path {
+html[data-theme="claudionday"] .line-graph-path {
   stroke: #7575ff !important;
 }
 
-/* [data-theme="claudionday"] .region-fill {
+/* html[data-theme="claudionday"] .region-fill {
   fill: url(#path-fill-gradient-purple-custom) !important;
 } */
 
-[data-theme="claudionday"] .graph-svg-tip .tooltip-legend {
+html[data-theme="claudionday"] .graph-svg-tip .tooltip-legend {
   background: #7575ff !important;
 }
 
 /* Additional fallback if .region-fill doesn't respond to URL gradient */
-[data-theme="claudionday"] .region-fill {
+html[data-theme="claudionday"] .region-fill {
   fill: #7575ff1a !important;
   /* 10% opacity */
 }
 
 /* Adjusting stroke width or line style */
-[data-theme="claudionday"] .line-graph-path {
+html[data-theme="claudionday"] .line-graph-path {
   stroke-width: 2px !important;
 }
 
 /* Smooth curve if it's SVG path-based */
-[data-theme="claudionday"] .line-graph-path {
+html[data-theme="claudionday"] .line-graph-path {
   stroke-linejoin: round !important;
   stroke-linecap: round !important;
 }
 
-[data-theme="claudionday"] rect.bar.mini {
+html[data-theme="claudionday"] rect.bar.mini {
   fill: #073c44 !important;
 }
 
 /* ******************************************************************************** */
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Delivery Note"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Delivery Note"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sto-delivery-note.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Inventory Management"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Inventory Management"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sto-learn-inventory.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Receipt"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Receipt"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sto-purchase-receipt.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Balance"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Balance"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sto-stock-balance.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Entry"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Entry"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sto-stock-entry.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Ledger"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Ledger"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sto-stock-ledger.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-asst-asset.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset Category"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset Category"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-asst-asset-category.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Fixed Asset Register"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Fixed Asset Register"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-asst-fixed-asset-reg.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Creator"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Creator"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-bom-creator.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Stock Report"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Stock Report"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-bom-stock-report.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-bom.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Forecasting"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Forecasting"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-forecasting.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Job Card"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Job Card"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-job-card.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Manufacturing"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Manufacturing"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-learn-manufacturing.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Plant Floor"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Plant Floor"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-plant-floor.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-production-plan.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Planning Report"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Planning Report"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-production-planning-report.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Work Order"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Work Order"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-man-work-order.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Non Conformance"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Non Conformance"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-q-no-conformance.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-q-production-plan.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Action"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Action"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-q-qaction.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Goal"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Goal"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-q-qgoal.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Inspection"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Inspection"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-q-qinspection.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Procedure"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Procedure"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-q-qprocedure.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Review"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Review"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-q-qreview.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Project Management"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Project Management"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-pro-learn-project-management.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project Billing Summary"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project Billing Summary"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-pro-project-billing-summary.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-pro-project.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Task"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Task"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-pro-task.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Timesheet"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Timesheet"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-pro-timesheet.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Issue"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Issue"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sup-issue.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Maintenance Visit"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Maintenance Visit"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sup-maintenance-visit.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Service Level Agreement"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Service Level Agreement"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-sup-service-level-agreement.png");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Permission Manager"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Permission Manager"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-us-permission-manager.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Role"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Role"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-us-role.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Profile"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Profile"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-us-user-profile.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Type"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Type"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-us-user-type.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-us-user.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blog Post"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blog Post"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-web-blog-post.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blogger"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blogger"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-web-blogger.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Form"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Form"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-web-web-form.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Page"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Page"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-web-web-page.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Website Settings"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Website Settings"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-web-website-settings.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Lead"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Lead"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-crm-lead.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Opportunity"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Opportunity"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-crm-opportunity.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Assignment Rule"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Assignment Rule"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-to-assignment-rule.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="File"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="File"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-to-file.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Import Data"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Import Data"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-to-import-data.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="ToDo"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="ToDo"])::before {
   background-image: url("/assets/erpgulf_themes/images/d-to-todo.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Settings"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Settings"])::before {
   background-image: url("/assets/erpgulf_themes/images/d--acc-sett.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Buying Settings"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Buying Settings"])::before {
   background-image: url("/assets/erpgulf_themes/images/d--buying-sett.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Global Defaults"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Global Defaults"])::before {
   background-image: url("/assets/erpgulf_themes/images/d--global-defaults.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Settings"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Settings"])::before {
   background-image: url("/assets/erpgulf_themes/images/d--print-sett.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Selling Settings"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Selling Settings"])::before {
   background-image: url("/assets/erpgulf_themes/images/d--selling-sett.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Settings"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Settings"])::before {
   background-image: url("/assets/erpgulf_themes/images/d--stock-sett.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="System Settings"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="System Settings"])::before {
   background-image: url("/assets/erpgulf_themes/images/d--syst-sett.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Browse Apps"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Browse Apps"])::before {
   background-image: url("/assets/erpgulf_themes/images/BROWSE.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Client Script"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Client Script"])::before {
   background-image: url("/assets/erpgulf_themes/images/build-client-script.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customize Form"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customize Form"])::before {
   background-image: url("/assets/erpgulf_themes/images/build-customize-form.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="DocType"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="DocType"])::before {
   background-image: url("/assets/erpgulf_themes/images/build-doctype.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Report"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Report"])::before {
   background-image: url("/assets/erpgulf_themes/images/build-report.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Server Script"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Server Script"])::before {
   background-image: url("/assets/erpgulf_themes/images/build-server-script.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Format Builder"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Format Builder"])::before {
   background-image: url("/assets/erpgulf_themes/images/build-pfb.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard "])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard "])::before {
   background-image: url("/assets/erpgulf_themes/images/a-db.svg") !important;
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Zatca Setup Wizard"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Zatca Setup Wizard"])::before {
   background-image: url("/assets/erpgulf_themes/images/a-wizard.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Receivable"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Receivable"])::before {
   background-image: url("/assets/erpgulf_themes/images/A-accnts-recvbl.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Cost Center"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Cost Center"])::before {
   background-image: url("/assets/erpgulf_themes/images/A-cost-center.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Journal Entry"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Journal Entry"])::before {
   background-image: url("/assets/erpgulf_themes/images/A-journal-entry.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Payment Entry"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Payment Entry"])::before {
   background-image: url("/assets/erpgulf_themes/images/A-payment-entry.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="POS Invoice"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="POS Invoice"])::before {
   background-image: url("/assets/erpgulf_themes/images/A-pos-invoice.svg") !important;
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Chart of Accounts"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Chart of Accounts"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-chart-of-accnts.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Invoice"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Invoice"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-pur-inv.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-general-ledger.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-trial-balance.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-learn-accounting.svg") !important;
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-general-ledger.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-trial-balance.svg");
 }
 
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
   background-image: url("/assets/erpgulf_themes/images/z-learn-accounting.svg") !important;
 }
 
 /*********************************ICONS END***********************************/
 
-[data-theme="claudionday"] .widget.number-widget-box .count {
+html[data-theme="claudionday"] .widget.number-widget-box .count {
   width: 16px !important;
   height: 20px !important;
   font-family: $theme-font !important;
@@ -1379,7 +1373,7 @@ height: 16px !important;
   color: black !important;
 }
 
-[data-theme="claudionday"] .card-container {
+html[data-theme="claudionday"] .card-container {
   display: flex;
   flex-wrap: wrap;
   column-gap: 4px !important;
@@ -1389,30 +1383,28 @@ height: 16px !important;
   margin-bottom: 20px;
 }
 
-[data-theme="claudionday"] .frappe-control[data-fieldname="zatca_list"] table {
+html[data-theme="claudionday"] .frappe-control[data-fieldname="zatca_list"] table {
   border-radius: 12px !important;
 
   background: #ffffff !important;
   border-bottom: 1px solid #eaecf0 !important;
 }
 
-[data-theme="claudionday"] .frappe-control[data-fieldname="zatca_list"] td {
+html[data-theme="claudionday"] .frappe-control[data-fieldname="zatca_list"] td {
   color: black !important;
   font-family: $theme-font !important;
 }
 
-[data-theme="claudionday"] .frappe-control[data-fieldname="zatca_list"] td a {
+html[data-theme="claudionday"] .frappe-control[data-fieldname="zatca_list"] td a {
   color: black !important;
 }
 
-[data-theme="claudionday"] th {
+html[data-theme="claudionday"] th {
   color: black !important;
   background: #f9fafb;
 }
 
-[data-theme="claudionday"] .badge-danger {
-  width: 88px !important;
-  height: 20px !important;
+html[data-theme="claudionday"] .badge-danger {
   gap: 4px !important;
   border-radius: 9999px !important;
   border-width: 1px !important;
@@ -1436,7 +1428,7 @@ height: 16px !important;
   justify-content: center !important;
 }
 
-[data-theme="claudionday"] .filter-chart.btn.btn-xs.pull-right {
+html[data-theme="claudionday"] .filter-chart.btn.btn-xs.pull-right {
   width: 36px !important;
   height: 28px !important;
   padding: 0 !important;
@@ -1451,10 +1443,10 @@ height: 16px !important;
   display: inline-block !important;
 }
 
-[data-theme="claudionday"] .filter-chart.btn.btn-xs.pull-right svg {
+html[data-theme="claudionday"] .filter-chart.btn.btn-xs.pull-right svg {
   display: none !important;
 }
-[data-theme="claudionday"] .chart-actions .chart-menu {
+html[data-theme="claudionday"] .chart-actions .chart-menu {
   width: 36px !important;
   height: 28px !important;
   padding: 0 !important;
@@ -1473,10 +1465,10 @@ height: 16px !important;
   display: inline-block !important;
 }
 
-[data-theme="claudionday"] .chart-actions .chart-menu svg {
+html[data-theme="claudionday"] .chart-actions .chart-menu svg {
   display: none !important;
 }
-[data-theme="claudionday"] .card-actions.dropdown.pull-right > a {
+html[data-theme="claudionday"] .card-actions.dropdown.pull-right > a {
   width: 16px !important;
   height: 16px !important;
   display: inline-block !important;
@@ -1493,20 +1485,20 @@ height: 16px !important;
   text-decoration: none !important;
 }
 
-[data-theme="claudionday"] .card-actions.dropdown.pull-right > a * {
+html[data-theme="claudionday"] .card-actions.dropdown.pull-right > a * {
   display: none !important;
 }
-[data-theme="claudionday"] .widget-label:not(.shortcut-widget-box .widget-label)::before {
+html[data-theme="claudionday"] .widget-label:not(.shortcut-widget-box .widget-label)::before {
   display: none !important;
   content: none !important;
 }
 
 /*****************FINAL************************/
 
-[data-theme="claudionday"] a.btn.list-sidebar-button:hover,
-[data-theme="claudionday"] a.btn.list-sidebar-button.select,
+html[data-theme="claudionday"] a.btn.list-sidebar-button:hover,
+html[data-theme="claudionday"] a.btn.list-sidebar-button.select,
 
-[data-theme="claudionday"] a.btn.list-sidebar-button[data-label="Assigned To"]
+html[data-theme="claudionday"] a.btn.list-sidebar-button[data-label="Assigned To"]
 {
   width: 198px;
   height: 28px;
@@ -1522,7 +1514,7 @@ height: 16px !important;
   color:#ffffff;
 }
 
-[data-theme="claudionday"] a.btn.list-sidebar-button{
+html[data-theme="claudionday"] a.btn.list-sidebar-button{
   width: 198px;
   height: 28px;
   gap: 10px;
@@ -1536,15 +1528,15 @@ height: 16px !important;
 }
 
 /* Hide only the SVG that uses #icon-add */
-[data-theme="claudionday"] .btn.icon-btn svg.icon.icon-sm use[href="#icon-plus"] {
+html[data-theme="claudionday"] .btn.icon-btn svg.icon.icon-sm use[href="#icon-plus"] {
   display: none; 
 }
 
-[data-theme="claudionday"] .btn.icon-btn svg.icon.icon-sm:has(use[href="#icon-plus"]) {
+html[data-theme="claudionday"] .btn.icon-btn svg.icon.icon-sm:has(use[href="#icon-plus"]) {
   display: none !important;
 }
 
-[data-theme="claudionday"] .btn.icon-btn:has(svg.icon.icon-sm use[href="#icon-plus"]) {
+html[data-theme="claudionday"] .btn.icon-btn:has(svg.icon.icon-sm use[href="#icon-plus"]) {
   background-image: url("/assets/erpgulf_themes/images/add.svg") !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -1558,12 +1550,12 @@ height: 16px !important;
 }
 
 /* ---------- Dock (the module rail in v16.50+) ---------- */
-[data-theme="claudionday"] .dock .dock-item:hover {
+html[data-theme="claudionday"] .dock .dock-item:hover {
   background-color: var(--background-color3);
   color: var(--main-color);
 }
 
-[data-theme="claudionday"] .dock .dock-item.active {
+html[data-theme="claudionday"] .dock .dock-item.active {
   background-color: var(--accent-color);
   color: var(--background-light);
 }
@@ -1571,102 +1563,102 @@ height: 16px !important;
 /* ---------- Fixes from review on a v16.50 site ---------- */
 
 /* Inputs joined to a button (list filters): let the input share the row instead of taking all of it. */
-[data-theme="claudionday"] .input-group > .form-control {
+html[data-theme="claudionday"] .input-group > .form-control {
   width: 1%;
   min-width: 0;
   flex: 1 1 auto;
 }
 
 /* Widget labels: reserve the icon slot only for labels that have an icon. */
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Item"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Material Request"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Analytics"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order Analysis"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Procurement"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customer"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Supplier"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Invoice"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Leaderboard"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Order"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Analytics"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Point of Sale"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Sales Management"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Delivery Note"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Inventory Management"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Receipt"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Balance"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Entry"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Ledger"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset Category"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Fixed Asset Register"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Creator"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Stock Report"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Forecasting"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Job Card"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Manufacturing"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Plant Floor"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Planning Report"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Work Order"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Non Conformance"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Action"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Goal"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Inspection"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Procedure"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Review"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Project Management"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project Billing Summary"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Task"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Timesheet"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Issue"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Maintenance Visit"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Service Level Agreement"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Permission Manager"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Role"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Profile"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Type"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blog Post"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blogger"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Form"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Page"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Website Settings"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Lead"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Opportunity"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Assignment Rule"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="File"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Import Data"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="ToDo"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Settings"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Buying Settings"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Global Defaults"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Settings"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Selling Settings"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Settings"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="System Settings"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Browse Apps"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Client Script"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customize Form"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="DocType"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Report"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Server Script"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Format Builder"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard "])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Zatca Setup Wizard"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Receivable"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Cost Center"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Journal Entry"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Payment Entry"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="POS Invoice"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Chart of Accounts"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Invoice"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before,
-[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Item"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Material Request"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Analytics"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Order Analysis"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Procurement"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customer"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Supplier"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Invoice"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Leaderboard"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Order"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Sales Analytics"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Point of Sale"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Sales Management"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Delivery Note"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Inventory Management"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Receipt"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Balance"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Entry"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Ledger"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Asset Category"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Fixed Asset Register"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Creator"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM Stock Report"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="BOM"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Forecasting"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Job Card"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Manufacturing"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Plant Floor"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Plan"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Production Planning Report"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Work Order"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Non Conformance"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Action"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Goal"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Inspection"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Procedure"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Quality Review"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Project Management"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project Billing Summary"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Project"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Task"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Timesheet"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Issue"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Maintenance Visit"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Service Level Agreement"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Permission Manager"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Role"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Profile"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User Type"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="User"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blog Post"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Blogger"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Form"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Web Page"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Website Settings"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Lead"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Opportunity"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Assignment Rule"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="File"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Import Data"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="ToDo"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Settings"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Buying Settings"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Global Defaults"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Settings"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Selling Settings"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Stock Settings"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="System Settings"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Browse Apps"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Client Script"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Customize Form"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="DocType"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Report"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Server Script"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Print Format Builder"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Dashboard "])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Zatca Setup Wizard"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Accounts Receivable"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Cost Center"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Journal Entry"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Payment Entry"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="POS Invoice"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Chart of Accounts"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Purchase Invoice"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="General Ledger"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before,
+html[data-theme="claudionday"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
   content: "";
 }

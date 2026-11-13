@@ -22,8 +22,10 @@ $theme-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courie
   font-display: swap;
 }
 
-// Each theme's root selector. Night is keyed on data-theme-mode because its data-theme is "dark".
-$theme-themes: '[data-theme="claudionday"]', '[data-theme-mode="claudionnight"]', '[data-theme="erpgulf"]';
+// Each theme's root selector, anchored to <html> so that an element elsewhere on the page that
+// happens to carry the same attribute can never switch a theme's rules on for its contents.
+// Night is keyed on data-theme-mode because its data-theme is "dark".
+$theme-themes: 'html[data-theme="claudionday"]', 'html[data-theme-mode="claudionnight"]', 'html[data-theme="erpgulf"]';
 
 @each $root in $theme-themes {
   #{$root} * {

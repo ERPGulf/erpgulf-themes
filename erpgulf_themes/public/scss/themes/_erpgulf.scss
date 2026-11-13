@@ -76,23 +76,22 @@ $eg-shell-text: #aab1c2; // idle text and icons on the shell
 // ---------- Shell: navy frame, page as a rounded panel ----------
 
 html[data-theme="erpgulf"],
-[data-theme="erpgulf"] body {
+html[data-theme="erpgulf"] body {
   background-color: $eg-navy;
 }
 
-[data-theme="erpgulf"] .main-section {
+html[data-theme="erpgulf"] .main-section {
   background-color: $eg-page;
   border-start-start-radius: 22px;
   border-end-start-radius: 22px;
 }
 
 // Workspaces: no white column behind the widgets, so cards sit directly on the grey page.
-[data-theme="erpgulf"][data-page-route="Workspaces"] .layout-main-section:not(.edit-mode),
-[data-theme="erpgulf"] [data-page-route="Workspaces"] .layout-main-section:not(.edit-mode) {
+html[data-theme="erpgulf"] [data-page-route="Workspaces"] .layout-main-section:not(.edit-mode) {
   background-color: transparent;
 }
 
-[data-theme="erpgulf"] .page-head {
+html[data-theme="erpgulf"] .page-head {
   background-color: $eg-card;
   border-bottom: 1px solid $eg-border;
 }
@@ -101,8 +100,8 @@ html[data-theme="erpgulf"],
 // Re-declares the tokens the sidebar reads, so its text, icons, hover states and
 // borders all turn light-on-dark without touching the rest of the page.
 
-[data-theme="erpgulf"] .body-sidebar-container,
-[data-theme="erpgulf"] .dock {
+html[data-theme="erpgulf"] .body-sidebar-container,
+html[data-theme="erpgulf"] .dock {
   --ink-gray-9: #ffffff;
   --ink-gray-8: #f1f2f5;
   --ink-gray-7: #dcdfe5;
@@ -141,22 +140,22 @@ html[data-theme="erpgulf"],
   --dock-ink-active: #ffffff;
 }
 
-[data-theme="erpgulf"] .body-sidebar-container .body-sidebar {
+html[data-theme="erpgulf"] .body-sidebar-container .body-sidebar {
   background: $eg-navy;
   border-inline-end-color: transparent;
 }
 
-[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item .item-anchor {
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item .item-anchor {
   color: $eg-shell-text;
 }
 
-[data-theme="erpgulf"]
+html[data-theme="erpgulf"]
   .body-sidebar-container
   .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
-[data-theme="erpgulf"]
+html[data-theme="erpgulf"]
   .body-sidebar-container
   .standard-sidebar-item:not(.active-sidebar):has(.item-anchor:not(.section-break)):hover
   .item-anchor {
@@ -164,28 +163,28 @@ html[data-theme="erpgulf"],
 }
 
 // The page you are on: red tile, white label and icon.
-[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar {
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar {
   background: $eg-red;
   box-shadow: 0 6px 16px rgba(217, 55, 43, 0.35);
 }
 
-[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar .item-anchor,
-[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar .sidebar-item-label,
-[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar .sidebar-item-icon {
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar .item-anchor,
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar .sidebar-item-label,
+html[data-theme="erpgulf"] .body-sidebar-container .standard-sidebar-item.active-sidebar .sidebar-item-icon {
   color: #ffffff;
 }
 
 // The dock (module rail): idle tiles are muted, the current module is a red tile.
-[data-theme="erpgulf"] .dock {
+html[data-theme="erpgulf"] .dock {
   background: $eg-navy;
 }
 
-[data-theme="erpgulf"] .dock .dock-item:hover {
+html[data-theme="erpgulf"] .dock .dock-item:hover {
   background-color: rgba(255, 255, 255, 0.08);
   color: #ffffff;
 }
 
-[data-theme="erpgulf"] .dock .dock-item.active {
+html[data-theme="erpgulf"] .dock .dock-item.active {
   background: $eg-red;
   color: #ffffff;
   box-shadow: 0 6px 16px rgba(217, 55, 43, 0.35);
@@ -194,10 +193,10 @@ html[data-theme="erpgulf"],
 // ---------- Typography ----------
 
 // Page title (the last breadcrumb) and large headings use the serif display face.
-[data-theme="erpgulf"] .page-head .navbar-breadcrumbs li:last-child,
-[data-theme="erpgulf"] .page-head .navbar-breadcrumbs li:last-child *,
-[data-theme="erpgulf"] .page-container h1,
-[data-theme="erpgulf"] .page-container h2 {
+html[data-theme="erpgulf"] .page-head .navbar-breadcrumbs li:last-child,
+html[data-theme="erpgulf"] .page-head .navbar-breadcrumbs li:last-child *,
+html[data-theme="erpgulf"] .page-container h1,
+html[data-theme="erpgulf"] .page-container h2 {
   font-family: $theme-serif !important;
   font-weight: 400;
   color: $eg-ink;
@@ -206,21 +205,21 @@ html[data-theme="erpgulf"],
 
 // ---------- Buttons ----------
 
-[data-theme="erpgulf"] .btn-primary,
-[data-theme="erpgulf"] .btn-primary:focus {
+html[data-theme="erpgulf"] .btn-primary,
+html[data-theme="erpgulf"] .btn-primary:focus {
   background-color: $eg-red;
   border-color: $eg-red;
   color: #ffffff;
 }
 
-[data-theme="erpgulf"] .btn-primary:hover {
+html[data-theme="erpgulf"] .btn-primary:hover {
   background-color: $eg-red-dark;
   border-color: $eg-red-dark;
   color: #ffffff;
 }
 
 // Frappe sets the pressed state with !important, so this has to as well.
-[data-theme="erpgulf"] .btn.btn-primary:active {
+html[data-theme="erpgulf"] .btn.btn-primary:active {
   background-color: $eg-red-dark !important;
   border-color: $eg-red-dark;
   color: #ffffff !important;
@@ -228,123 +227,131 @@ html[data-theme="erpgulf"],
 
 // Solid buttons from Frappe's new component library. Buttons that carry their own
 // colour (data-theme="red", "green"…) are left alone.
-[data-theme="erpgulf"] .es-button[data-variant="solid"]:not([data-theme]) {
+html[data-theme="erpgulf"] .es-button[data-variant="solid"]:not([data-theme]) {
   --bt-solid-bg: #{$eg-red};
   --bt-solid-bg-hover: #{$eg-red-dark};
   --bt-solid-bg-active: #{$eg-red-dark};
   --bt-solid-fg: #ffffff;
 }
 
-[data-theme="erpgulf"] .btn-primary .icon,
-[data-theme="erpgulf"] .btn-primary .es-icon {
+html[data-theme="erpgulf"] .btn-primary .icon,
+html[data-theme="erpgulf"] .btn-primary .es-icon {
   stroke: #ffffff;
   color: #ffffff;
 }
 
-[data-theme="erpgulf"] .btn-default {
+html[data-theme="erpgulf"] .btn-default {
   background-color: $eg-card;
   border: 1px solid $eg-border;
   color: $eg-ink;
 }
 
-[data-theme="erpgulf"] .btn-default:hover {
+html[data-theme="erpgulf"] .btn-default:hover {
   background-color: $eg-page;
 }
 
 // ---------- Cards, widgets, forms ----------
 
-[data-theme="erpgulf"] .frappe-card,
-[data-theme="erpgulf"] .widget,
-[data-theme="erpgulf"] .form-page,
-[data-theme="erpgulf"] .frappe-list,
-[data-theme="erpgulf"] .report-wrapper {
+html[data-theme="erpgulf"] .frappe-card,
+html[data-theme="erpgulf"] .widget,
+html[data-theme="erpgulf"] .form-page,
+html[data-theme="erpgulf"] .frappe-list,
+html[data-theme="erpgulf"] .report-wrapper {
   background-color: $eg-card;
   border: 1px solid $eg-border;
   border-radius: 16px;
   box-shadow: none;
 }
 
-[data-theme="erpgulf"] .widget .widget-title,
-[data-theme="erpgulf"] .section-head,
-[data-theme="erpgulf"] .form-section .section-head {
+html[data-theme="erpgulf"] .widget .widget-title,
+html[data-theme="erpgulf"] .section-head,
+html[data-theme="erpgulf"] .form-section .section-head {
   color: $eg-ink;
   font-weight: 600;
 }
 
-[data-theme="erpgulf"] .form-control {
+html[data-theme="erpgulf"] .form-control {
   background-color: $eg-card;
   border: 1px solid $eg-border;
   border-radius: 10px;
 }
 
-[data-theme="erpgulf"] .form-control:focus {
+html[data-theme="erpgulf"] .form-control:focus {
   border-color: $eg-red;
   box-shadow: 0 0 0 3px rgba(217, 55, 43, 0.15);
 }
 
-[data-theme="erpgulf"] .form-control[disabled],
-[data-theme="erpgulf"] .form-control[readonly],
-[data-theme="erpgulf"] .like-disabled-input {
+html[data-theme="erpgulf"] .form-control[disabled],
+html[data-theme="erpgulf"] .form-control[readonly],
+html[data-theme="erpgulf"] .like-disabled-input {
   background-color: $eg-page;
 }
 
 // ---------- Lists and tables ----------
 
 // The right-hand part of each list row is painted with --bg-color: keep it white like its card.
-[data-theme="erpgulf"] .frappe-list .list-row .level-right,
-[data-theme="erpgulf"] .frappe-list .list-row-head .level-right {
+html[data-theme="erpgulf"] .frappe-list .list-row .level-right,
+html[data-theme="erpgulf"] .frappe-list .list-row-head .level-right {
   background-color: $eg-card;
 }
 
-[data-theme="erpgulf"] .frappe-list .list-row:hover:not(.list-row-head) .level-right {
+html[data-theme="erpgulf"] .frappe-list .list-row:hover:not(.list-row-head) .level-right {
   background-color: $eg-page;
 }
 
-[data-theme="erpgulf"] .list-row-head,
-[data-theme="erpgulf"] .grid-heading-row {
+html[data-theme="erpgulf"] .list-row-head,
+html[data-theme="erpgulf"] .grid-heading-row {
   background-color: $eg-card;
   color: $eg-muted;
   font-weight: 500;
 }
 
-[data-theme="erpgulf"] .list-row:hover,
-[data-theme="erpgulf"] .grid-row:hover {
+html[data-theme="erpgulf"] .list-row:hover,
+html[data-theme="erpgulf"] .grid-row:hover {
   background-color: $eg-page;
 }
 
 // ---------- Small accents ----------
 
-[data-theme="erpgulf"] ::selection {
+html[data-theme="erpgulf"] ::selection {
   background: $eg-red-soft;
   color: $eg-ink;
 }
 
-[data-theme="erpgulf"] .modal-content {
+html[data-theme="erpgulf"] .modal-content {
   border-radius: 18px;
 }
 
+// Link cards: Frappe draws these without a box and with no bottom padding. As cards they
+// need room under the last link.
+html[data-theme="erpgulf"] .widget.links-widget-box {
+  height: auto;
+  min-height: 100%;
+  padding: 16px 16px 14px;
+}
+
 // Inside white surfaces, anything Frappe paints with the page colour should be white too.
-[data-theme="erpgulf"] .modal-content,
-[data-theme="erpgulf"] .frappe-list,
-[data-theme="erpgulf"] .form-page,
-[data-theme="erpgulf"] .widget,
-[data-theme="erpgulf"] .report-wrapper {
+html[data-theme="erpgulf"] .modal-content,
+html[data-theme="erpgulf"] .frappe-list,
+html[data-theme="erpgulf"] .form-page,
+html[data-theme="erpgulf"] .widget,
+html[data-theme="erpgulf"] .report-wrapper {
   --bg-color: #{$eg-card};
 }
 
 // Forms shown inside a dialog (Settings, quick entry) are not cards: no border around the fields.
-[data-theme="erpgulf"] .modal .form-page {
+html[data-theme="erpgulf"] .modal .form-page {
   border: 0;
   border-radius: 0;
   background-color: transparent;
 }
 
-[data-theme="erpgulf"] .avatar-frame.standard-image {
+html[data-theme="erpgulf"] .avatar-frame.standard-image {
   background-color: $eg-navy;
   color: #ffffff;
 }
 
-[data-theme="erpgulf"] .progress-bar {
+html[data-theme="erpgulf"] .progress-bar {
   background-color: $eg-red;
 }
 
