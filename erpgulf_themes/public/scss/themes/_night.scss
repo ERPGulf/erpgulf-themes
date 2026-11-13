@@ -1126,7 +1126,7 @@ html[data-theme-mode="claudionnight"] .kn-board {
   box-sizing: border-box;
 }
 [data-theme-mode="claudionnight"] .like-icon {
-  fill: #ffffff !important;
+  stroke: #ffffff !important;
 }
 [data-theme-mode="claudionnight"] .form-tabs-list {
   background: #0a1416 !important;
@@ -1567,7 +1567,7 @@ html[data-theme-mode="claudionnight"] .kn-board {
     /*********************************ICONS END***********************************/
 
     /* 
-[data-theme-mode="claudionnight"] .count {
+[data-theme-mode="claudionnight"] .widget.number-widget-box .count {
   width: 16px !important;
   height: 20px !important;
   font-family: $theme-font !important;
@@ -1711,8 +1711,6 @@ border: 1px solid #313536!important;
 }
 
 [data-theme-mode="claudionnight"] .widget.number-widget-box .widget-title span {
-  width: 120px !important;
-  height: 20px !important;
   font-family: $theme-font !important;
   font-weight: 400 !important;
   font-size: 14px !important;
@@ -1742,7 +1740,7 @@ color:#ffffff !important;
   color: #ffffff !important;
 }
 
-  [data-theme-mode="claudionnight"] .count {
+  [data-theme-mode="claudionnight"] .widget.number-widget-box .count {
   width: 16px !important;
   height: 20px !important;
   font-family: $theme-font !important;
@@ -1988,4 +1986,11 @@ color: #ffffff !important;
 [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Trial Balance"])::before,
 [data-theme-mode="claudionnight"] .widget.shortcut-widget-box .widget-head .widget-label:has(span[title="Learn Accounting"])::before {
   content: "";
+}
+
+/* The search box inside the command palette (Ctrl/Cmd+K) is the old top-bar search input:
+   drop the top-bar fill there so it reads as part of the dialog. */
+[data-theme-mode="claudionnight"] .modal #navbar-search {
+  background: transparent !important;
+  border-color: transparent !important;
 }

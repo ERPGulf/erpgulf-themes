@@ -29,8 +29,9 @@ $eg-shell-text: #aab1c2; // idle text and icons on the shell
   --gray-900: #1b2030;
   --gray-950: #12151f;
 
-  // Surfaces. The grey page colour is set on .main-section below, not through --bg-color,
-  // because Frappe also uses that token inside cards (sticky list columns, for example).
+  // Page and surfaces. Frappe paints its page containers with --bg-color, so the grey page
+  // has to come from the token; the few places that use it inside a white card are reset below.
+  --bg-color: #{$eg-page};
   --fg-color: #{$eg-card};
   --card-bg: #{$eg-card};
   --modal-bg: #{$eg-card};
@@ -83,6 +84,12 @@ html[data-theme="erpgulf"],
   background-color: $eg-page;
   border-start-start-radius: 22px;
   border-end-start-radius: 22px;
+}
+
+// Workspaces: no white column behind the widgets, so cards sit directly on the grey page.
+[data-theme="erpgulf"][data-page-route="Workspaces"] .layout-main-section:not(.edit-mode),
+[data-theme="erpgulf"] [data-page-route="Workspaces"] .layout-main-section:not(.edit-mode) {
+  background-color: transparent;
 }
 
 [data-theme="erpgulf"] .page-head {
@@ -282,6 +289,16 @@ html[data-theme="erpgulf"],
 }
 
 // ---------- Lists and tables ----------
+
+// The right-hand part of each list row is painted with --bg-color: keep it white like its card.
+[data-theme="erpgulf"] .frappe-list .list-row .level-right,
+[data-theme="erpgulf"] .frappe-list .list-row-head .level-right {
+  background-color: $eg-card;
+}
+
+[data-theme="erpgulf"] .frappe-list .list-row:hover:not(.list-row-head) .level-right {
+  background-color: $eg-page;
+}
 
 [data-theme="erpgulf"] .list-row-head,
 [data-theme="erpgulf"] .grid-heading-row {
