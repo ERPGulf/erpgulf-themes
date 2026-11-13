@@ -13,7 +13,7 @@ Desk themes for Frappe / ERPNext **v16.50 and above** (the release with the dock
 ## Install
 
 ```bash
-bench get-app https://github.com/ERPGulf/erpgulf-themes.git
+bench get-app https://github.com/ERPGulf/erpgulf_themes.git
 bench --site your-site install-app erpgulf_themes
 bench build --app erpgulf_themes
 ```
