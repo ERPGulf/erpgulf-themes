@@ -460,3 +460,123 @@ html[data-theme="erpgulf"] .widget.number-widget-box .widget-body .number {
   line-height: 1.15;
   letter-spacing: -0.01em;
 }
+
+// ---------- Tree views (Chart of Accounts, Item Group, Cost Center, Warehouse…) ----------
+// A white card. The root is a serif title with a rule under it, groups are semi-bold navy,
+// leaves are regular weight, account numbers are quiet pills and balances line up in a
+// tabular column. Hover highlights the whole row, balance included, with a red marker.
+
+$eg-tree-row: 38px;
+
+html[data-theme="erpgulf"] .tree.tree-rows {
+  padding: 14px 16px 16px;
+  background-color: $eg-card;
+  border: 1px solid $eg-border;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(27, 32, 48, 0.04);
+}
+
+// Rows
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link {
+  min-height: $eg-tree-row;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+  color: $eg-text;
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows li.tree-node > .balance-area {
+  min-height: $eg-tree-row;
+  padding-inline: 12px;
+  border-radius: 0 10px 10px 0;
+  color: $eg-ink;
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background-color 120ms ease;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows li.tree-node:has(> .balance-area) > .tree-link {
+  border-radius: 10px 0 0 10px;
+}
+
+// Groups (rows with an expand arrow) carry more weight than the accounts inside them.
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link:has(> span.node-parent) {
+  color: $eg-ink;
+  font-weight: 600;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link > span.node-parent {
+  color: $eg-muted;
+  transition: color 120ms ease;
+}
+
+// Hover / open: one continuous highlight across label and balance, with a red marker.
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link:hover,
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link[data-state="open"] {
+  background-color: $eg-page;
+  box-shadow: inset 3px 0 0 $eg-red;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link:hover + .balance-area,
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link[data-state="open"] + .balance-area {
+  background-color: $eg-page;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link:hover > span.node-parent,
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link[data-state="open"] > span.node-parent {
+  color: $eg-red;
+}
+
+// Root (the company): a serif title with a rule under it.
+html[data-theme="erpgulf"] .tree.tree-rows > li.tree-node > .tree-link,
+html[data-theme="erpgulf"] .tree.tree-rows > li.tree-node > .balance-area {
+  min-height: 46px;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows > li.tree-node > .tree-link .tree-label {
+  font-family: $theme-serif !important;
+  font-size: 18px;
+  font-weight: 400;
+  color: $eg-ink;
+  letter-spacing: -0.01em;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows > li.tree-node > ul.tree-children {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid $eg-border;
+}
+
+// Top-level groups: a little larger, and their balances semi-bold.
+html[data-theme="erpgulf"] .tree.tree-rows > li.tree-node > ul.tree-children > li.tree-node > .tree-link {
+  font-size: 15px;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows > li.tree-node > ul.tree-children > li.tree-node > .balance-area {
+  font-weight: 600;
+}
+
+// Connector lines: lighter, with a rounded elbow, re-centred on the taller rows.
+html[data-theme="erpgulf"] .tree.tree-rows ul.tree-children > li.tree-node::before {
+  height: calc(#{$eg-tree-row} / 2);
+  border-color: #dcdfe5;
+  border-bottom-left-radius: 8px;
+}
+
+html[data-theme="erpgulf"] .tree.tree-rows ul.tree-children > li.tree-node:not(:last-child)::after {
+  top: calc(#{$eg-tree-row} / 2 - 8px);
+  border-color: #dcdfe5;
+}
+
+// Account numbers and other flags beside the name: quiet pills with tabular digits.
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link .es-badge:not([data-theme]),
+html[data-theme="erpgulf"] .tree.tree-rows .tree-link .es-badge[data-theme="gray"] {
+  background-color: #eef0f5;
+  color: #4a5163;
+  border-radius: 999px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}

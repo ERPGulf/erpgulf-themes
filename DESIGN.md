@@ -91,6 +91,14 @@ Navy shell and sidebar, light-grey page, white cards, red accent. Based on the F
 | Report | `#FFFFFF` | `#343A4A` | none | 0 | Square edges: the table scrolls sideways |
 | Number card | `#FFFFFF` | label `#6B7385`, value `#1B2030` bold 24px | 1px `#E6E8EC` | 16px | 48px red icon tile on the left (gradient `#E2493D` to `#BF2D22`, white icon); hover: light red border and a soft shadow |
 | Progress bar | `#1B2030` | — | — | — | Navy, not red: a full red bar reads as a problem |
+| Tree view (card) | `#FFFFFF` | — | 1px `#E6E8EC` | 16px | Chart of Accounts, Item Group, Cost Center… |
+| Tree root | — | `#1B2030`, Young Serif 18px | rule below: 1px `#E6E8EC` | — | The company name |
+| Tree group row | — | `#1B2030`, weight 600 | — | 10px | Rows that expand; top-level groups are 15px |
+| Tree leaf row | — | `#343A4A`, regular | — | 10px | Row height 38px |
+| Tree row, hover | `#F4F5F7` | arrow turns `#D9372B` | 3px `#D9372B` marker on the left | 10px | Highlight runs across the balance too |
+| Tree balance | — | `#1B2030`, weight 500, tabular digits | — | — | Semi-bold on top-level groups |
+| Tree connector lines | — | `#DCDFE5` | — | rounded elbow | |
+| Tree account-number pill | `#EEF0F5` | `#4A5163`, weight 500 | — | full | |
 | Card and section titles | — | `#1B2030`, weight 600 | — | — | |
 | Text input | `#FFFFFF` | `#343A4A` | 1px `#E6E8EC` | 10px | Focus: `#D9372B` border and a 3px ring, red at 15% |
 | Read-only input | `#F4F5F7` | — | — | — | |
