@@ -8,6 +8,9 @@ MODULE = "ERPGulf Themes"
 # User.desk_theme options. Frappe lowercases the value into <html data-theme-mode="...">,
 # which is what the stylesheets and theme_switcher.js are keyed on.
 THEMES = ("ERPGulf", "ClaudionDay", "ClaudionNight")
+# Frappe's own themes stay available next to ours.
+FRAPPE_THEMES = ("Light", "Dark", "Automatic")
+ALL_THEMES = THEMES + FRAPPE_THEMES
 DEFAULT_THEME = "ERPGulf"
 
 
@@ -15,7 +18,7 @@ DEFAULT_THEME = "ERPGulf"
 def switch_theme(theme: str):
     """Save the theme the user picked in the theme switcher."""
     key = (theme or "").replace(" ", "").lower()
-    resolved = next((t for t in THEMES if t.lower() == key), None)
+    resolved = next((t for t in ALL_THEMES if t.lower() == key), None)
     if not resolved:
         frappe.throw(_("Theme {0} is not available").format(theme))
     frappe.db.set_value("User", frappe.session.user, "desk_theme", resolved)
@@ -23,15 +26,16 @@ def switch_theme(theme: str):
 
 def setup():
     """Runs after install and after every migrate. Safe to run repeatedly."""
-    _set_property("options", "\n".join(THEMES), "Text")
+    _set_property("options", "\n".join(ALL_THEMES), "Text")
     _set_property("default", DEFAULT_THEME, "Data")
 
-    # Users on any other theme (or none) move to the default. A user's own choice is kept.
+    # Users with no theme (or one that no longer exists) get the default. A user's own choice,
+    # including Frappe's Light, Dark and Automatic, is kept.
     User = frappe.qb.DocType("User")
     (
         frappe.qb.update(User)
         .set(User.desk_theme, DEFAULT_THEME)
-        .where(User.desk_theme.isnull() | User.desk_theme.notin(THEMES))
+        .where(User.desk_theme.isnull() | User.desk_theme.notin(ALL_THEMES))
     ).run()
     frappe.clear_cache(doctype="User")
 

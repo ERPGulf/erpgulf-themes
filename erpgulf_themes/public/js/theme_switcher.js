@@ -28,31 +28,42 @@ frappe.ui.set_theme = (theme) => {
 frappe.ui.set_theme();
 
 frappe.ui.ThemeSwitcher = class ERPGulfThemeSwitcher extends frappe.ui.ThemeSwitcher {
+  // Our three themes first, then Frappe's own Automatic, Light and Dark.
   fetch_themes() {
-    this.themes = THEMES.map((theme) => ({
+    const ours = THEMES.map((theme) => ({
       ...theme,
       label: __(theme.label),
       info: __(theme.info),
     }));
-    return Promise.resolve(this.themes);
+    return super.fetch_themes().then((frappe_themes) => {
+      this.themes = [...ours, ...(frappe_themes || [])];
+      return this.themes;
+    });
   }
 
   render() {
     super.render();
     // Preview cards are drawn with data-theme=<name>; point each at its base theme and
     // carry the mode alongside, so a card previews exactly what the theme will look like.
-    this.themes.forEach((theme) => {
-      theme.$html
-        .find(`[data-theme="${theme.name}"]`)
-        .addBack(`[data-theme="${theme.name}"]`)
-        .attr("data-theme-mode", theme.name)
-        .attr("data-theme", base_theme(theme.name));
-    });
+    this.themes
+      .filter((theme) => THEMES.some((t) => t.name === theme.name))
+      .forEach((theme) => {
+        theme.$html
+          .find(`[data-theme="${theme.name}"]`)
+          .addBack(`[data-theme="${theme.name}"]`)
+          .attr("data-theme-mode", theme.name)
+          .attr("data-theme", base_theme(theme.name));
+      });
   }
 
   toggle_theme(theme_name) {
     const theme = THEMES.find((t) => t.name === theme_name);
-    if (!theme) return;
+    if (!theme) {
+      // One of Frappe's own themes: let Frappe switch to it.
+      super.toggle_theme(theme_name);
+      frappe.ui.set_theme();
+      return;
+    }
 
     this.current_theme = theme.name;
     document.documentElement.setAttribute("data-theme-mode", theme.name);

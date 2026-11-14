@@ -20,12 +20,12 @@ bench build --app erpgulf_themes
 
 ## What it does
 
-- Replaces the theme switcher (user menu → Toggle Theme, or `Ctrl+Shift+G`) with these three themes.
+- Adds these three themes to the theme switcher (user menu → Toggle Theme, or `Ctrl+Shift+G`), ahead of Frappe's own Automatic, Light and Dark.
 - Saves each user's choice on the server (`User.desk_theme`), so it follows them across browsers.
 - Sets **ERPGulf** as the default: on install every user gets it, and so does each new user. To change the default, edit `DEFAULT_THEME` in `erpgulf_themes/theme.py`.
-- On install and on every migrate, users who are on any other theme are moved to the default. A user's own choice among the three is never overwritten.
+- On install and on every migrate, users with no theme set get the default. A user's own choice, including Frappe's Light, Dark and Automatic, is never overwritten.
 
-Frappe's built-in Light, Dark and Automatic themes are not offered while the app is installed.
+Frappe's built-in Light, Dark and Automatic themes stay available. They are shown as Frappe ships them; this app does not restyle them.
 
 ## Uninstall
 
